@@ -4,8 +4,6 @@ Run from **repository root** (so `artifacts/` and `data/` resolve):
 
 ```bash
 python strategies/06_HIGH_opportunity_state/code/<script>.py
-# or legacy shim from repo root:
-python <script>.py
 ```
 
 ## Scripts

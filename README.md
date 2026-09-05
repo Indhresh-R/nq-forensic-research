@@ -39,7 +39,6 @@ common/                 # shared loaders (nq_session, paths, splits)
 artifacts/<id>/         # reports grouped by family (parquet panels gitignored)
 reports/                # master tables
 archive/legacy_scripts/ # pre-library engines needed by OR5 forensics
-run_*.py                # thin shims → strategies/*/code/
 ```
 
 ## Data (not in this repo)
@@ -55,8 +54,6 @@ Place locally under `data/`:
 ```bash
 cd NQ-2
 python strategies/06_HIGH_opportunity_state/code/run_ny_open_opportunity_timing.py
-# or legacy shim from repo root:
-python run_ny_open_opportunity_timing.py
 ```
 
 Shared primitives: `from common.nq_session import load_nq, state_at_T, build_day_context`.
