@@ -1,0 +1,586 @@
+{
+  "frozen": {
+    "target": "opposite ORB extreme inset 20% R",
+    "stop": "15-point ORB-extreme stop",
+    "orb_pct_gate": 0.8452380952380952
+  },
+  "geometry": {
+    "oos_orb_n": 280,
+    "oos_orb_through_stop_pct": 59.6,
+    "oos_orb_exit_on_fill_bar_pct": 76.8,
+    "oos_orb_same_bar_ambiguous_n": 0,
+    "oos_orb_same_bar_ambiguous_pct": 0.0,
+    "engine_same_bar_rule": "BOTH stop+TP in bar -> SL (pessimistic). Observed count = 0.",
+    "pnl_share_oos_orb": {
+      "adverse_stop": {
+        "trades": 99,
+        "pct_trades": 35.4,
+        "pnl": -9840.0,
+        "pct_pnl": -19.3,
+        "avg": -99.39
+      },
+      "favorable_through_stop": {
+        "trades": 167,
+        "pct_trades": 59.6,
+        "pnl": 50697.0,
+        "pct_pnl": 99.6,
+        "avg": 303.57
+      },
+      "structural_TP": {
+        "trades": 14,
+        "pct_trades": 5.0,
+        "pnl": 10056.0,
+        "pct_pnl": 19.8,
+        "avg": 718.29
+      }
+    }
+  },
+  "tables": [
+    {
+      "book": "ALL",
+      "exit_class": "structural_TP",
+      "trades": 297,
+      "pct_trades": 9.0,
+      "pnl": 75922.8,
+      "pct_pnl": 27.9,
+      "pf": 0.0,
+      "avg": 255.63,
+      "wr": 100.0
+    },
+    {
+      "book": "ALL",
+      "exit_class": "adverse_stop",
+      "trades": 1444,
+      "pct_trades": 43.9,
+      "pnl": -94084.5,
+      "pct_pnl": -34.6,
+      "pf": 0.0,
+      "avg": -65.16,
+      "wr": 0.0
+    },
+    {
+      "book": "ALL",
+      "exit_class": "favorable_through_stop",
+      "trades": 1546,
+      "pct_trades": 47.0,
+      "pnl": 289863.0,
+      "pct_pnl": 106.7,
+      "pf": 10171.63,
+      "avg": 187.49,
+      "wr": 98.77
+    },
+    {
+      "book": "ALL",
+      "exit_class": "raw_SL",
+      "trades": 2990,
+      "pct_trades": 91.0,
+      "pnl": 195778.5,
+      "pct_pnl": 72.1,
+      "pf": 3.08,
+      "avg": 65.48,
+      "wr": 51.07
+    },
+    {
+      "book": "ALL",
+      "exit_class": "raw_TP",
+      "trades": 297,
+      "pct_trades": 9.0,
+      "pnl": 75922.8,
+      "pct_pnl": 27.9,
+      "pf": 0.0,
+      "avg": 255.63,
+      "wr": 100.0
+    },
+    {
+      "book": "IS",
+      "exit_class": "structural_TP",
+      "trades": 229,
+      "pct_trades": 10.4,
+      "pnl": 46408.8,
+      "pct_pnl": 37.0,
+      "pf": 0.0,
+      "avg": 202.66,
+      "wr": 100.0
+    },
+    {
+      "book": "IS",
+      "exit_class": "adverse_stop",
+      "trades": 1050,
+      "pct_trades": 47.5,
+      "pnl": -62292.0,
+      "pct_pnl": -49.7,
+      "pf": 0.0,
+      "avg": -59.33,
+      "wr": 0.0
+    },
+    {
+      "book": "IS",
+      "exit_class": "favorable_through_stop",
+      "trades": 932,
+      "pct_trades": 42.2,
+      "pnl": 141280.5,
+      "pct_pnl": 112.7,
+      "pf": 5887.69,
+      "avg": 151.59,
+      "wr": 98.28
+    },
+    {
+      "book": "IS",
+      "exit_class": "raw_SL",
+      "trades": 1982,
+      "pct_trades": 89.6,
+      "pnl": 78988.5,
+      "pct_pnl": 63.0,
+      "pf": 2.27,
+      "avg": 39.85,
+      "wr": 46.22
+    },
+    {
+      "book": "IS",
+      "exit_class": "raw_TP",
+      "trades": 229,
+      "pct_trades": 10.4,
+      "pnl": 46408.8,
+      "pct_pnl": 37.0,
+      "pf": 0.0,
+      "avg": 202.66,
+      "wr": 100.0
+    },
+    {
+      "book": "OOS",
+      "exit_class": "structural_TP",
+      "trades": 68,
+      "pct_trades": 6.3,
+      "pnl": 29514.0,
+      "pct_pnl": 20.2,
+      "pf": 0.0,
+      "avg": 434.03,
+      "wr": 100.0
+    },
+    {
+      "book": "OOS",
+      "exit_class": "adverse_stop",
+      "trades": 394,
+      "pct_trades": 36.6,
+      "pnl": -31792.5,
+      "pct_pnl": -21.7,
+      "pf": 0.0,
+      "avg": -80.69,
+      "wr": 0.0
+    },
+    {
+      "book": "OOS",
+      "exit_class": "favorable_through_stop",
+      "trades": 614,
+      "pct_trades": 57.1,
+      "pnl": 148582.5,
+      "pct_pnl": 101.6,
+      "pf": 33019.33,
+      "avg": 241.99,
+      "wr": 99.51
+    },
+    {
+      "book": "OOS",
+      "exit_class": "raw_SL",
+      "trades": 1008,
+      "pct_trades": 93.7,
+      "pnl": 116790.0,
+      "pct_pnl": 79.8,
+      "pf": 4.67,
+      "avg": 115.86,
+      "wr": 60.62
+    },
+    {
+      "book": "OOS",
+      "exit_class": "raw_TP",
+      "trades": 68,
+      "pct_trades": 6.3,
+      "pnl": 29514.0,
+      "pct_pnl": 20.2,
+      "pf": 0.0,
+      "avg": 434.03,
+      "wr": 100.0
+    },
+    {
+      "book": "OOS_orb_gate",
+      "exit_class": "structural_TP",
+      "trades": 14,
+      "pct_trades": 5.0,
+      "pnl": 10056.0,
+      "pct_pnl": 19.8,
+      "pf": 0.0,
+      "avg": 718.29,
+      "wr": 100.0
+    },
+    {
+      "book": "OOS_orb_gate",
+      "exit_class": "adverse_stop",
+      "trades": 99,
+      "pct_trades": 35.4,
+      "pnl": -9840.0,
+      "pct_pnl": -19.3,
+      "pf": 0.0,
+      "avg": -99.39,
+      "wr": 0.0
+    },
+    {
+      "book": "OOS_orb_gate",
+      "exit_class": "favorable_through_stop",
+      "trades": 167,
+      "pct_trades": 59.6,
+      "pnl": 50697.0,
+      "pct_pnl": 99.6,
+      "pf": 33799.0,
+      "avg": 303.57,
+      "wr": 99.4
+    },
+    {
+      "book": "OOS_orb_gate",
+      "exit_class": "raw_SL",
+      "trades": 266,
+      "pct_trades": 95.0,
+      "pnl": 40857.0,
+      "pct_pnl": 80.2,
+      "pf": 5.15,
+      "avg": 153.6,
+      "wr": 62.41
+    },
+    {
+      "book": "OOS_orb_gate",
+      "exit_class": "raw_TP",
+      "trades": 14,
+      "pct_trades": 5.0,
+      "pnl": 10056.0,
+      "pct_pnl": 19.8,
+      "pf": 0.0,
+      "avg": 718.29,
+      "wr": 100.0
+    },
+    {
+      "book": "live_2026_orb",
+      "exit_class": "structural_TP",
+      "trades": 1,
+      "pct_trades": 1.0,
+      "pnl": 897.0,
+      "pct_pnl": 4.2,
+      "pf": 0.0,
+      "avg": 897.0,
+      "wr": 100.0
+    },
+    {
+      "book": "live_2026_orb",
+      "exit_class": "adverse_stop",
+      "trades": 31,
+      "pct_trades": 32.0,
+      "pnl": -3304.5,
+      "pct_pnl": -15.6,
+      "pf": 0.0,
+      "avg": -106.6,
+      "wr": 0.0
+    },
+    {
+      "book": "live_2026_orb",
+      "exit_class": "favorable_through_stop",
+      "trades": 65,
+      "pct_trades": 67.0,
+      "pnl": 23608.5,
+      "pct_pnl": 111.4,
+      "pf": 15740.0,
+      "avg": 363.21,
+      "wr": 98.46
+    },
+    {
+      "book": "live_2026_orb",
+      "exit_class": "raw_SL",
+      "trades": 96,
+      "pct_trades": 99.0,
+      "pnl": 20304.0,
+      "pct_pnl": 95.8,
+      "pf": 7.14,
+      "avg": 211.5,
+      "wr": 66.67
+    },
+    {
+      "book": "live_2026_orb",
+      "exit_class": "raw_TP",
+      "trades": 1,
+      "pct_trades": 1.0,
+      "pnl": 897.0,
+      "pct_pnl": 4.2,
+      "pf": 0.0,
+      "avg": 897.0,
+      "wr": 100.0
+    }
+  ],
+  "stress": [
+    {
+      "mode": "baseline",
+      "OOS": {
+        "trades": 1076,
+        "wr": 63.1,
+        "pnl": 146304.0,
+        "pf": 5.6,
+        "exp": 135.97,
+        "mdd": 820.5,
+        "win_days": 61.5,
+        "pct_total_pnl": 100.0,
+        "months_pos": 32,
+        "months_total": 32,
+        "monthly_pos_pct": 100.0,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "OOS_orb": {
+        "trades": 280,
+        "wr": 64.29,
+        "pnl": 50913.0,
+        "pf": 6.17,
+        "exp": 181.83,
+        "mdd": 1422.0,
+        "win_days": 60.8,
+        "pct_total_pnl": 100.0,
+        "months_pos": 23,
+        "months_total": 29,
+        "monthly_pos_pct": 79.3,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "live_2026_orb": {
+        "trades": 97,
+        "wr": 67.01,
+        "pnl": 21201.0,
+        "pf": 7.41,
+        "exp": 218.57,
+        "mdd": 580.5,
+        "win_days": 63.3,
+        "pct_total_pnl": 100.0,
+        "months_pos": 6,
+        "months_total": 8,
+        "monthly_pos_pct": 75.0,
+        "years_pos": 1,
+        "years_total": 1
+      },
+      "exit_reasons": {
+        "SL": 2990,
+        "TP": 297
+      }
+    },
+    {
+      "mode": "reject_through",
+      "OOS": {
+        "trades": 622,
+        "wr": 13.02,
+        "pnl": -6286.5,
+        "pf": 0.85,
+        "exp": -10.11,
+        "mdd": 9573.0,
+        "win_days": 21.7,
+        "pct_total_pnl": 100.0,
+        "months_pos": 14,
+        "months_total": 32,
+        "monthly_pos_pct": 43.8,
+        "years_pos": 0,
+        "years_total": 3
+      },
+      "OOS_orb": {
+        "trades": 162,
+        "wr": 9.88,
+        "pnl": -2844.3,
+        "pf": 0.8,
+        "exp": -17.56,
+        "mdd": 5523.0,
+        "win_days": 16.5,
+        "pct_total_pnl": 100.0,
+        "months_pos": 9,
+        "months_total": 28,
+        "monthly_pos_pct": 32.1,
+        "years_pos": 2,
+        "years_total": 3
+      },
+      "live_2026_orb": {
+        "trades": 49,
+        "wr": 2.04,
+        "pnl": -4234.5,
+        "pf": 0.18,
+        "exp": -86.42,
+        "mdd": 4113.0,
+        "win_days": 3.3,
+        "pct_total_pnl": 100.0,
+        "months_pos": 1,
+        "months_total": 8,
+        "monthly_pos_pct": 12.5,
+        "years_pos": 0,
+        "years_total": 1
+      },
+      "exit_reasons": {
+        "SL": 1799,
+        "TP": 322
+      }
+    },
+    {
+      "mode": "clip_through",
+      "OOS": {
+        "trades": 1076,
+        "wr": 6.32,
+        "pnl": -3199.5,
+        "pf": 0.9,
+        "exp": -2.97,
+        "mdd": 5648.7,
+        "win_days": 12.2,
+        "pct_total_pnl": 100.0,
+        "months_pos": 12,
+        "months_total": 32,
+        "monthly_pos_pct": 37.5,
+        "years_pos": 0,
+        "years_total": 3
+      },
+      "OOS_orb": {
+        "trades": 280,
+        "wr": 5.0,
+        "pnl": -34.5,
+        "pf": 1.0,
+        "exp": -0.12,
+        "mdd": 3522.0,
+        "win_days": 9.8,
+        "pct_total_pnl": 100.0,
+        "months_pos": 10,
+        "months_total": 29,
+        "monthly_pos_pct": 34.5,
+        "years_pos": 2,
+        "years_total": 3
+      },
+      "live_2026_orb": {
+        "trades": 97,
+        "wr": 1.03,
+        "pnl": -2505.0,
+        "pf": 0.26,
+        "exp": -25.82,
+        "mdd": 2383.5,
+        "win_days": 2.0,
+        "pct_total_pnl": 100.0,
+        "months_pos": 1,
+        "months_total": 8,
+        "monthly_pos_pct": 12.5,
+        "years_pos": 0,
+        "years_total": 1
+      },
+      "exit_reasons": {
+        "SL": 2990,
+        "TP": 297
+      }
+    },
+    {
+      "mode": "same_bar_optimistic",
+      "OOS": {
+        "trades": 1076,
+        "wr": 63.1,
+        "pnl": 146304.0,
+        "pf": 5.6,
+        "exp": 135.97,
+        "mdd": 820.5,
+        "win_days": 61.5,
+        "pct_total_pnl": 100.0,
+        "months_pos": 32,
+        "months_total": 32,
+        "monthly_pos_pct": 100.0,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "OOS_orb": {
+        "trades": 280,
+        "wr": 64.29,
+        "pnl": 50913.0,
+        "pf": 6.17,
+        "exp": 181.83,
+        "mdd": 1422.0,
+        "win_days": 60.8,
+        "pct_total_pnl": 100.0,
+        "months_pos": 23,
+        "months_total": 29,
+        "monthly_pos_pct": 79.3,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "live_2026_orb": {
+        "trades": 97,
+        "wr": 67.01,
+        "pnl": 21201.0,
+        "pf": 7.41,
+        "exp": 218.57,
+        "mdd": 580.5,
+        "win_days": 63.3,
+        "pct_total_pnl": 100.0,
+        "months_pos": 6,
+        "months_total": 8,
+        "monthly_pos_pct": 75.0,
+        "years_pos": 1,
+        "years_total": 1
+      },
+      "exit_reasons": {
+        "SL": 2990,
+        "TP": 297
+      }
+    },
+    {
+      "mode": "same_bar_cancel",
+      "OOS": {
+        "trades": 1076,
+        "wr": 63.1,
+        "pnl": 146304.0,
+        "pf": 5.6,
+        "exp": 135.97,
+        "mdd": 820.5,
+        "win_days": 61.5,
+        "pct_total_pnl": 100.0,
+        "months_pos": 32,
+        "months_total": 32,
+        "monthly_pos_pct": 100.0,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "OOS_orb": {
+        "trades": 280,
+        "wr": 64.29,
+        "pnl": 50913.0,
+        "pf": 6.17,
+        "exp": 181.83,
+        "mdd": 1422.0,
+        "win_days": 60.8,
+        "pct_total_pnl": 100.0,
+        "months_pos": 23,
+        "months_total": 29,
+        "monthly_pos_pct": 79.3,
+        "years_pos": 3,
+        "years_total": 3
+      },
+      "live_2026_orb": {
+        "trades": 97,
+        "wr": 67.01,
+        "pnl": 21201.0,
+        "pf": 7.41,
+        "exp": 218.57,
+        "mdd": 580.5,
+        "win_days": 63.3,
+        "pct_total_pnl": 100.0,
+        "months_pos": 6,
+        "months_total": 8,
+        "monthly_pos_pct": 75.0,
+        "years_pos": 1,
+        "years_total": 1
+      },
+      "exit_reasons": {
+        "SL": 2990,
+        "TP": 297
+      }
+    }
+  ],
+  "stress_headline": {
+    "baseline_oos_orb_pf": 6.17,
+    "reject_through_oos_orb_pf": 0.8,
+    "clip_through_oos_orb_pf": 1.0,
+    "baseline_oos_orb_exp": 181.83,
+    "reject_through_oos_orb_exp": -17.56,
+    "clip_through_oos_orb_exp": -0.12
+  },
+  "verdict": "CRITICAL \u2014 OOS ORB-gated PnL is dominated by favorable through-stop fills (99.6% of PnL; entry already beyond ORB+/-15). Same-bar SL/TP ambiguity is NOT the issue (0 cases). Rejecting through-stop fills is the binding robustness test."
+}

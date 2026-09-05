@@ -1,0 +1,412 @@
+//@version=5
+strategy("90 Min Cross-Q SMT Backtest", overlay=true, pyramiding=0, process_orders_on_close=true)
+
+// ================================
+// INPUTS
+// ================================
+
+esSymbol = input.symbol("CME_MINI:ES1!", "ES Symbol")
+
+dev1 = input.float(1.28, "VWAP SD 1")
+dev2 = input.float(2.01, "VWAP SD 2")
+dev3 = input.float(2.51, "VWAP SD 3")
+
+bandChoice = input.string("SD1", "VWAP Extreme", options=["SD1", "SD2", "SD3"])
+
+pivotLen = input.int(2, "MSS Pivot Length", minval=1)
+confirmBars = input.int(30, "Max Confirmation Bars", minval=1)
+
+confirmation = input.string("MSS Only", "Confirmation", options=["MSS Only", "iFVG Only", "MSS OR iFVG"])
+
+stopPoints = input.float(20.0, "Stop Loss Points", minval=0.25, step=0.25)
+targetPoints = input.float(30.0, "Take Profit Points", minval=0.25, step=0.25)
+
+// ================================
+// TIME
+// ================================
+
+tz = "America/New_York"
+
+currentHour = hour(time, tz)
+currentMinute = minute(time, tz)
+currentMinutes = currentHour * 60 + currentMinute
+
+newDay = ta.change(dayofmonth(time, tz)) != 0
+
+// ================================
+// EXACT 90 MINUTE WINDOWS
+// Q1 = 06:00 - 07:30
+// Q2 = 07:30 - 09:00
+// Q3 = 09:00 - 10:30
+// Q4 = 10:30 - 12:00
+// ================================
+
+int currentQ = na
+
+if currentMinutes >= 360 and currentMinutes < 450
+    currentQ := 1
+else if currentMinutes >= 450 and currentMinutes < 540
+    currentQ := 2
+else if currentMinutes >= 540 and currentMinutes < 630
+    currentQ := 3
+else if currentMinutes >= 630 and currentMinutes < 720
+    currentQ := 4
+
+inSession = not na(currentQ)
+
+newQ = inSession and (na(currentQ[1]) or currentQ != currentQ[1])
+
+// ================================
+// DAILY VWAP + STANDARD DEVIATION
+// ================================
+
+var float sumPV = na
+var float sumV = na
+var float sumPV2 = na
+
+if na(sumPV) or newDay
+    sumPV := hl2 * volume
+    sumV := volume
+    sumPV2 := hl2 * hl2 * volume
+else
+    sumPV := sumPV + hl2 * volume
+    sumV := sumV + volume
+    sumPV2 := sumPV2 + hl2 * hl2 * volume
+
+vwapValue = sumPV / sumV
+variance = math.max(sumPV2 / sumV - vwapValue * vwapValue, 0)
+stdev = math.sqrt(variance)
+
+upper1 = vwapValue + dev1 * stdev
+lower1 = vwapValue - dev1 * stdev
+
+upper2 = vwapValue + dev2 * stdev
+lower2 = vwapValue - dev2 * stdev
+
+upper3 = vwapValue + dev3 * stdev
+lower3 = vwapValue - dev3 * stdev
+
+plot(vwapValue, "VWAP", color=color.black, linewidth=2)
+plot(upper1, "Upper SD1", color=color.gray)
+plot(lower1, "Lower SD1", color=color.gray)
+plot(upper2, "Upper SD2", color=color.red)
+plot(lower2, "Lower SD2", color=color.green)
+plot(upper3, "Upper SD3", color=color.red)
+plot(lower3, "Lower SD3", color=color.green)
+
+// ================================
+// VWAP EXTREMES
+// ================================
+
+bool overbought = false
+bool oversold = false
+
+if bandChoice == "SD1"
+    overbought := high >= upper1
+    oversold := low <= lower1
+else if bandChoice == "SD2"
+    overbought := high >= upper2
+    oversold := low <= lower2
+else
+    overbought := high >= upper3
+    oversold := low <= lower3
+
+// ================================
+// ES DATA
+// ================================
+
+esHigh = request.security(esSymbol, timeframe.period, high)
+esLow = request.security(esSymbol, timeframe.period, low)
+
+// ================================
+// STORE Q LEVELS
+// ================================
+
+var float q1HighNQ = na
+var float q1LowNQ = na
+var float q1HighES = na
+var float q1LowES = na
+
+var float q2HighNQ = na
+var float q2LowNQ = na
+var float q2HighES = na
+var float q2LowES = na
+
+var float q3HighNQ = na
+var float q3LowNQ = na
+var float q3HighES = na
+var float q3LowES = na
+
+var float currentQHighNQ = na
+var float currentQLowNQ = na
+var float currentQHighES = na
+var float currentQLowES = na
+
+// Reset daily
+
+if newDay
+    q1HighNQ := na
+    q1LowNQ := na
+    q1HighES := na
+    q1LowES := na
+
+    q2HighNQ := na
+    q2LowNQ := na
+    q2HighES := na
+    q2LowES := na
+
+    q3HighNQ := na
+    q3LowNQ := na
+    q3HighES := na
+    q3LowES := na
+
+    currentQHighNQ := na
+    currentQLowNQ := na
+    currentQHighES := na
+    currentQLowES := na
+
+// ================================
+// BUILD CURRENT Q
+// ================================
+
+if newQ
+    if currentQ == 2
+        q1HighNQ := currentQHighNQ
+        q1LowNQ := currentQLowNQ
+        q1HighES := currentQHighES
+        q1LowES := currentQLowES
+
+    if currentQ == 3
+        q2HighNQ := currentQHighNQ
+        q2LowNQ := currentQLowNQ
+        q2HighES := currentQHighES
+        q2LowES := currentQLowES
+
+    if currentQ == 4
+        q3HighNQ := currentQHighNQ
+        q3LowNQ := currentQLowNQ
+        q3HighES := currentQHighES
+        q3LowES := currentQLowES
+
+    currentQHighNQ := high
+    currentQLowNQ := low
+    currentQHighES := esHigh
+    currentQLowES := esLow
+
+else if inSession
+    currentQHighNQ := na(currentQHighNQ) ? high : math.max(currentQHighNQ, high)
+    currentQLowNQ := na(currentQLowNQ) ? low : math.min(currentQLowNQ, low)
+    currentQHighES := na(currentQHighES) ? esHigh : math.max(currentQHighES, esHigh)
+    currentQLowES := na(currentQLowES) ? esLow : math.min(currentQLowES, esLow)
+
+// ================================
+// SMT STATE
+// One event per Q level
+// ================================
+
+var bool q1HighUsed = false
+var bool q1LowUsed = false
+var bool q2HighUsed = false
+var bool q2LowUsed = false
+var bool q3HighUsed = false
+var bool q3LowUsed = false
+
+if newDay
+    q1HighUsed := false
+    q1LowUsed := false
+    q2HighUsed := false
+    q2LowUsed := false
+    q3HighUsed := false
+    q3LowUsed := false
+
+bool bearishSMT = false
+bool bullishSMT = false
+
+// ================================
+// CHECK Q1
+// Only Q2, Q3, Q4 can use Q1
+// ================================
+
+if currentQ >= 2 and not q1HighUsed and not na(q1HighNQ)
+
+    nqSweep = high > q1HighNQ
+    esSweep = esHigh > q1HighES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if overbought
+            bearishSMT := true
+            q1HighUsed := true
+
+if currentQ >= 2 and not q1LowUsed and not na(q1LowNQ)
+
+    nqSweep = low < q1LowNQ
+    esSweep = esLow < q1LowES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if oversold
+            bullishSMT := true
+            q1LowUsed := true
+
+// ================================
+// CHECK Q2
+// Only Q3 and Q4 can use Q2
+// ================================
+
+if currentQ >= 3 and not q2HighUsed and not na(q2HighNQ)
+
+    nqSweep = high > q2HighNQ
+    esSweep = esHigh > q2HighES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if overbought
+            bearishSMT := true
+            q2HighUsed := true
+
+if currentQ >= 3 and not q2LowUsed and not na(q2LowNQ)
+
+    nqSweep = low < q2LowNQ
+    esSweep = esLow < q2LowES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if oversold
+            bullishSMT := true
+            q2LowUsed := true
+
+// ================================
+// CHECK Q3
+// Only Q4 can use Q3
+// ================================
+
+if currentQ == 4 and not q3HighUsed and not na(q3HighNQ)
+
+    nqSweep = high > q3HighNQ
+    esSweep = esHigh > q3HighES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if overbought
+            bearishSMT := true
+            q3HighUsed := true
+
+if currentQ == 4 and not q3LowUsed and not na(q3LowNQ)
+
+    nqSweep = low < q3LowNQ
+    esSweep = esLow < q3LowES
+
+    if (nqSweep and not esSweep) or (esSweep and not nqSweep)
+        if oversold
+            bullishSMT := true
+            q3LowUsed := true
+
+// ================================
+// MSS
+// ================================
+
+pivotHigh = ta.pivothigh(high, pivotLen, pivotLen)
+pivotLow = ta.pivotlow(low, pivotLen, pivotLen)
+
+var float lastPivotHigh = na
+var float lastPivotLow = na
+
+if not na(pivotHigh)
+    lastPivotHigh := pivotHigh
+
+if not na(pivotLow)
+    lastPivotLow := pivotLow
+
+bearishMSS = not na(lastPivotLow) and ta.crossunder(close, lastPivotLow)
+bullishMSS = not na(lastPivotHigh) and ta.crossover(close, lastPivotHigh)
+
+// ================================
+// iFVG
+// ================================
+
+bullFVG = low > high[2]
+bearFVG = high < low[2]
+
+var float lastBullFVG = na
+var float lastBearFVG = na
+
+if bullFVG
+    lastBullFVG := high[2]
+
+if bearFVG
+    lastBearFVG := low[2]
+
+bearishIFVG = not na(lastBullFVG) and ta.crossunder(close, lastBullFVG)
+bullishIFVG = not na(lastBearFVG) and ta.crossover(close, lastBearFVG)
+
+// ================================
+// STATE MACHINE
+// ================================
+
+var int setupDirection = 0
+var int setupStartBar = na
+
+if newDay
+    setupDirection := 0
+    setupStartBar := na
+
+if strategy.position_size == 0 and setupDirection == 0
+    if bearishSMT
+        setupDirection := -1
+        setupStartBar := bar_index
+    else if bullishSMT
+        setupDirection := 1
+        setupStartBar := bar_index
+
+if setupDirection != 0 and bar_index - setupStartBar > confirmBars
+    setupDirection := 0
+    setupStartBar := na
+
+waitingShort = setupDirection == -1 and bar_index > setupStartBar
+waitingLong = setupDirection == 1 and bar_index > setupStartBar
+
+bool shortConfirm = false
+bool longConfirm = false
+
+if confirmation == "MSS Only"
+    shortConfirm := bearishMSS
+    longConfirm := bullishMSS
+else if confirmation == "iFVG Only"
+    shortConfirm := bearishIFVG
+    longConfirm := bullishIFVG
+else
+    shortConfirm := bearishMSS or bearishIFVG
+    longConfirm := bullishMSS or bullishIFVG
+
+longSignal = strategy.position_size == 0 and waitingLong and longConfirm
+shortSignal = strategy.position_size == 0 and waitingShort and shortConfirm
+
+// ================================
+// ENTRIES
+// ================================
+
+if longSignal
+    strategy.entry("Long", strategy.long)
+    setupDirection := 0
+    setupStartBar := na
+
+if shortSignal
+    strategy.entry("Short", strategy.short)
+    setupDirection := 0
+    setupStartBar := na
+
+// ================================
+// EXITS
+// ================================
+
+if strategy.position_size > 0
+    strategy.exit("Long Exit", "Long", stop=strategy.position_avg_price - stopPoints, limit=strategy.position_avg_price + targetPoints)
+
+if strategy.position_size < 0
+    strategy.exit("Short Exit", "Short", stop=strategy.position_avg_price + stopPoints, limit=strategy.position_avg_price - targetPoints)
+
+// ================================
+// VISUALS
+// ================================
+
+plotshape(bearishSMT, title="Bearish SMT", style=shape.triangledown, location=location.abovebar, color=color.orange, size=size.small, text="SMT")
+plotshape(bullishSMT, title="Bullish SMT", style=shape.triangleup, location=location.belowbar, color=color.orange, size=size.small, text="SMT")
+
+plotshape(longSignal, title="Long", style=shape.labelup, location=location.belowbar, color=color.green, text="LONG")
+plotshape(shortSignal, title="Short", style=shape.labeldown, location=location.abovebar, color=color.red, text="SHORT")

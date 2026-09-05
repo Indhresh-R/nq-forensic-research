@@ -1,0 +1,22 @@
+{
+  "family": "E1_eod_options_intraday_direction",
+  "causality": "options opt_date < session_date (merge_asof backward, no exact match)",
+  "frozen": {
+    "gex_abs_quantile_IS": 0.66,
+    "gex_abs_threshold_IS": 55151009916.46395,
+    "pc_imb_abs_quantile_IS": 0.8,
+    "pc_imb_abs_threshold_IS": 0.43157241209168234,
+    "put_z_abs_threshold": 1.0,
+    "direction_maps": {
+      "gex_follow": "sign(net_gex_proxy)",
+      "pc_follow": "-sign(near2_pc_imb)  # put-heavy -> short",
+      "putz_follow": "-sign(delta_put_oi_z20)  # put buildup -> short",
+      "fade": "opposite of follow"
+    }
+  },
+  "no_HIGH": true,
+  "sources": {
+    "pos": "d:\\NQ\\nq_data\\research\\options_positioning_changes\\options_positioning_features_daily.parquet",
+    "gex": "d:\\NQ\\nq_data\\data\\processed\\research\\daily_gamma_gex_features.parquet"
+  }
+}

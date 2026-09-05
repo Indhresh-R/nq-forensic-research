@@ -1,0 +1,72 @@
+regime,feature,bucket,sample,trades,wr,pnl,pf,exp,mdd,win_days,pct_total_pnl,months_pos,months_total,monthly_pos_pct,years_pos,years_total
+ORB width percentile (252d),orb_pct_252,Low,IS,739,53.32,50881.2,3.49,68.85,942.6,54.0,40.6,51,64,79.7,7,12
+ORB width percentile (252d),orb_pct_252,Mid,IS,740,54.19,45261.0,3.31,61.16,890.7,52.1,36.1,72,121,59.5,10,14
+ORB width percentile (252d),orb_pct_252,High,IS,731,47.74,29193.9,2.31,39.94,2052.3,45.2,23.3,61,116,52.6,8,13
+ORB width percentile (252d),orb_pct_252,NA,IS,1,100.0,61.2,0.0,61.2,0.0,100.0,0.0,0,0,0.0,1,1
+ORB width percentile (252d),orb_pct_252,Low,OOS,475,62.95,45326.1,4.79,95.42,709.5,60.7,31.0,29,32,90.6,3,3
+ORB width percentile (252d),orb_pct_252,Mid,OOS,323,62.23,50093.4,6.0,155.09,759.0,63.6,34.2,30,32,93.8,3,3
+ORB width percentile (252d),orb_pct_252,High,OOS,278,64.39,50884.5,6.18,183.04,1422.0,60.6,34.8,23,29,79.3,3,3
+Prior-day ATR14 (RTH range),prior_atr14,Low,IS,726,42.56,5641.8,1.25,7.77,1542.9,42.2,4.5,40,96,41.7,7,12
+Prior-day ATR14 (RTH range),prior_atr14,Mid,IS,724,53.04,45264.9,3.25,62.52,1195.5,52.0,36.1,37,42,88.1,6,6
+Prior-day ATR14 (RTH range),prior_atr14,High,IS,725,60.0,75023.4,5.02,103.48,645.0,59.3,59.8,30,34,88.2,4,4
+Prior-day ATR14 (RTH range),prior_atr14,NA,IS,36,47.22,-532.8,0.6,-14.8,840.6,33.3,-0.4,6,14,42.9,1,3
+Prior-day ATR14 (RTH range),prior_atr14,Mid,OOS,236,55.51,15499.8,3.21,65.68,456.0,52.9,10.6,12,13,92.3,3,3
+Prior-day ATR14 (RTH range),prior_atr14,High,OOS,840,65.24,130804.2,6.28,155.72,820.5,64.0,89.4,29,29,100.0,3,3
+Overnight NQ range,overnight_range,Low,IS,737,42.06,4368.3,1.18,5.93,3071.7,40.6,3.5,55,129,42.6,7,14
+Overnight NQ range,overnight_range,Mid,IS,739,49.8,31477.8,2.5,42.6,1264.5,47.4,25.1,50,70,71.4,7,9
+Overnight NQ range,overnight_range,High,IS,735,63.54,89551.2,6.17,121.84,645.0,64.8,71.4,51,58,87.9,9,9
+Overnight NQ range,overnight_range,Low,OOS,23,30.43,-273.9,0.75,-11.91,408.0,33.3,-0.2,3,6,50.0,0,2
+Overnight NQ range,overnight_range,Mid,OOS,323,56.97,22219.5,3.16,68.79,1033.5,54.2,15.2,21,26,80.8,3,3
+Overnight NQ range,overnight_range,High,OOS,730,66.85,124358.4,7.09,170.35,820.5,65.7,85.0,31,32,96.9,3,3
+VIX prior close,vix_close,Low,IS,737,46.27,15624.6,1.7,21.2,2160.6,45.0,12.5,45,98,45.9,9,13
+VIX prior close,vix_close,Mid,IS,738,52.57,43343.4,3.12,58.73,1016.4,50.8,34.6,51,76,67.1,10,13
+VIX prior close,vix_close,High,IS,736,56.52,66429.3,4.37,90.26,667.5,56.2,53.0,38,55,69.1,9,12
+VIX prior close,vix_close,Low,OOS,568,59.68,56419.2,4.52,99.33,504.0,57.7,38.6,24,26,92.3,3,3
+VIX prior close,vix_close,Mid,OOS,397,68.77,72121.8,7.29,181.67,562.5,67.6,49.3,22,26,84.6,3,3
+VIX prior close,vix_close,High,OOS,111,60.36,17763.0,5.12,160.03,820.5,58.9,12.1,7,10,70.0,3,3
+VIX day-over-day change,vix_change,Low,IS,738,51.9,50292.9,3.58,68.15,978.0,51.8,40.1,67,103,65.0,10,14
+VIX day-over-day change,vix_change,Mid,IS,737,51.56,37793.1,2.76,51.28,1598.7,49.5,30.1,82,130,63.1,9,14
+VIX day-over-day change,vix_change,High,IS,736,51.9,37311.3,2.75,50.69,1968.0,50.1,29.8,72,125,57.6,7,13
+VIX day-over-day change,vix_change,Low,OOS,329,59.88,35929.8,4.13,109.21,1323.0,58.3,24.6,28,32,87.5,3,3
+VIX day-over-day change,vix_change,Mid,OOS,444,65.54,55798.8,6.02,125.67,780.0,62.6,38.1,29,32,90.6,3,3
+VIX day-over-day change,vix_change,High,OOS,303,63.04,54575.4,6.93,180.12,717.0,63.5,37.3,28,32,87.5,3,3
+Prior session trend/range ratio,prior_trend_ratio,Low,IS,716,52.65,40066.8,3.1,55.96,1441.8,50.9,32.0,69,116,59.5,10,13
+Prior session trend/range ratio,prior_trend_ratio,Mid,IS,715,48.95,43578.9,3.01,60.95,1193.7,49.0,34.8,72,115,62.6,9,13
+Prior session trend/range ratio,prior_trend_ratio,High,IS,714,54.48,41642.1,3.15,58.32,870.0,52.8,33.2,67,107,62.6,7,12
+Prior session trend/range ratio,prior_trend_ratio,NA,IS,66,43.94,109.5,1.05,1.66,1244.7,39.0,0.1,11,28,39.3,3,7
+Prior session trend/range ratio,prior_trend_ratio,Low,OOS,405,60.99,58609.2,5.95,144.71,783.0,59.1,40.1,27,32,84.4,3,3
+Prior session trend/range ratio,prior_trend_ratio,Mid,OOS,362,67.13,55587.9,6.8,153.56,840.0,62.7,38.0,31,32,96.9,3,3
+Prior session trend/range ratio,prior_trend_ratio,High,OOS,305,60.98,32033.4,4.14,105.03,1455.0,63.5,21.9,27,32,84.4,3,3
+Prior session trend/range ratio,prior_trend_ratio,NA,OOS,4,75.0,73.5,1.45,18.38,165.0,50.0,0.1,0,0,0.0,1,2
+Prior session RTH range,prior_range_day,Low,IS,716,43.99,11554.5,1.54,16.14,1458.6,43.0,9.2,59,120,49.2,9,13
+Prior session RTH range,prior_range_day,Mid,IS,717,52.02,41862.3,3.04,58.39,1126.5,49.6,33.4,51,70,72.9,8,10
+Prior session RTH range,prior_range_day,High,IS,712,60.11,71871.0,4.99,100.94,777.0,61.2,57.3,45,54,83.3,6,8
+Prior session RTH range,prior_range_day,NA,IS,66,43.94,109.5,1.05,1.66,1244.7,39.0,0.1,11,28,39.3,3,7
+Prior session RTH range,prior_range_day,Low,OOS,58,63.79,8809.8,8.16,151.89,364.5,66.7,6.0,14,19,73.7,3,3
+Prior session RTH range,prior_range_day,Mid,OOS,285,58.6,24881.4,4.08,87.3,766.5,57.5,17.0,23,28,82.1,3,3
+Prior session RTH range,prior_range_day,High,OOS,729,64.75,112539.3,6.04,154.37,820.5,62.7,76.9,31,32,96.9,3,3
+Prior session RTH range,prior_range_day,NA,OOS,4,75.0,73.5,1.45,18.38,165.0,50.0,0.1,0,0,0.0,1,2
+Rolling 60d strategy expectancy,roll_exp_60d,Low,IS,724,43.51,7430.7,1.35,10.26,1443.0,42.6,5.9,41,92,44.6,6,11
+Rolling 60d strategy expectancy,roll_exp_60d,Mid,IS,723,53.94,47467.8,3.23,65.65,897.0,52.6,37.9,39,57,68.4,9,11
+Rolling 60d strategy expectancy,roll_exp_60d,High,IS,724,58.15,70815.0,4.77,97.81,711.0,56.7,56.5,29,34,85.3,4,7
+Rolling 60d strategy expectancy,roll_exp_60d,NA,IS,40,47.5,-316.2,0.73,-7.91,711.9,45.2,-0.3,8,19,42.1,3,7
+Rolling 60d strategy expectancy,roll_exp_60d,Low,OOS,7,85.71,2092.5,200.29,298.93,10.5,100.0,1.4,0,0,0.0,1,1
+Rolling 60d strategy expectancy,roll_exp_60d,Mid,OOS,251,63.35,24188.4,4.9,96.37,475.5,59.1,16.5,15,15,100.0,3,3
+Rolling 60d strategy expectancy,roll_exp_60d,High,OOS,818,62.84,120023.1,5.69,146.73,820.5,61.6,82.0,26,28,92.9,3,3
+Rolling 60d strategy PF,roll_pf_60d,Low,IS,724,43.78,9079.5,1.44,12.54,1336.5,43.1,7.2,48,94,51.1,7,12
+Rolling 60d strategy PF,roll_pf_60d,Mid,IS,723,55.05,50356.2,3.39,69.65,876.3,54.1,40.2,40,66,60.6,8,11
+Rolling 60d strategy PF,roll_pf_60d,High,IS,724,56.77,66277.8,4.43,91.54,645.0,54.1,52.9,31,38,81.6,6,9
+Rolling 60d strategy PF,roll_pf_60d,NA,IS,40,47.5,-316.2,0.73,-7.91,711.9,45.2,-0.3,8,19,42.1,3,7
+Rolling 60d strategy PF,roll_pf_60d,Low,OOS,7,85.71,2092.5,200.29,298.93,10.5,100.0,1.4,0,0,0.0,1,1
+Rolling 60d strategy PF,roll_pf_60d,Mid,OOS,394,64.72,47810.7,6.03,121.35,475.5,63.1,32.7,20,20,100.0,3,3
+Rolling 60d strategy PF,roll_pf_60d,High,OOS,675,61.93,96400.8,5.33,142.82,955.5,59.8,65.9,24,29,82.8,3,3
+day_of_week,dow,Mon,IS,456,49.12,18076.8,2.25,39.64,1414.2,45.6,14.4,59,114,51.8,10,14
+day_of_week,dow,Tue,IS,424,50.0,27325.8,3.31,64.45,1252.8,48.5,21.8,61,103,59.2,9,13
+day_of_week,dow,Wed,IS,416,50.96,22989.0,2.98,55.26,804.9,52.2,18.3,63,98,64.3,7,12
+day_of_week,dow,Thu,IS,464,54.53,29970.9,3.47,64.59,717.0,53.4,23.9,65,106,61.3,7,13
+day_of_week,dow,Fri,IS,451,54.1,27034.8,3.21,59.94,727.5,52.7,21.6,66,105,62.9,9,13
+day_of_week,dow,Mon,OOS,200,61.0,25103.7,5.19,125.52,699.0,57.1,17.2,28,32,87.5,3,3
+day_of_week,dow,Tue,OOS,223,62.33,25873.5,4.63,116.02,853.5,62.6,17.7,28,32,87.5,3,3
+day_of_week,dow,Wed,OOS,222,66.22,31242.6,5.93,140.73,834.0,65.2,21.4,29,32,90.6,3,3
+day_of_week,dow,Thu,OOS,211,55.92,25635.0,4.74,121.49,672.0,54.2,17.5,23,32,71.9,3,3
+day_of_week,dow,Fri,OOS,220,69.55,38449.2,8.01,174.77,541.5,67.9,26.3,28,32,87.5,3,3

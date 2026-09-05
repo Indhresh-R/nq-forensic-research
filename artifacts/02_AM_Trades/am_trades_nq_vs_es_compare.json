@@ -1,0 +1,17 @@
+{
+  "same_exact_results": false,
+  "same_verdict": true,
+  "nq_verdict": "C",
+  "es_verdict": "C",
+  "note": "Identical frozen absolute point params (sep=40, slip=1, commission=0.25, 2R). Not vol-scaled. Trade counts/PnL/PF differ; both fail IS.",
+  "nq_bias": {
+    "none": 1906,
+    "bull": 1088,
+    "bear": 622
+  },
+  "es_bias": {
+    "none": 2633,
+    "bull": 618,
+    "bear": 399
+  }
+}

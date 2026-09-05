@@ -1,0 +1,245 @@
+{
+  "hypothesis": "AM Trades NY continuation on ES (no SMT/VWAP/ORB)",
+  "symbol": "ES",
+  "definitions": "artifacts/am_trades_definitions.md",
+  "frozen_params": {
+    "lookback_days": 30,
+    "swing_sep": 40.0,
+    "slippage": 1.0,
+    "commission_rt": 0.25,
+    "stop_buffer": 0.25,
+    "target_R": 2.0,
+    "min_risk": 1.0,
+    "conf_tf": "1m",
+    "close_tol": 0.0,
+    "note": "Identical absolute point params as NQ freeze (not volatility-scaled)"
+  },
+  "bias_counts": {
+    "none": 2633,
+    "bull": 618,
+    "bear": 399
+  },
+  "forensics": {
+    "blocked_gap_through_entry": 0,
+    "skipped_tight_risk": 0,
+    "skipped_no_bias": 2633,
+    "skipped_invalid_profile": 283,
+    "skipped_no_trigger": 58,
+    "days_total": 3650,
+    "days_with_bias": 1017,
+    "profile_counts": {
+      "A": 94,
+      "B": 256,
+      "C": 384,
+      "D": 2916
+    }
+  },
+  "summaries": {
+    "IS": {
+      "split": "IS",
+      "N": 326,
+      "win_rate": 0.3282208588957055,
+      "profit_factor": 0.7858419243986254,
+      "expectancy": -1.1947852760736197,
+      "total_pnl": -389.5,
+      "max_drawdown": -456.5,
+      "avg_win": 13.357476635514018,
+      "avg_loss": -8.304794520547945,
+      "median_R": -1.0177005012531328,
+      "largest_win": 87.25,
+      "largest_loss": -64.0,
+      "max_losing_streak": 14,
+      "ambiguous_bars": 0,
+      "gap_through_stops": 1,
+      "avg_risk": 10.700153374233128,
+      "median_risk": 6.25,
+      "p90_risk": 23.125,
+      "avg_mae_R": 0.875582416124618,
+      "avg_mfe_R": 0.8038294633578397,
+      "avg_minutes_to_target": 139.0,
+      "avg_minutes_to_stop": 85.18848167539267,
+      "avg_minutes_held": 166.98159509202455,
+      "exit_reasons": {
+        "time_exit": 79,
+        "stop": 191,
+        "target": 55,
+        "gap_through_stop": 1
+      },
+      "profile_counts": {
+        "C": 167,
+        "B": 121,
+        "A": 38
+      }
+    },
+    "Validation": {
+      "split": "Validation",
+      "N": 219,
+      "win_rate": 0.3515981735159817,
+      "profit_factor": 1.0230471984543197,
+      "expectancy": 0.1906392694063927,
+      "total_pnl": 41.75,
+      "max_drawdown": -323.25,
+      "avg_win": 24.068181818181817,
+      "avg_loss": -12.757042253521126,
+      "median_R": -1.0129870129870129,
+      "largest_win": 83.75,
+      "largest_loss": -57.75,
+      "max_losing_streak": 8,
+      "ambiguous_bars": 2,
+      "gap_through_stops": 1,
+      "avg_risk": 14.848173515981735,
+      "median_risk": 10.0,
+      "p90_risk": 30.35000000000001,
+      "avg_mae_R": 0.9387414389237154,
+      "avg_mfe_R": 1.0226712324025573,
+      "avg_minutes_to_target": 119.9322033898305,
+      "avg_minutes_to_stop": 75.2910447761194,
+      "avg_minutes_held": 125.32876712328768,
+      "exit_reasons": {
+        "target": 59,
+        "stop": 134,
+        "time_exit": 25,
+        "gap_through_stop": 1
+      },
+      "profile_counts": {
+        "B": 78,
+        "C": 113,
+        "A": 28
+      }
+    },
+    "OOS": {
+      "split": "OOS",
+      "N": 131,
+      "win_rate": 0.3511450381679389,
+      "profit_factor": 0.8941270475429485,
+      "expectancy": -1.0114503816793894,
+      "total_pnl": -132.5,
+      "max_drawdown": -215.25,
+      "avg_win": 24.32608695652174,
+      "avg_loss": -14.723529411764705,
+      "median_R": -1.011111111111111,
+      "largest_win": 93.75,
+      "largest_loss": -74.0,
+      "max_losing_streak": 8,
+      "ambiguous_bars": 0,
+      "gap_through_stops": 0,
+      "avg_risk": 17.916030534351144,
+      "median_risk": 11.5,
+      "p90_risk": 35.5,
+      "avg_mae_R": 0.8850952548546515,
+      "avg_mfe_R": 0.9205775271080671,
+      "avg_minutes_to_target": 86.93939393939394,
+      "avg_minutes_to_stop": 59.8974358974359,
+      "avg_minutes_held": 112.4885496183206,
+      "exit_reasons": {
+        "stop": 78,
+        "target": 33,
+        "time_exit": 20
+      },
+      "profile_counts": {
+        "A": 12,
+        "C": 72,
+        "B": 47
+      }
+    },
+    "ALL": {
+      "split": "ALL",
+      "N": 676,
+      "win_rate": 0.34023668639053256,
+      "profit_factor": 0.9016233932503713,
+      "expectancy": -0.7104289940828402,
+      "total_pnl": -480.25,
+      "max_drawdown": -672.75,
+      "avg_win": 19.13695652173913,
+      "avg_loss": -10.945627802690582,
+      "median_R": -1.01360607182525,
+      "largest_win": 93.75,
+      "largest_loss": -74.0,
+      "max_losing_streak": 14,
+      "ambiguous_bars": 2,
+      "gap_through_stops": 2,
+      "avg_risk": 13.442307692307692,
+      "median_risk": 8.5,
+      "p90_risk": 28.75,
+      "avg_mae_R": 0.8978871614894651,
+      "avg_mfe_R": 0.8973506819555808,
+      "avg_minutes_to_target": 119.65986394557824,
+      "avg_minutes_to_stop": 77.00248138957816,
+      "avg_minutes_held": 142.92751479289942,
+      "exit_reasons": {
+        "time_exit": 124,
+        "stop": 403,
+        "target": 147,
+        "gap_through_stop": 2
+      },
+      "profile_counts": {
+        "C": 352,
+        "B": 246,
+        "A": 78
+      }
+    }
+  },
+  "open930_analysis": {
+    "IS": {
+      "aligned": {
+        "N": 149,
+        "win_rate": 0.2684563758389262,
+        "profit_factor": 0.48240018899125914,
+        "expectancy": -3.6761744966442955,
+        "total_pnl": -547.75
+      },
+      "opposed": {
+        "N": 177,
+        "win_rate": 0.3785310734463277,
+        "profit_factor": 1.208086785009862,
+        "expectancy": 0.8940677966101694,
+        "total_pnl": 158.25
+      }
+    },
+    "Validation": {
+      "aligned": {
+        "N": 107,
+        "win_rate": 0.2523364485981308,
+        "profit_factor": 0.6337625178826896,
+        "expectancy": -3.588785046728972,
+        "total_pnl": -384.0
+      },
+      "opposed": {
+        "N": 112,
+        "win_rate": 0.44642857142857145,
+        "profit_factor": 1.557994757536042,
+        "expectancy": 3.8013392857142856,
+        "total_pnl": 425.75
+      }
+    },
+    "OOS": {
+      "aligned": {
+        "N": 55,
+        "win_rate": 0.2545454545454545,
+        "profit_factor": 0.6619309008718114,
+        "expectancy": -4.759090909090909,
+        "total_pnl": -261.75
+      },
+      "opposed": {
+        "N": 75,
+        "win_rate": 0.4266666666666667,
+        "profit_factor": 1.2890541976620615,
+        "expectancy": 1.8133333333333332,
+        "total_pnl": 136.0
+      }
+    }
+  },
+  "robustness_ran": false,
+  "robustness": [],
+  "smt": {
+    "ran": false,
+    "reason": "Core failed IS and/or Validation \u2014 SMT not permitted to rescue"
+  },
+  "verdict": "C",
+  "verdict_reason": "No consistent edge across IS and Validation. IS_ok=False Val_ok=True OOS_ok=False. IS PF=0.7858419243986254 Val PF=1.0230471984543197 OOS PF=0.8941270475429485.",
+  "failure_checks": {
+    "oos_pf_lt_1": true,
+    "oos_expectancy_le_0": true,
+    "is_val_positive": false
+  }
+}

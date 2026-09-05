@@ -1,0 +1,195 @@
+{
+  "stage": "high_multiscale_directional",
+  "family": "multi_scale",
+  "verdict": "B",
+  "kill_family": true,
+  "verdict_text": "Multi-scale leftovers exist (~soft/single-clock) without stable multi-clock incremental improvement over HIGH. Kill family for promotion.",
+  "frozen_gate": "vol_expansion_high",
+  "n_strong_cells": 0,
+  "n_soft_cells": 4,
+  "n_multi_clock_strong_mechs": 0,
+  "n_multi_clock_soft_only": 0,
+  "mechanism_IS_summary": [
+    {
+      "mechanism": "disagree_follow_short",
+      "IS_med_win": 0.5,
+      "IS_med_delta_vs_follow": 0.01775921361019417,
+      "IS_med_n": 323.5
+    },
+    {
+      "mechanism": "accel_with_med",
+      "IS_med_win": 0.49606288363633855,
+      "IS_med_delta_vs_follow": 0.00996928066917882,
+      "IS_med_n": 368.5
+    },
+    {
+      "mechanism": "flip_5m",
+      "IS_med_win": 0.49340369393139843,
+      "IS_med_delta_vs_follow": 0.009597712229291178,
+      "IS_med_n": 379.0
+    },
+    {
+      "mechanism": "align_1_5",
+      "IS_med_win": 0.48624512761695793,
+      "IS_med_delta_vs_follow": 0.00808175961792637,
+      "IS_med_n": 492.0
+    },
+    {
+      "mechanism": "align_1_5_15",
+      "IS_med_win": 0.4970540196170653,
+      "IS_med_delta_vs_follow": 0.0061408275228221065,
+      "IS_med_n": 347.0
+    },
+    {
+      "mechanism": "follow_15",
+      "IS_med_win": 0.4870848708487085,
+      "IS_med_delta_vs_follow": 0.004712098788198393,
+      "IS_med_n": 812.0
+    },
+    {
+      "mechanism": "rev_short_vs_med",
+      "IS_med_win": 0.48141870684243565,
+      "IS_med_delta_vs_follow": 0.003131556952213399,
+      "IS_med_n": 323.5
+    },
+    {
+      "mechanism": "align_5_15",
+      "IS_med_win": 0.4853997095927638,
+      "IS_med_delta_vs_follow": 0.0018769731886807417,
+      "IS_med_n": 543.0
+    },
+    {
+      "mechanism": "follow_5",
+      "IS_med_win": 0.4844308312655087,
+      "IS_med_delta_vs_follow": 0.000156441820709452,
+      "IS_med_n": 801.5
+    },
+    {
+      "mechanism": "persist_5m",
+      "IS_med_win": 0.4782608695652174,
+      "IS_med_delta_vs_follow": -0.0010633149959250465,
+      "IS_med_n": 399.0
+    }
+  ],
+  "top_candidates": [
+    {
+      "mechanism": "disagree_follow_short",
+      "T_offset": 90,
+      "horizon": 30,
+      "tier": "soft",
+      "IS_n": 295,
+      "IS_win": 0.5220338983050847,
+      "IS_mean": 0.3474576271186441,
+      "IS_delta": 0.04218041845160486,
+      "Val_win": 0.5510204081632653,
+      "Val_delta": 0.010370001659200212,
+      "OOS_win": 0.5714285714285714,
+      "OOS_delta": 0.1183035714285714,
+      "y2025_win": 0.5517241379310345,
+      "y2026_win": 0.5925925925925926,
+      "y2025_n": 29,
+      "y2026_n": 27
+    },
+    {
+      "mechanism": "align_1_5_15",
+      "T_offset": 65,
+      "horizon": 30,
+      "tier": "soft",
+      "IS_n": 337,
+      "IS_win": 0.5578635014836796,
+      "IS_mean": 2.3820474777448073,
+      "IS_delta": 0.0395260931707212,
+      "Val_win": 0.5454545454545454,
+      "Val_delta": 0.0182578927348801,
+      "OOS_win": 0.5822784810126582,
+      "OOS_delta": 0.05242773474400153,
+      "y2025_win": 0.5454545454545454,
+      "y2026_win": 0.6285714285714286,
+      "y2025_n": 44,
+      "y2026_n": 35
+    },
+    {
+      "mechanism": "persist_5m",
+      "T_offset": 25,
+      "horizon": 15,
+      "tier": "soft",
+      "IS_n": 420,
+      "IS_win": 0.5261904761904762,
+      "IS_mean": 0.7720238095238096,
+      "IS_delta": 0.03901098901098904,
+      "Val_win": 0.5576923076923077,
+      "Val_delta": 0.0946381205001895,
+      "OOS_win": 0.609375,
+      "OOS_delta": 0.05005296610169496,
+      "y2025_win": 0.6666666666666666,
+      "y2026_win": 0.52,
+      "y2025_n": 39,
+      "y2026_n": 25
+    },
+    {
+      "mechanism": "align_1_5_15",
+      "T_offset": 80,
+      "horizon": 15,
+      "tier": "soft",
+      "IS_n": 347,
+      "IS_win": 0.5360230547550432,
+      "IS_mean": 1.2492795389048992,
+      "IS_delta": 0.032963079234847315,
+      "Val_win": 0.5376344086021505,
+      "Val_delta": 0.006514076651943035,
+      "OOS_win": 0.6290322580645161,
+      "OOS_delta": 0.07434475806451613,
+      "y2025_win": 0.6428571428571429,
+      "y2026_win": 0.6,
+      "y2025_n": 42,
+      "y2026_n": 20
+    }
+  ],
+  "stability": [
+    {
+      "mechanism": "align_1_5_15",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        80
+      ],
+      "median_IS_delta": 0.032963079234847315,
+      "median_IS_win": 0.5360230547550432
+    },
+    {
+      "mechanism": "align_1_5_15",
+      "horizon": 30,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        65
+      ],
+      "median_IS_delta": 0.0395260931707212,
+      "median_IS_win": 0.5578635014836796
+    },
+    {
+      "mechanism": "disagree_follow_short",
+      "horizon": 30,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        90
+      ],
+      "median_IS_delta": 0.04218041845160486,
+      "median_IS_win": 0.5220338983050847
+    },
+    {
+      "mechanism": "persist_5m",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        25
+      ],
+      "median_IS_delta": 0.03901098901098904,
+      "median_IS_win": 0.5261904761904762
+    }
+  ],
+  "pivot_if_killed": "Stop manufacturing direction inside HIGH. Search directional mechanism independently; then test whether frozen HIGH improves its timing."
+}

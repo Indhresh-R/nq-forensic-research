@@ -1,0 +1,124 @@
+{
+  "baseline_IS": {
+    "trades": 2211,
+    "wr": 51.79,
+    "pnl": 125397.3,
+    "pf": 3.01,
+    "exp": 56.72,
+    "mdd": 2181.3,
+    "win_days": 50.5,
+    "pct_total_pnl": 100.0,
+    "months_pos": 86,
+    "months_total": 148,
+    "monthly_pos_pct": 58.1,
+    "years_pos": 9,
+    "years_total": 14
+  },
+  "baseline_OOS": {
+    "trades": 1076,
+    "wr": 63.1,
+    "pnl": 146304.0,
+    "pf": 5.6,
+    "exp": 135.97,
+    "mdd": 820.5,
+    "win_days": 61.5,
+    "pct_total_pnl": 100.0,
+    "months_pos": 32,
+    "months_total": 32,
+    "monthly_pos_pct": 100.0,
+    "years_pos": 3,
+    "years_total": 3
+  },
+  "frozen_thresholds": {
+    "orb_pct_252_q33": 0.5816733067729084,
+    "orb_pct_252_q66": 0.8452380952380952,
+    "prior_atr14_med": 177.76785714285714,
+    "overnight_range_med": 107.25,
+    "prior_range_day_med": 171.75,
+    "prior_trend_ratio_med": 0.5239179954441914,
+    "roll_exp_60d_med": 54.975000000000136,
+    "vix_close_med": 19.6299991607666,
+    "vix_change_med": -0.05000019073486328
+  },
+  "IS_filter_ranking": [
+    [
+      "overnight_wide",
+      4.77
+    ],
+    [
+      "prior_atr_high",
+      4.63
+    ],
+    [
+      "prior_range_day",
+      4.53
+    ],
+    [
+      "vix_elevated",
+      4.01
+    ],
+    [
+      "roll_exp_positive",
+      3.42
+    ],
+    [
+      "roll_pf_above_1",
+      3.42
+    ],
+    [
+      "prior_trend_low",
+      3.0
+    ],
+    [
+      "vix_rising",
+      2.8
+    ],
+    [
+      "orb_pct_high",
+      2.3
+    ]
+  ],
+  "union_selected_filters": [
+    "overnight_wide",
+    "prior_atr_high",
+    "prior_range_day",
+    "vix_elevated",
+    "roll_exp_positive",
+    "roll_pf_above_1"
+  ],
+  "OOS_tests": {
+    "orb_pct_high_tertile": {
+      "trades": 280,
+      "wr": 64.29,
+      "pnl": 50913.0,
+      "pf": 6.17,
+      "exp": 181.83,
+      "mdd": 1422.0,
+      "win_days": 60.8,
+      "pct_total_pnl": 34.8,
+      "months_pos": 23,
+      "months_total": 29,
+      "monthly_pos_pct": 79.3,
+      "years_pos": 3,
+      "years_total": 3
+    },
+    "vix_above_IS_median": {
+      "trades": 235,
+      "wr": 64.26,
+      "pnl": 42616.8,
+      "pf": 5.95,
+      "exp": 181.35,
+      "mdd": 820.5,
+      "win_days": 63.9,
+      "pct_total_pnl": 29.1,
+      "months_pos": 17,
+      "months_total": 18,
+      "monthly_pos_pct": 94.4,
+      "years_pos": 3,
+      "years_total": 3
+    },
+    "pct_oos_pnl_in_2022_plus": 100.0
+  },
+  "production_ready": true,
+  "verdict_text": "OOS baseline remains strong \u2014 edge persists in untouched 2024-2026 period. ORB percentile filter adds/retains edge OOS."
+}

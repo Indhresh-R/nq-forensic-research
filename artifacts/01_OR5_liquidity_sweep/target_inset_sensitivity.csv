@@ -1,0 +1,25 @@
+inset_pct,meaning,sample,trades,wr,pf,exp,pnl,mdd,win_loss_ratio,tp_pct,months_pos,months_total
+0,opposite ORB extreme,IS_baseline,2162,50.23,2.93,56.53,122215.5,3928.5,2.98,7.8,84,145
+0,opposite ORB extreme,OOS_baseline,1071,62.18,5.47,137.04,146764.5,969.0,3.45,4.9,32,32
+0,opposite ORB extreme,OOS_orb_gate,279,64.16,6.36,189.1,52758.0,1422.0,3.67,4.7,23,29
+0,opposite ORB extreme,live_2026_orb_gate,97,67.01,7.5,221.51,21486.0,580.5,3.69,1.0,6,8
+10,opposite ORB inset 10% R,IS_baseline,2188,50.87,2.96,56.45,123523.5,3360.0,2.93,8.9,87,146
+10,opposite ORB inset 10% R,OOS_baseline,1074,62.57,5.53,136.43,146530.95,969.0,3.42,5.7,32,32
+10,opposite ORB inset 10% R,OOS_orb_gate,279,64.16,6.23,184.62,51509.4,1422.0,3.59,4.7,23,29
+10,opposite ORB inset 10% R,live_2026_orb_gate,97,67.01,7.46,220.04,21343.5,580.5,3.67,1.0,6,8
+20,opposite ORB inset 20% R,IS_baseline,2211,51.79,3.01,56.72,125397.3,2181.3,2.88,10.4,86,148
+20,opposite ORB inset 20% R,OOS_baseline,1076,63.1,5.6,135.97,146304.0,820.5,3.38,6.3,32,32
+20,opposite ORB inset 20% R,OOS_orb_gate,280,64.29,6.17,181.83,50913.0,1422.0,3.54,5.0,23,29
+20,opposite ORB inset 20% R,live_2026_orb_gate,97,67.01,7.41,218.57,21201.0,580.5,3.65,1.0,6,8
+30,opposite ORB inset 30% R,IS_baseline,2240,52.77,3.03,55.89,125194.95,2082.15,2.78,12.1,89,148
+30,opposite ORB inset 30% R,OOS_baseline,1080,63.98,5.91,137.33,148311.45,783.0,3.44,7.5,32,32
+30,opposite ORB inset 30% R,OOS_orb_gate,281,65.12,6.76,185.57,52146.15,778.5,3.73,6.0,23,29
+30,opposite ORB inset 30% R,live_2026_orb_gate,97,67.01,7.37,217.1,21058.5,580.5,3.63,1.0,6,8
+40,opposite ORB inset 40% R,IS_baseline,2273,54.38,3.12,55.95,127163.7,1852.8,2.68,14.5,96,148
+40,opposite ORB inset 40% R,OOS_baseline,1083,64.82,6.06,137.34,148738.2,783.0,3.4,8.8,32,32
+40,opposite ORB inset 40% R,OOS_orb_gate,281,65.84,6.78,184.41,51818.7,778.5,3.63,7.1,23,29
+40,opposite ORB inset 40% R,live_2026_orb_gate,97,67.01,7.33,215.63,20916.0,580.5,3.61,1.0,6,8
+50,ORB midpoint,IS_baseline,2300,55.87,3.21,55.7,128120.25,1899.0,2.59,16.5,99,148
+50,ORB midpoint,OOS_baseline,1084,66.05,6.38,137.56,149112.0,783.0,3.39,10.1,32,32
+50,ORB midpoint,OOS_orb_gate,281,66.9,7.12,185.13,52021.5,778.5,3.63,8.2,23,29
+50,ORB midpoint,live_2026_orb_gate,97,70.1,9.04,236.03,22894.5,433.5,3.86,4.1,6,8

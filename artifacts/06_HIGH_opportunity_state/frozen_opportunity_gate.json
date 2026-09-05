@@ -1,0 +1,16 @@
+{
+  "status": "FROZEN",
+  "frozen_at_stage": "A_opportunity_timing_found",
+  "primary_arm": "vol_expansion_high",
+  "secondary_arm": "fast_and_expanded",
+  "wait_states": ["vol_expansion_low", "quiet_wait"],
+  "structural_frac": 0.25,
+  "decision_offsets_min": [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90],
+  "thresholds_file": "artifacts/ny_open_opp_timing_thresholds_IS.json",
+  "threshold_feature_for_primary_arm": "rng_onr",
+  "threshold_side": "p66",
+  "rule_primary_arm": "rng_onr >= IS_tercile_p66[T_offset]",
+  "entry_clock": "next_bar_open_after_T",
+  "do_not_optimize": true,
+  "notes": "Gate is opportunity timing only. Directional research must condition on HIGH and compare to HIGH-alone baseline."
+}

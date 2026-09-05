@@ -1,0 +1,429 @@
+{
+  "hypothesis": "AM Trades NY continuation (no SMT/VWAP/ORB)",
+  "definitions": "artifacts/am_trades_definitions.md",
+  "frozen_params": {
+    "lookback_days": 30,
+    "swing_sep": 40.0,
+    "slippage": 1.0,
+    "commission_rt": 0.25,
+    "stop_buffer": 0.25,
+    "target_R": 2.0,
+    "min_risk": 1.0,
+    "conf_tf": "1m",
+    "close_tol": 0.0
+  },
+  "bias_counts": {
+    "none": 1906,
+    "bull": 1088,
+    "bear": 622
+  },
+  "forensics": {
+    "blocked_gap_through_entry": 0,
+    "skipped_tight_risk": 0,
+    "skipped_no_bias": 1906,
+    "skipped_invalid_profile": 478,
+    "skipped_no_trigger": 85,
+    "days_total": 3616,
+    "days_with_bias": 1710,
+    "profile_counts": {
+      "A": 129,
+      "B": 423,
+      "C": 680,
+      "D": 2384
+    }
+  },
+  "summaries": {
+    "IS": {
+      "split": "IS",
+      "N": 730,
+      "win_rate": 0.33972602739726027,
+      "profit_factor": 0.8940981093510475,
+      "expectancy": -1.4195205479452055,
+      "total_pnl": -1036.25,
+      "max_drawdown": -1447.0,
+      "avg_win": 35.27721774193548,
+      "avg_loss": -20.300829875518673,
+      "median_R": -1.0082305920606962,
+      "largest_win": 290.25,
+      "largest_loss": -202.75,
+      "max_losing_streak": 12,
+      "ambiguous_bars": 0,
+      "gap_through_stops": 2,
+      "avg_risk": 25.11986301369863,
+      "median_risk": 14.0,
+      "p90_risk": 55.525000000000006,
+      "avg_mae_R": 0.9157823798347589,
+      "avg_mfe_R": 0.9894381351449871,
+      "avg_minutes_to_target": 81.21428571428571,
+      "avg_minutes_to_stop": 69.3529411764706,
+      "avg_minutes_held": 124.0123287671233,
+      "exit_reasons": {
+        "stop": 442,
+        "target": 168,
+        "time_exit": 118,
+        "gap_through_stop": 2
+      },
+      "profile_counts": {
+        "C": 410,
+        "A": 66,
+        "B": 254
+      }
+    },
+    "Validation": {
+      "split": "Validation",
+      "N": 269,
+      "win_rate": 0.3940520446096654,
+      "profit_factor": 1.1383250237416904,
+      "expectancy": 4.3317843866171,
+      "total_pnl": 1165.25,
+      "max_drawdown": -930.75,
+      "avg_win": 90.46462264150944,
+      "avg_loss": -51.68098159509202,
+      "median_R": -1.0026041666666667,
+      "largest_win": 364.25,
+      "largest_loss": -221.75,
+      "max_losing_streak": 9,
+      "ambiguous_bars": 1,
+      "gap_through_stops": 0,
+      "avg_risk": 58.894052044609666,
+      "median_risk": 40.5,
+      "p90_risk": 125.60000000000002,
+      "avg_mae_R": 0.952767578945974,
+      "avg_mfe_R": 1.1270716107480947,
+      "avg_minutes_to_target": 90.07594936708861,
+      "avg_minutes_to_stop": 61.825806451612905,
+      "avg_minutes_held": 116.37174721189591,
+      "exit_reasons": {
+        "target": 79,
+        "stop": 155,
+        "time_exit": 35
+      },
+      "profile_counts": {
+        "C": 143,
+        "B": 102,
+        "A": 24
+      }
+    },
+    "OOS": {
+      "split": "OOS",
+      "N": 148,
+      "win_rate": 0.36486486486486486,
+      "profit_factor": 1.0153656252660255,
+      "expectancy": 0.6097972972972973,
+      "total_pnl": 90.25,
+      "max_drawdown": -1403.25,
+      "avg_win": 110.43981481481481,
+      "avg_loss": -62.484042553191486,
+      "median_R": -1.0022321428571428,
+      "largest_win": 362.75,
+      "largest_loss": -224.5,
+      "max_losing_streak": 9,
+      "ambiguous_bars": 3,
+      "gap_through_stops": 0,
+      "avg_risk": 77.84628378378379,
+      "median_risk": 54.125,
+      "p90_risk": 171.05,
+      "avg_mae_R": 0.9561469399927536,
+      "avg_mfe_R": 1.2186004167808953,
+      "avg_minutes_to_target": 40.0,
+      "avg_minutes_to_stop": 55.955555555555556,
+      "avg_minutes_held": 102.54729729729729,
+      "exit_reasons": {
+        "target": 37,
+        "time_exit": 21,
+        "stop": 90
+      },
+      "profile_counts": {
+        "C": 77,
+        "B": 54,
+        "A": 17
+      }
+    },
+    "ALL": {
+      "split": "ALL",
+      "N": 1147,
+      "win_rate": 0.35571054925893636,
+      "profit_factor": 1.0091041212498701,
+      "expectancy": 0.19115082824760243,
+      "total_pnl": 219.25,
+      "max_drawdown": -1957.25,
+      "avg_win": 59.56311274509804,
+      "avg_loss": -32.587956698240866,
+      "median_R": -1.0042372881355932,
+      "largest_win": 364.25,
+      "largest_loss": -224.5,
+      "max_losing_streak": 12,
+      "ambiguous_bars": 4,
+      "gap_through_stops": 2,
+      "avg_risk": 39.844158674803836,
+      "median_risk": 22.5,
+      "p90_risk": 96.75,
+      "avg_mae_R": 0.9296646583563805,
+      "avg_mfe_R": 1.0512859316744991,
+      "avg_minutes_to_target": 78.30985915492958,
+      "avg_minutes_to_stop": 65.8995633187773,
+      "avg_minutes_held": 119.45074106364429,
+      "exit_reasons": {
+        "stop": 687,
+        "target": 284,
+        "time_exit": 174,
+        "gap_through_stop": 2
+      },
+      "profile_counts": {
+        "C": 630,
+        "A": 107,
+        "B": 410
+      }
+    }
+  },
+  "open930_analysis": {
+    "IS": {
+      "aligned": {
+        "N": 316,
+        "win_rate": 0.30063291139240506,
+        "profit_factor": 0.5950696790540541,
+        "expectancy": -6.068829113924051,
+        "total_pnl": -1917.75
+      },
+      "opposed": {
+        "N": 413,
+        "win_rate": 0.3704600484261501,
+        "profit_factor": 1.1792016702291594,
+        "expectancy": 2.1822033898305087,
+        "total_pnl": 901.25
+      }
+    },
+    "Validation": {
+      "aligned": {
+        "N": 124,
+        "win_rate": 0.23387096774193547,
+        "profit_factor": 0.4698044565711687,
+        "expectancy": -23.506048387096776,
+        "total_pnl": -2914.75
+      },
+      "opposed": {
+        "N": 144,
+        "win_rate": 0.5347222222222222,
+        "profit_factor": 2.421043538355218,
+        "expectancy": 28.55902777777778,
+        "total_pnl": 4112.5
+      }
+    },
+    "OOS": {
+      "aligned": {
+        "N": 68,
+        "win_rate": 0.22058823529411764,
+        "profit_factor": 0.5074911122397155,
+        "expectancy": -28.522058823529413,
+        "total_pnl": -1939.5
+      },
+      "opposed": {
+        "N": 79,
+        "win_rate": 0.4936708860759494,
+        "profit_factor": 2.05987012987013,
+        "expectancy": 25.825949367088608,
+        "total_pnl": 2040.25
+      }
+    }
+  },
+  "robustness_ran": false,
+  "robustness": [],
+  "smt": {
+    "ran": true,
+    "definition": "120m pre-entry half-split: NQ makes new extreme in 2nd half, ES does not",
+    "core": {
+      "ALL": {
+        "split": "core",
+        "N": 1147,
+        "win_rate": 0.35571054925893636,
+        "profit_factor": 1.0091041212498701,
+        "expectancy": 0.19115082824760243,
+        "total_pnl": 219.25,
+        "max_drawdown": -1957.25,
+        "avg_win": 59.56311274509804,
+        "avg_loss": -32.587956698240866,
+        "median_R": -1.0042372881355932,
+        "largest_win": 364.25,
+        "largest_loss": -224.5,
+        "max_losing_streak": 12,
+        "ambiguous_bars": 4,
+        "gap_through_stops": 2,
+        "avg_risk": 39.844158674803836,
+        "median_risk": 22.5,
+        "p90_risk": 96.75,
+        "avg_mae_R": 0.9296646583563805,
+        "avg_mfe_R": 1.0512859316744991,
+        "avg_minutes_to_target": 78.30985915492958,
+        "avg_minutes_to_stop": 65.8995633187773,
+        "avg_minutes_held": 119.45074106364429,
+        "exit_reasons": {
+          "stop": 687,
+          "target": 284,
+          "time_exit": 174,
+          "gap_through_stop": 2
+        },
+        "profile_counts": {
+          "C": 630,
+          "A": 107,
+          "B": 410
+        }
+      },
+      "OOS": {
+        "split": "core_oos",
+        "N": 148,
+        "win_rate": 0.36486486486486486,
+        "profit_factor": 1.0153656252660255,
+        "expectancy": 0.6097972972972973,
+        "total_pnl": 90.25,
+        "max_drawdown": -1403.25,
+        "avg_win": 110.43981481481481,
+        "avg_loss": -62.484042553191486,
+        "median_R": -1.0022321428571428,
+        "largest_win": 362.75,
+        "largest_loss": -224.5,
+        "max_losing_streak": 9,
+        "ambiguous_bars": 3,
+        "gap_through_stops": 0,
+        "avg_risk": 77.84628378378379,
+        "median_risk": 54.125,
+        "p90_risk": 171.05,
+        "avg_mae_R": 0.9561469399927536,
+        "avg_mfe_R": 1.2186004167808953,
+        "avg_minutes_to_target": 40.0,
+        "avg_minutes_to_stop": 55.955555555555556,
+        "avg_minutes_held": 102.54729729729729,
+        "exit_reasons": {
+          "target": 37,
+          "time_exit": 21,
+          "stop": 90
+        },
+        "profile_counts": {
+          "C": 77,
+          "B": 54,
+          "A": 17
+        }
+      }
+    },
+    "core_plus_smt": {
+      "ALL": {
+        "split": "smt",
+        "N": 97,
+        "win_rate": 0.30927835051546393,
+        "profit_factor": 1.2892738952696126,
+        "expectancy": 3.829896907216495,
+        "total_pnl": 371.5,
+        "max_drawdown": -288.25,
+        "avg_win": 55.19166666666667,
+        "avg_loss": -19.167910447761194,
+        "median_R": -1.0116279069767442,
+        "largest_win": 274.75,
+        "largest_loss": -112.25,
+        "max_losing_streak": 8,
+        "ambiguous_bars": 0,
+        "gap_through_stops": 0,
+        "avg_risk": 22.47422680412371,
+        "median_risk": 13.5,
+        "p90_risk": 55.20000000000002,
+        "avg_mae_R": 1.0292562950531476,
+        "avg_mfe_R": 1.004472818120574,
+        "avg_minutes_to_target": 89.53846153846153,
+        "avg_minutes_to_stop": 42.09090909090909,
+        "avg_minutes_held": 75.18556701030928,
+        "exit_reasons": {
+          "stop": 66,
+          "target": 26,
+          "time_exit": 5
+        },
+        "profile_counts": {
+          "C": 67,
+          "B": 25,
+          "A": 5
+        }
+      },
+      "OOS": {
+        "split": "smt_oos",
+        "N": 11,
+        "win_rate": 0.2727272727272727,
+        "profit_factor": 0.7826446280991736,
+        "expectancy": -5.9772727272727275,
+        "total_pnl": -65.75,
+        "max_drawdown": -231.75,
+        "avg_win": 78.91666666666667,
+        "avg_loss": -37.8125,
+        "median_R": -1.007462686567164,
+        "largest_win": 135.25,
+        "largest_loss": -112.25,
+        "max_losing_streak": 5,
+        "ambiguous_bars": 0,
+        "gap_through_stops": 0,
+        "avg_risk": 38.88636363636363,
+        "median_risk": 29.5,
+        "p90_risk": 76.25,
+        "avg_mae_R": 1.4679421291776542,
+        "avg_mfe_R": 0.8627895463218839,
+        "avg_minutes_to_target": 18.5,
+        "avg_minutes_to_stop": 20.0,
+        "avg_minutes_held": 52.45454545454545,
+        "exit_reasons": {
+          "stop": 8,
+          "target": 2,
+          "time_exit": 1
+        },
+        "profile_counts": {
+          "C": 8,
+          "B": 3
+        }
+      },
+      "N_filtered": 97
+    }
+  },
+  "verdict": "C",
+  "verdict_reason": "FAILED core hypothesis. In-sample (2010-2021) is clearly unprofitable under frozen execution rules: N=730, WR=34.0%, PF=0.894, expectancy=-1.42 pts/trade, total PnL=-1036. Validation (2022-2024) and aggregate OOS (2025-2026) look mildly positive, but OOS is fragile (2025 PF=1.16 vs 2026 PF=0.85) and cannot override IS failure. Per protocol: no robustness search, no SMT rescue, no parameter optimization. Classification C = no demonstrated edge.",
+  "failure_checks": {
+    "oos_pf_lt_1": false,
+    "oos_expectancy_le_0": false,
+    "is_val_positive": false
+  },
+  "monthly_profitability": {
+    "IS": {
+      "n_months": 115,
+      "profitable_months": 42,
+      "monthly_profitability_rate": 0.3652173913043478,
+      "total_pnl": -1036.25
+    },
+    "Validation": {
+      "n_months": 33,
+      "profitable_months": 19,
+      "monthly_profitability_rate": 0.5757575757575758,
+      "total_pnl": 1165.25
+    },
+    "OOS": {
+      "n_months": 19,
+      "profitable_months": 9,
+      "monthly_profitability_rate": 0.47368421052631576,
+      "total_pnl": 90.25
+    }
+  },
+  "gap_statistics": {
+    "gap_through_stop_exits": 2,
+    "ambiguous_stop_target_same_bar": 4,
+    "blocked_gap_through_entry": 0,
+    "rule": "same-bar stop+target => STOP FIRST; gap open beyond stop => exit at open"
+  },
+  "risk_distribution": {
+    "mean": 39.844158674803836,
+    "median": 22.5,
+    "p10": 5.5,
+    "p90": 96.75,
+    "min": 2.0,
+    "max": 566.5
+  },
+  "protocol": {
+    "definitions_frozen_before_metrics": true,
+    "robustness_ran": false,
+    "robustness_skip_reason": "IS not positive (PF<1 and expectancy<=0) \u2014 grid not searched",
+    "smt_ran": false,
+    "oos_untouched": true,
+    "no_optimization_after_failure": true
+  }
+}

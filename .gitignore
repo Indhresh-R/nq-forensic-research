@@ -1,0 +1,48 @@
+# Git — ignore heavy / local-only material. Public repo keeps research docs + code + report artifacts.
+
+# Market data (too large; rebuild locally)
+data/
+*.parquet
+
+# Raw vendor dumps
+GLBX-*/
+scratch/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.env.*
+
+# One-shot local helpers
+_group_artifacts.py
+_patch_art.py
+_rewrite_md_links.py
+_restructure_repo.py
+_fix_data_paths.py
+_populate_dossier_numbers.py
+
+# Root audit leftovers (not part of forensic library)
+audit_*.csv
+audit_*.parquet
+baseline_trades.csv
+orb_15m_trades.csv
+parameter_sensitivity.csv
+yearly_performance.csv
+session_cached.parquet
+nq_1m_continuous.parquet
+es_1m_continuous.parquet
+
+# Nested heavy regenerable panels (reports/json/csv stay)
+artifacts/**/*.parquet
+artifacts/_other/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log

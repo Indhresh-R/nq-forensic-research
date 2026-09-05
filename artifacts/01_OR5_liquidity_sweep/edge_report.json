@@ -1,0 +1,538 @@
+{
+  "params": {
+    "orb": "15m",
+    "wide_mult": 1.1,
+    "thresh": 40,
+    "sigma": 1.28,
+    "sl": 15,
+    "target_frac": 0.2,
+    "exit": "15:30"
+  },
+  "sizing": {
+    "point_value": 6.0,
+    "friction_pts": 0.25,
+    "note": "3x MNQ"
+  },
+  "summary": [
+    {
+      "fill": "close",
+      "variant": "ORB_only",
+      "trades": 3979,
+      "wr": 38.43,
+      "pnl": 22270.2,
+      "pf": 1.13,
+      "exp": 5.6,
+      "mdd": 6149.1,
+      "win_days": 34.5
+    },
+    {
+      "fill": "close",
+      "variant": "VWAP_only",
+      "trades": 5958,
+      "wr": 53.21,
+      "pnl": 113655.9,
+      "pf": 1.43,
+      "exp": 19.08,
+      "mdd": 5032.5,
+      "win_days": 49.4
+    },
+    {
+      "fill": "close",
+      "variant": "ORB_VWAP",
+      "trades": 3828,
+      "wr": 47.1,
+      "pnl": 143282.7,
+      "pf": 2.06,
+      "exp": 37.43,
+      "mdd": 3272.7,
+      "win_days": 43.8
+    },
+    {
+      "fill": "close",
+      "variant": "ORB_SMT",
+      "trades": 3299,
+      "wr": 58.32,
+      "pnl": 288612.9,
+      "pf": 4.34,
+      "exp": 87.48,
+      "mdd": 1392.3,
+      "win_days": 55.1
+    },
+    {
+      "fill": "close",
+      "variant": "VWAP_SMT",
+      "trades": 4969,
+      "wr": 59.73,
+      "pnl": 286387.5,
+      "pf": 2.72,
+      "exp": 57.63,
+      "mdd": 2505.6,
+      "win_days": 55.8
+    },
+    {
+      "fill": "close",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 3287,
+      "wr": 58.53,
+      "pnl": 290827.8,
+      "pf": 4.39,
+      "exp": 88.48,
+      "mdd": 1392.3,
+      "win_days": 55.6
+    },
+    {
+      "fill": "close",
+      "variant": "ORB_VWAP_opposite",
+      "trades": 4272,
+      "wr": 2.48,
+      "pnl": -620161.8,
+      "pf": 0.0,
+      "exp": -145.17,
+      "mdd": 620131.8,
+      "win_days": 0.3
+    },
+    {
+      "fill": "close",
+      "variant": "ORB_VWAP_random",
+      "trades": 4036,
+      "wr": 21.53,
+      "pnl": -277068.0,
+      "pf": 0.34,
+      "exp": -68.65,
+      "mdd": 277277.7,
+      "win_days": 18.1
+    },
+    {
+      "fill": "next_open",
+      "variant": "ORB_only",
+      "trades": 3979,
+      "wr": 38.78,
+      "pnl": 22759.2,
+      "pf": 1.13,
+      "exp": 5.72,
+      "mdd": 6054.6,
+      "win_days": 34.6
+    },
+    {
+      "fill": "next_open",
+      "variant": "VWAP_only",
+      "trades": 5958,
+      "wr": 53.56,
+      "pnl": 114300.9,
+      "pf": 1.43,
+      "exp": 19.18,
+      "mdd": 5032.5,
+      "win_days": 49.4
+    },
+    {
+      "fill": "next_open",
+      "variant": "ORB_VWAP",
+      "trades": 3828,
+      "wr": 47.62,
+      "pnl": 143915.7,
+      "pf": 2.07,
+      "exp": 37.6,
+      "mdd": 3250.2,
+      "win_days": 43.9
+    },
+    {
+      "fill": "next_open",
+      "variant": "ORB_SMT",
+      "trades": 3299,
+      "wr": 58.78,
+      "pnl": 289164.9,
+      "pf": 4.36,
+      "exp": 87.65,
+      "mdd": 1371.3,
+      "win_days": 55.5
+    },
+    {
+      "fill": "next_open",
+      "variant": "VWAP_SMT",
+      "trades": 4969,
+      "wr": 60.09,
+      "pnl": 287044.5,
+      "pf": 2.73,
+      "exp": 57.77,
+      "mdd": 2507.1,
+      "win_days": 56.0
+    },
+    {
+      "fill": "next_open",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 3287,
+      "wr": 58.99,
+      "pnl": 291423.3,
+      "pf": 4.41,
+      "exp": 88.66,
+      "mdd": 1371.3,
+      "win_days": 56.0
+    },
+    {
+      "fill": "native",
+      "variant": "SMT_only",
+      "trades": 3828,
+      "wr": 37.64,
+      "pnl": -32802.0,
+      "pf": 0.89,
+      "exp": -8.57,
+      "mdd": 34224.0,
+      "win_days": 43.9
+    }
+  ],
+  "slippage": [
+    {
+      "slippage_pts": 0,
+      "trades": 3828,
+      "wr": 47.1,
+      "pnl": 143282.7,
+      "pf": 2.06,
+      "exp": 37.43,
+      "mdd": 3272.7,
+      "win_days": 43.8
+    },
+    {
+      "slippage_pts": 0.5,
+      "trades": 3828,
+      "wr": 45.17,
+      "pnl": 131798.7,
+      "pf": 1.93,
+      "exp": 34.43,
+      "mdd": 4796.1,
+      "win_days": 42.7
+    },
+    {
+      "slippage_pts": 1,
+      "trades": 3828,
+      "wr": 43.03,
+      "pnl": 120314.7,
+      "pf": 1.82,
+      "exp": 31.43,
+      "mdd": 7370.4,
+      "win_days": 42.0
+    },
+    {
+      "slippage_pts": 2,
+      "trades": 3828,
+      "wr": 40.57,
+      "pnl": 97346.7,
+      "pf": 1.6,
+      "exp": 25.43,
+      "mdd": 12530.4,
+      "win_days": 40.5
+    },
+    {
+      "slippage_pts": 3,
+      "trades": 3828,
+      "wr": 38.43,
+      "pnl": 74378.7,
+      "pf": 1.43,
+      "exp": 19.43,
+      "mdd": 18094.2,
+      "win_days": 39.1
+    },
+    {
+      "slippage_pts": 5,
+      "trades": 3828,
+      "wr": 34.95,
+      "pnl": 28442.7,
+      "pf": 1.14,
+      "exp": 7.43,
+      "mdd": 29491.8,
+      "win_days": 36.6
+    }
+  ],
+  "subperiods": [
+    {
+      "period": "2010-2014",
+      "variant": "ORB_only",
+      "trades": 265,
+      "wr": 51.7,
+      "pnl": -752.1,
+      "pf": 0.91,
+      "exp": -2.84,
+      "mdd": 1470.0,
+      "win_days": 48.4
+    },
+    {
+      "period": "2010-2014",
+      "variant": "VWAP_only",
+      "trades": 789,
+      "wr": 65.53,
+      "pnl": 3610.5,
+      "pf": 1.22,
+      "exp": 4.58,
+      "mdd": 1269.9,
+      "win_days": 61.6
+    },
+    {
+      "period": "2010-2014",
+      "variant": "ORB_VWAP",
+      "trades": 253,
+      "wr": 49.01,
+      "pnl": -620.1,
+      "pf": 0.91,
+      "exp": -2.45,
+      "mdd": 1411.5,
+      "win_days": 47.0
+    },
+    {
+      "period": "2010-2014",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 201,
+      "wr": 50.75,
+      "pnl": -145.5,
+      "pf": 0.97,
+      "exp": -0.72,
+      "mdd": 1392.3,
+      "win_days": 45.2
+    },
+    {
+      "period": "2015-2018",
+      "variant": "ORB_only",
+      "trades": 555,
+      "wr": 38.38,
+      "pnl": -396.6,
+      "pf": 0.98,
+      "exp": -0.71,
+      "mdd": 2875.5,
+      "win_days": 35.7
+    },
+    {
+      "period": "2015-2018",
+      "variant": "VWAP_only",
+      "trades": 1501,
+      "wr": 54.16,
+      "pnl": 2893.5,
+      "pf": 1.06,
+      "exp": 1.93,
+      "mdd": 4690.8,
+      "win_days": 48.5
+    },
+    {
+      "period": "2015-2018",
+      "variant": "ORB_VWAP",
+      "trades": 541,
+      "wr": 39.56,
+      "pnl": 325.8,
+      "pf": 1.02,
+      "exp": 0.6,
+      "mdd": 3272.7,
+      "win_days": 37.2
+    },
+    {
+      "period": "2015-2018",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 459,
+      "wr": 47.49,
+      "pnl": 5981.1,
+      "pf": 1.47,
+      "exp": 13.03,
+      "mdd": 954.9,
+      "win_days": 42.1
+    },
+    {
+      "period": "2019-2021",
+      "variant": "ORB_only",
+      "trades": 949,
+      "wr": 34.25,
+      "pnl": -3831.0,
+      "pf": 0.91,
+      "exp": -4.04,
+      "mdd": 5924.1,
+      "win_days": 25.6
+    },
+    {
+      "period": "2019-2021",
+      "variant": "VWAP_only",
+      "trades": 1396,
+      "wr": 49.93,
+      "pnl": 21107.4,
+      "pf": 1.33,
+      "exp": 15.12,
+      "mdd": 2426.4,
+      "win_days": 45.3
+    },
+    {
+      "period": "2019-2021",
+      "variant": "ORB_VWAP",
+      "trades": 909,
+      "wr": 43.56,
+      "pnl": 22629.3,
+      "pf": 1.73,
+      "exp": 24.89,
+      "mdd": 1911.3,
+      "win_days": 38.2
+    },
+    {
+      "period": "2019-2021",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 778,
+      "wr": 55.53,
+      "pnl": 47880.6,
+      "pf": 3.41,
+      "exp": 61.54,
+      "mdd": 1056.0,
+      "win_days": 51.1
+    },
+    {
+      "period": "2022-2024",
+      "variant": "ORB_only",
+      "trades": 1402,
+      "wr": 37.59,
+      "pnl": 11899.8,
+      "pf": 1.18,
+      "exp": 8.49,
+      "mdd": 4296.0,
+      "win_days": 34.0
+    },
+    {
+      "period": "2022-2024",
+      "variant": "VWAP_only",
+      "trades": 1476,
+      "wr": 49.39,
+      "pnl": 48183.9,
+      "pf": 1.59,
+      "exp": 32.64,
+      "mdd": 2549.4,
+      "win_days": 46.1
+    },
+    {
+      "period": "2022-2024",
+      "variant": "ORB_VWAP",
+      "trades": 1352,
+      "wr": 48.45,
+      "pnl": 64713.6,
+      "pf": 2.3,
+      "exp": 47.87,
+      "mdd": 1551.9,
+      "win_days": 45.2
+    },
+    {
+      "period": "2022-2024",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 1157,
+      "wr": 62.32,
+      "pnl": 124302.6,
+      "pf": 5.39,
+      "exp": 107.44,
+      "mdd": 595.5,
+      "win_days": 61.0
+    },
+    {
+      "period": "2025-2026",
+      "variant": "ORB_only",
+      "trades": 803,
+      "wr": 40.35,
+      "pnl": 15229.5,
+      "pf": 1.38,
+      "exp": 18.97,
+      "mdd": 3036.3,
+      "win_days": 39.5
+    },
+    {
+      "period": "2025-2026",
+      "variant": "VWAP_only",
+      "trades": 796,
+      "wr": 52.01,
+      "pnl": 37860.6,
+      "pf": 1.7,
+      "exp": 47.56,
+      "mdd": 5032.5,
+      "win_days": 50.5
+    },
+    {
+      "period": "2025-2026",
+      "variant": "ORB_VWAP",
+      "trades": 769,
+      "wr": 53.58,
+      "pnl": 56263.5,
+      "pf": 2.96,
+      "exp": 73.16,
+      "mdd": 1472.4,
+      "win_days": 51.8
+    },
+    {
+      "period": "2025-2026",
+      "variant": "ORB_VWAP_SMT",
+      "trades": 688,
+      "wr": 65.26,
+      "pnl": 112815.9,
+      "pf": 6.83,
+      "exp": 163.98,
+      "mdd": 802.5,
+      "win_days": 65.2
+    }
+  ],
+  "verdict": {
+    "close_fill_orb_vwap": {
+      "fill": "close",
+      "variant": "ORB_VWAP",
+      "trades": 3828,
+      "wr": 47.1,
+      "pnl": 143282.7,
+      "pf": 2.06,
+      "exp": 37.43,
+      "mdd": 3272.7,
+      "win_days": 43.8
+    },
+    "next_open_orb_vwap": {
+      "fill": "next_open",
+      "variant": "ORB_VWAP",
+      "trades": 3828,
+      "wr": 47.62,
+      "pnl": 143915.7,
+      "pf": 2.07,
+      "exp": 37.6,
+      "mdd": 3250.2,
+      "win_days": 43.9
+    },
+    "signal_beats_opposite": true,
+    "signal_beats_random": true,
+    "orb_adds_vs_vwap_alone": true,
+    "vwap_adds_vs_orb_alone": true,
+    "smt_filter_on_orb_vwap": {
+      "improves_exp": true,
+      "improves_pf": true,
+      "baseline": {
+        "fill": "close",
+        "variant": "ORB_VWAP",
+        "trades": 3828,
+        "wr": 47.1,
+        "pnl": 143282.7,
+        "pf": 2.06,
+        "exp": 37.43,
+        "mdd": 3272.7,
+        "win_days": 43.8
+      },
+      "with_smt": {
+        "fill": "close",
+        "variant": "ORB_VWAP_SMT",
+        "trades": 3287,
+        "wr": 58.53,
+        "pnl": 290827.8,
+        "pf": 4.39,
+        "exp": 88.48,
+        "mdd": 1392.3,
+        "win_days": 55.6
+      },
+      "smt_only": {
+        "fill": "native",
+        "variant": "SMT_only",
+        "trades": 3828,
+        "wr": 37.64,
+        "pnl": -32802.0,
+        "pf": 0.89,
+        "exp": -8.57,
+        "mdd": 34224.0,
+        "win_days": 43.9
+      }
+    },
+    "years_profitable_close_orb_vwap": "11/17",
+    "early_2010_2018_avg_pf": 0.97,
+    "late_2022_2026_avg_pf": 2.63,
+    "slippage_1pt_pf": 1.82,
+    "hostile_gap_stop_note": "Prior hostile next-open + gap-stop-at-entry engine: ~4261 trades, WR~14.5%, PF~0.35, PnL ~-$238k. That kill-switch is mostly SL_GAP_ENTRY (~37% of trades), not a fair measure of the original close-fill Inverse ORB design.",
+    "practical_edge_verdict": "CONDITIONAL \u2014 close-fill backtest shows strong PF, but edge is regime-heavy and/or fill-sensitive. Not a stable forever edge; size as discretionary/regime filter."
+  }
+}

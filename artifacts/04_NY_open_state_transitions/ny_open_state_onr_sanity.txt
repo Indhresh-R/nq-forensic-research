@@ -1,0 +1,55 @@
+ONR-normalized: P(|fwd|/ONR >= 0.05) cond - unc; plus dir win
+== wide_ON_quiet_open T+10 h5
+  IS: n=455 rate=0.19 P05=0.712 unc=0.800 d=-0.088 dir_win=0.490 dir_mean=-1.03
+  Validation: n=182 rate=0.24 P05=0.758 unc=0.801 d=-0.043 dir_win=0.464 dir_mean=-2.81
+  OOS: n=95 rate=0.23 P05=0.768 unc=0.791 d=-0.023 dir_win=0.516 dir_mean=1.63
+  2025: n=56 dir_win=0.518 mean_abs_onr=0.1138
+  2026: n=39 dir_win=0.513 mean_abs_onr=0.1181
+== wide_ON_quiet_open T+45 h15
+  IS: n=443 rate=0.18 P05=0.795 unc=0.849 d=-0.054 dir_win=0.471 dir_mean=-0.45
+  Validation: n=172 rate=0.22 P05=0.767 unc=0.833 d=-0.066 dir_win=0.529 dir_mean=1.18
+  OOS: n=90 rate=0.22 P05=0.811 unc=0.818 d=-0.007 dir_win=0.500 dir_mean=-3.22
+  2025: n=51 dir_win=0.569 mean_abs_onr=0.1781
+  2026: n=39 dir_win=0.410 mean_abs_onr=0.1795
+== wide_ON_quiet_open T+20 h15
+  IS: n=438 rate=0.18 P05=0.811 unc=0.867 d=-0.057 dir_win=0.483 dir_mean=-2.09
+  Validation: n=168 rate=0.22 P05=0.857 unc=0.886 d=-0.029 dir_win=0.512 dir_mean=1.04
+  OOS: n=96 rate=0.23 P05=0.792 unc=0.850 d=-0.058 dir_win=0.531 dir_mean=1.50
+  2025: n=56 dir_win=0.500 mean_abs_onr=0.1589
+  2026: n=40 dir_win=0.575 mean_abs_onr=0.1468
+== compress_then_expand T+15 h30
+  IS: n=436 rate=0.18 P05=0.943 unc=0.912 d=+0.031 dir_win=0.540 dir_mean=1.83
+  Validation: n=137 rate=0.18 P05=0.942 unc=0.901 d=+0.041 dir_win=0.540 dir_mean=9.16
+  OOS: n=72 rate=0.17 P05=0.889 unc=0.886 d=+0.003 dir_win=0.500 dir_mean=7.10
+  2025: n=47 dir_win=0.468 mean_abs_onr=0.5088
+  2026: n=25 dir_win=0.560 mean_abs_onr=0.6957
+== compress_then_expand T+45 h30
+  IS: n=419 rate=0.17 P05=0.938 unc=0.888 d=+0.050 dir_win=0.467 dir_mean=0.11
+  Validation: n=133 rate=0.17 P05=0.902 unc=0.884 d=+0.019 dir_win=0.496 dir_mean=2.79
+  OOS: n=72 rate=0.17 P05=0.889 unc=0.862 d=+0.027 dir_win=0.500 dir_mean=9.99
+  2025: n=48 dir_win=0.458 mean_abs_onr=0.3194
+  2026: n=24 dir_win=0.583 mean_abs_onr=0.6124
+== open_near_ONH T+5 h30
+  IS: n=586 rate=0.24 P05=0.906 unc=0.908 d=-0.002 dir_win=0.559 dir_mean=2.66
+  Validation: n=185 rate=0.24 P05=0.886 unc=0.903 d=-0.017 dir_win=0.546 dir_mean=7.56
+  OOS: n=95 rate=0.23 P05=0.895 unc=0.913 d=-0.018 dir_win=0.547 dir_mean=8.16
+  2025: n=55 dir_win=0.473 mean_abs_onr=0.4492
+  2026: n=40 dir_win=0.650 mean_abs_onr=0.3439
+== strong_and_persistent T+10 h15
+  IS: n=658 rate=0.27 P05=0.884 unc=0.869 d=+0.015 dir_win=0.532 dir_mean=-0.34
+  Validation: n=169 rate=0.22 P05=0.899 unc=0.866 d=+0.034 dir_win=0.580 dir_mean=4.00
+  OOS: n=99 rate=0.24 P05=0.909 unc=0.852 d=+0.057 dir_win=0.596 dir_mean=12.55
+  2025: n=66 dir_win=0.545 mean_abs_onr=0.3646
+  2026: n=33 dir_win=0.697 mean_abs_onr=0.4408
+== price_near_ONH T+10 h15
+  IS: n=610 rate=0.25 P05=0.869 unc=0.869 d=-0.001 dir_win=0.550 dir_mean=-0.28
+  Validation: n=191 rate=0.25 P05=0.885 unc=0.866 d=+0.019 dir_win=0.518 dir_mean=-0.73
+  OOS: n=81 rate=0.20 P05=0.840 unc=0.852 d=-0.012 dir_win=0.568 dir_mean=9.22
+  2025: n=52 dir_win=0.519 mean_abs_onr=0.2859
+  2026: n=29 dir_win=0.655 mean_abs_onr=0.2823
+== high_persistence T+5 h5
+  IS: n=833 rate=0.34 P05=0.776 unc=0.814 d=-0.038 dir_win=0.552 dir_mean=1.28
+  Validation: n=280 rate=0.36 P05=0.779 unc=0.795 d=-0.016 dir_win=0.507 dir_mean=-0.49
+  OOS: n=152 rate=0.37 P05=0.717 unc=0.779 d=-0.062 dir_win=0.546 dir_mean=0.06
+  2025: n=89 dir_win=0.539 mean_abs_onr=0.1384
+  2026: n=63 dir_win=0.556 mean_abs_onr=0.1344

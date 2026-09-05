@@ -1,0 +1,76 @@
+{
+  "stage": "E1_eod_options_intraday_direction",
+  "family": "eod_options_for_direction",
+  "verdict": "C",
+  "kill_family": true,
+  "verdict_text": "No intraday directional asymmetry from prior-day EOD GEX / PC-imbalance / put-OI-z states (follow and fade both fail hostile gates).",
+  "scope": "Prior-day EOD QQQ options \u2192 next-day NQ RTH clocks; NO HIGH; intraday direction only",
+  "n_strong_cells": 0,
+  "n_soft_cells": 0,
+  "n_multi_clock_strong": 0,
+  "coverage": {
+    "y2025_sessions_with_opt": 450,
+    "y2026_sessions_any_signal": 150,
+    "opt_last_date": "2025-12-15"
+  },
+  "mechanism_IS_summary": [
+    {
+      "mechanism": "putz_fade",
+      "IS_med_n": 268.5,
+      "IS_med_win": 0.47191011235955055,
+      "IS_med_d50": -0.02808988764044945,
+      "IS_med_mean_z": -0.032190477251985594,
+      "IS_med_mfe_gt_mae": 0.48044111527257594,
+      "IS_med_p_hit": 0.5020169488768522
+    },
+    {
+      "mechanism": "pc_fade",
+      "IS_med_n": 458.5,
+      "IS_med_win": 0.47835497835497837,
+      "IS_med_d50": -0.021645021645021634,
+      "IS_med_mean_z": 0.03590395936579252,
+      "IS_med_mfe_gt_mae": 0.495090857197222,
+      "IS_med_p_hit": 0.49757639620653316
+    },
+    {
+      "mechanism": "putz_follow",
+      "IS_med_n": 268.5,
+      "IS_med_win": 0.5111111111111111,
+      "IS_med_d50": 0.011111111111111072,
+      "IS_med_mean_z": 0.032190477251985594,
+      "IS_med_mfe_gt_mae": 0.50187265917603,
+      "IS_med_p_hit": 0.4979830511231478
+    },
+    {
+      "mechanism": "gex_fade",
+      "IS_med_n": 779.5,
+      "IS_med_win": 0.49034749034749037,
+      "IS_med_d50": -0.009652509652509633,
+      "IS_med_mean_z": 0.0021672128583715517,
+      "IS_med_mfe_gt_mae": 0.491669734904271,
+      "IS_med_p_hit": 0.48970397264993504
+    },
+    {
+      "mechanism": "pc_follow",
+      "IS_med_n": 458.5,
+      "IS_med_win": 0.5054704595185996,
+      "IS_med_d50": 0.005470459518599591,
+      "IS_med_mean_z": -0.03590395936579252,
+      "IS_med_mfe_gt_mae": 0.4935064935064935,
+      "IS_med_p_hit": 0.5024236037934668
+    },
+    {
+      "mechanism": "gex_follow",
+      "IS_med_n": 779.5,
+      "IS_med_win": 0.4971157381871668,
+      "IS_med_d50": -0.0028842618128332165,
+      "IS_med_mean_z": -0.0021672128583715517,
+      "IS_med_mfe_gt_mae": 0.49935649935649934,
+      "IS_med_p_hit": 0.510296027350065
+    }
+  ],
+  "top_candidates": [],
+  "stability": [],
+  "next_if_killed": "scheduled_information_events",
+  "pivot_doc": "artifacts/research_pivot_external_direction.md"
+}

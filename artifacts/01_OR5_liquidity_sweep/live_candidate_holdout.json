@@ -1,0 +1,871 @@
+{
+  "classification": "HIGH-CONFIDENCE RESEARCH CANDIDATE \u2014 strong persistence in 2024-2026, not yet proven regime-invariant or production-ready.",
+  "claim_correction": "pct_oos_pnl_in_2022_plus is tautological: OOS is defined as year>=2024, so year>=2022 covers 100% of OOS by construction. It is not evidence of a pre-2022 vs post-2022 split inside OOS.",
+  "frozen": {
+    "orb_pct_threshold": 0.8452380952380952,
+    "fill": "next_open",
+    "friction_pts": 0.25,
+    "entry_slippage_pts": 1.0,
+    "sl_pts": 15,
+    "target_frac": 0.2,
+    "wide_mult": 1.1,
+    "fixed_orb_thresh": 40,
+    "vwap": "\u00b11.28\u03c3",
+    "smt": true
+  },
+  "oos_year_contribution": [
+    {
+      "year": 2024,
+      "trades": 388,
+      "pnl": 37227.6,
+      "pct_oos_pnl": 25.4,
+      "pf": 4.35,
+      "exp": 95.95
+    },
+    {
+      "year": 2025,
+      "trades": 421,
+      "pnl": 49917.9,
+      "pct_oos_pnl": 34.1,
+      "pf": 4.65,
+      "exp": 118.57
+    },
+    {
+      "year": 2026,
+      "trades": 267,
+      "pnl": 59158.5,
+      "pct_oos_pnl": 40.4,
+      "pf": 9.46,
+      "exp": 221.57
+    }
+  ],
+  "yearly": [
+    {
+      "year": 2024,
+      "subset": "baseline",
+      "trades": 388,
+      "wr": 60.82,
+      "pnl": 37227.6,
+      "pf": 4.35,
+      "exp": 95.95,
+      "mdd": 618.0,
+      "win_days": 57.0,
+      "losing_streak": 6,
+      "largest_loss": -349.5,
+      "longest_dd_days": 15,
+      "longest_dd": {
+        "days": 15,
+        "start": "2024-02-08",
+        "trough": "2024-02-20",
+        "recover": "2024-02-23"
+      },
+      "first_trade": "2024-01-02 14:46:00+00:00",
+      "last_trade": "2024-12-31 16:04:00+00:00",
+      "monthly": [
+        {
+          "month": "2024-01",
+          "trades": 26,
+          "wr": 76.9,
+          "pnl": 2048.4,
+          "pf": 6.4,
+          "exp": 78.78
+        },
+        {
+          "month": "2024-02",
+          "trades": 29,
+          "wr": 41.4,
+          "pnl": 1510.5,
+          "pf": 2.37,
+          "exp": 52.09
+        },
+        {
+          "month": "2024-03",
+          "trades": 28,
+          "wr": 64.3,
+          "pnl": 2908.2,
+          "pf": 5.56,
+          "exp": 103.86
+        },
+        {
+          "month": "2024-04",
+          "trades": 32,
+          "wr": 75.0,
+          "pnl": 5283.6,
+          "pf": 10.17,
+          "exp": 165.11
+        },
+        {
+          "month": "2024-05",
+          "trades": 30,
+          "wr": 63.3,
+          "pnl": 3471.0,
+          "pf": 7.11,
+          "exp": 115.7
+        },
+        {
+          "month": "2024-06",
+          "trades": 26,
+          "wr": 57.7,
+          "pnl": 1945.8,
+          "pf": 3.53,
+          "exp": 74.84
+        },
+        {
+          "month": "2024-07",
+          "trades": 43,
+          "wr": 51.2,
+          "pnl": 1325.1,
+          "pf": 1.91,
+          "exp": 30.82
+        },
+        {
+          "month": "2024-08",
+          "trades": 39,
+          "wr": 53.8,
+          "pnl": 4266.9,
+          "pf": 4.04,
+          "exp": 109.41
+        },
+        {
+          "month": "2024-09",
+          "trades": 39,
+          "wr": 66.7,
+          "pnl": 5036.1,
+          "pf": 4.69,
+          "exp": 129.13
+        },
+        {
+          "month": "2024-10",
+          "trades": 37,
+          "wr": 56.8,
+          "pnl": 4153.8,
+          "pf": 4.69,
+          "exp": 112.26
+        },
+        {
+          "month": "2024-11",
+          "trades": 28,
+          "wr": 50.0,
+          "pnl": 1387.2,
+          "pf": 2.3,
+          "exp": 49.54
+        },
+        {
+          "month": "2024-12",
+          "trades": 31,
+          "wr": 74.2,
+          "pnl": 3891.0,
+          "pf": 6.7,
+          "exp": 125.52
+        }
+      ],
+      "months_pos": 12,
+      "months_total": 12
+    },
+    {
+      "year": 2024,
+      "subset": "orb_pct_high",
+      "trades": 101,
+      "wr": 58.42,
+      "pnl": 13915.5,
+      "pf": 5.3,
+      "exp": 137.78,
+      "mdd": 370.5,
+      "win_days": 56.9,
+      "losing_streak": 5,
+      "largest_loss": -349.5,
+      "longest_dd_days": 32,
+      "longest_dd": {
+        "days": 32,
+        "start": "2024-10-03",
+        "trough": "2024-11-01",
+        "recover": "2024-11-04"
+      },
+      "first_trade": "2024-01-02 14:46:00+00:00",
+      "last_trade": "2024-12-31 16:04:00+00:00",
+      "monthly": [
+        {
+          "month": "2024-01",
+          "trades": 4,
+          "wr": 50.0,
+          "pnl": -49.5,
+          "pf": 0.48,
+          "exp": -12.38
+        },
+        {
+          "month": "2024-02",
+          "trades": 4,
+          "wr": 50.0,
+          "pnl": 523.5,
+          "pf": 6.37,
+          "exp": 130.88
+        },
+        {
+          "month": "2024-03",
+          "trades": 4,
+          "wr": 50.0,
+          "pnl": 439.5,
+          "pf": 5.8,
+          "exp": 109.88
+        },
+        {
+          "month": "2024-04",
+          "trades": 6,
+          "wr": 83.3,
+          "pnl": 920.7,
+          "pf": 7.82,
+          "exp": 153.45
+        },
+        {
+          "month": "2024-06",
+          "trades": 4,
+          "wr": 75.0,
+          "pnl": 451.5,
+          "pf": 16.84,
+          "exp": 112.88
+        },
+        {
+          "month": "2024-07",
+          "trades": 18,
+          "wr": 50.0,
+          "pnl": 747.0,
+          "pf": 2.38,
+          "exp": 41.5
+        },
+        {
+          "month": "2024-08",
+          "trades": 17,
+          "wr": 52.9,
+          "pnl": 3485.4,
+          "pf": 5.87,
+          "exp": 205.02
+        },
+        {
+          "month": "2024-09",
+          "trades": 14,
+          "wr": 64.3,
+          "pnl": 2231.1,
+          "pf": 4.44,
+          "exp": 159.36
+        },
+        {
+          "month": "2024-10",
+          "trades": 12,
+          "wr": 58.3,
+          "pnl": 2342.1,
+          "pf": 8.16,
+          "exp": 195.17
+        },
+        {
+          "month": "2024-11",
+          "trades": 10,
+          "wr": 50.0,
+          "pnl": 886.2,
+          "pf": 3.94,
+          "exp": 88.62
+        },
+        {
+          "month": "2024-12",
+          "trades": 8,
+          "wr": 75.0,
+          "pnl": 1938.0,
+          "pf": 8.69,
+          "exp": 242.25
+        }
+      ],
+      "months_pos": 10,
+      "months_total": 11
+    },
+    {
+      "year": 2025,
+      "subset": "baseline",
+      "trades": 421,
+      "wr": 60.57,
+      "pnl": 49917.9,
+      "pf": 4.65,
+      "exp": 118.57,
+      "mdd": 820.5,
+      "win_days": 60.6,
+      "losing_streak": 6,
+      "largest_loss": -525.0,
+      "longest_dd_days": 15,
+      "longest_dd": {
+        "days": 15,
+        "start": "2025-07-30",
+        "trough": "2025-08-07",
+        "recover": "2025-08-14"
+      },
+      "first_trade": "2025-01-03 14:46:00+00:00",
+      "last_trade": "2025-12-30 14:50:00+00:00",
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 33,
+          "wr": 57.6,
+          "pnl": 3548.1,
+          "pf": 4.08,
+          "exp": 107.52
+        },
+        {
+          "month": "2025-02",
+          "trades": 30,
+          "wr": 63.3,
+          "pnl": 2403.0,
+          "pf": 3.59,
+          "exp": 80.1
+        },
+        {
+          "month": "2025-03",
+          "trades": 33,
+          "wr": 78.8,
+          "pnl": 7576.5,
+          "pf": 10.08,
+          "exp": 229.59
+        },
+        {
+          "month": "2025-04",
+          "trades": 36,
+          "wr": 50.0,
+          "pnl": 6111.0,
+          "pf": 4.02,
+          "exp": 169.75
+        },
+        {
+          "month": "2025-05",
+          "trades": 35,
+          "wr": 68.6,
+          "pnl": 3713.7,
+          "pf": 5.97,
+          "exp": 106.11
+        },
+        {
+          "month": "2025-06",
+          "trades": 34,
+          "wr": 64.7,
+          "pnl": 3654.6,
+          "pf": 6.75,
+          "exp": 107.49
+        },
+        {
+          "month": "2025-07",
+          "trades": 42,
+          "wr": 42.9,
+          "pnl": 401.7,
+          "pf": 1.27,
+          "exp": 9.56
+        },
+        {
+          "month": "2025-08",
+          "trades": 36,
+          "wr": 69.4,
+          "pnl": 4980.3,
+          "pf": 9.67,
+          "exp": 138.34
+        },
+        {
+          "month": "2025-09",
+          "trades": 40,
+          "wr": 55.0,
+          "pnl": 2463.6,
+          "pf": 2.89,
+          "exp": 61.59
+        },
+        {
+          "month": "2025-10",
+          "trades": 33,
+          "wr": 51.5,
+          "pnl": 3363.9,
+          "pf": 3.35,
+          "exp": 101.94
+        },
+        {
+          "month": "2025-11",
+          "trades": 32,
+          "wr": 71.9,
+          "pnl": 8259.0,
+          "pf": 8.43,
+          "exp": 258.09
+        },
+        {
+          "month": "2025-12",
+          "trades": 37,
+          "wr": 45.9,
+          "pnl": 3442.5,
+          "pf": 3.35,
+          "exp": 93.04
+        }
+      ],
+      "months_pos": 12,
+      "months_total": 12
+    },
+    {
+      "year": 2025,
+      "subset": "orb_pct_high",
+      "trades": 82,
+      "wr": 68.29,
+      "pnl": 15796.5,
+      "pf": 5.79,
+      "exp": 192.64,
+      "mdd": 1422.0,
+      "win_days": 62.8,
+      "losing_streak": 6,
+      "largest_loss": -525.0,
+      "longest_dd_days": 187,
+      "longest_dd": {
+        "days": 187,
+        "start": "2025-04-09",
+        "trough": "2025-05-29",
+        "recover": "2025-10-14"
+      },
+      "first_trade": "2025-01-03 14:46:00+00:00",
+      "last_trade": "2025-12-19 14:48:00+00:00",
+      "monthly": [
+        {
+          "month": "2025-01",
+          "trades": 9,
+          "wr": 77.8,
+          "pnl": 2349.6,
+          "pf": 20.1,
+          "exp": 261.07
+        },
+        {
+          "month": "2025-02",
+          "trades": 6,
+          "wr": 16.7,
+          "pnl": -229.5,
+          "pf": 0.34,
+          "exp": -38.25
+        },
+        {
+          "month": "2025-03",
+          "trades": 19,
+          "wr": 89.5,
+          "pnl": 4786.5,
+          "pf": 20.7,
+          "exp": 251.92
+        },
+        {
+          "month": "2025-04",
+          "trades": 16,
+          "wr": 50.0,
+          "pnl": 4032.0,
+          "pf": 4.26,
+          "exp": 252.0
+        },
+        {
+          "month": "2025-05",
+          "trades": 2,
+          "wr": 0.0,
+          "pnl": -198.0,
+          "pf": 0.0,
+          "exp": -99.0
+        },
+        {
+          "month": "2025-08",
+          "trades": 2,
+          "wr": 50.0,
+          "pnl": 16.5,
+          "pf": 3.75,
+          "exp": 8.25
+        },
+        {
+          "month": "2025-09",
+          "trades": 2,
+          "wr": 100.0,
+          "pnl": 1132.5,
+          "pf": Infinity,
+          "exp": 566.25
+        },
+        {
+          "month": "2025-10",
+          "trades": 3,
+          "wr": 66.7,
+          "pnl": 659.1,
+          "pf": 5.83,
+          "exp": 219.7
+        },
+        {
+          "month": "2025-11",
+          "trades": 17,
+          "wr": 82.4,
+          "pnl": 3487.8,
+          "pf": 6.48,
+          "exp": 205.16
+        },
+        {
+          "month": "2025-12",
+          "trades": 6,
+          "wr": 33.3,
+          "pnl": -240.0,
+          "pf": 0.35,
+          "exp": -40.0
+        }
+      ],
+      "months_pos": 7,
+      "months_total": 10
+    },
+    {
+      "year": 2026,
+      "subset": "baseline",
+      "trades": 267,
+      "wr": 70.41,
+      "pnl": 59158.5,
+      "pf": 9.46,
+      "exp": 221.57,
+      "mdd": 562.5,
+      "win_days": 69.6,
+      "losing_streak": 5,
+      "largest_loss": -322.5,
+      "longest_dd_days": 6,
+      "longest_dd": {
+        "days": 6,
+        "start": "2026-07-23",
+        "trough": "2026-07-27",
+        "recover": "2026-07-29"
+      },
+      "first_trade": "2026-01-02 14:48:00+00:00",
+      "last_trade": "2026-08-07 14:15:00+00:00",
+      "monthly": [
+        {
+          "month": "2026-01",
+          "trades": 32,
+          "wr": 56.2,
+          "pnl": 3886.2,
+          "pf": 4.73,
+          "exp": 121.44
+        },
+        {
+          "month": "2026-02",
+          "trades": 36,
+          "wr": 69.4,
+          "pnl": 9903.3,
+          "pf": 7.74,
+          "exp": 275.09
+        },
+        {
+          "month": "2026-03",
+          "trades": 34,
+          "wr": 70.6,
+          "pnl": 6030.0,
+          "pf": 8.5,
+          "exp": 177.35
+        },
+        {
+          "month": "2026-04",
+          "trades": 40,
+          "wr": 65.0,
+          "pnl": 6381.0,
+          "pf": 6.51,
+          "exp": 159.53
+        },
+        {
+          "month": "2026-05",
+          "trades": 36,
+          "wr": 80.6,
+          "pnl": 8386.2,
+          "pf": 19.89,
+          "exp": 232.95
+        },
+        {
+          "month": "2026-06",
+          "trades": 40,
+          "wr": 80.0,
+          "pnl": 10443.0,
+          "pf": 16.37,
+          "exp": 261.07
+        },
+        {
+          "month": "2026-07",
+          "trades": 39,
+          "wr": 61.5,
+          "pnl": 11194.8,
+          "pf": 9.66,
+          "exp": 287.05
+        },
+        {
+          "month": "2026-08",
+          "trades": 10,
+          "wr": 80.0,
+          "pnl": 2934.0,
+          "pf": 28.55,
+          "exp": 293.4
+        }
+      ],
+      "months_pos": 8,
+      "months_total": 8
+    },
+    {
+      "year": 2026,
+      "subset": "orb_pct_high",
+      "trades": 97,
+      "wr": 67.01,
+      "pnl": 21201.0,
+      "pf": 7.41,
+      "exp": 218.57,
+      "mdd": 580.5,
+      "win_days": 63.3,
+      "losing_streak": 5,
+      "largest_loss": -241.5,
+      "longest_dd_days": 28,
+      "longest_dd": {
+        "days": 28,
+        "start": "2026-02-24",
+        "trough": "2026-03-02",
+        "recover": "2026-03-24"
+      },
+      "first_trade": "2026-01-08 14:46:00+00:00",
+      "last_trade": "2026-08-06 13:51:00+00:00",
+      "monthly": [
+        {
+          "month": "2026-01",
+          "trades": 4,
+          "wr": 25.0,
+          "pnl": -256.5,
+          "pf": 0.14,
+          "exp": -64.12
+        },
+        {
+          "month": "2026-02",
+          "trades": 20,
+          "wr": 60.0,
+          "pnl": 4821.0,
+          "pf": 5.46,
+          "exp": 241.05
+        },
+        {
+          "month": "2026-03",
+          "trades": 10,
+          "wr": 70.0,
+          "pnl": 1261.5,
+          "pf": 8.07,
+          "exp": 126.15
+        },
+        {
+          "month": "2026-04",
+          "trades": 4,
+          "wr": 0.0,
+          "pnl": -336.0,
+          "pf": 0.0,
+          "exp": -84.0
+        },
+        {
+          "month": "2026-05",
+          "trades": 12,
+          "wr": 83.3,
+          "pnl": 4279.5,
+          "pf": 78.11,
+          "exp": 356.62
+        },
+        {
+          "month": "2026-06",
+          "trades": 22,
+          "wr": 90.9,
+          "pnl": 7065.0,
+          "pf": 24.43,
+          "exp": 321.14
+        },
+        {
+          "month": "2026-07",
+          "trades": 19,
+          "wr": 52.6,
+          "pnl": 2463.0,
+          "pf": 3.58,
+          "exp": 129.63
+        },
+        {
+          "month": "2026-08",
+          "trades": 6,
+          "wr": 83.3,
+          "pnl": 1903.5,
+          "pf": 20.23,
+          "exp": 317.25
+        }
+      ],
+      "months_pos": 6,
+      "months_total": 8
+    }
+  ],
+  "live_2026_baseline": {
+    "trades": 267,
+    "wr": 70.41,
+    "pnl": 59158.5,
+    "pf": 9.46,
+    "exp": 221.57,
+    "mdd": 562.5,
+    "win_days": 69.6,
+    "losing_streak": 5,
+    "largest_loss": -322.5,
+    "longest_dd_days": 6,
+    "longest_dd": {
+      "days": 6,
+      "start": "2026-07-23",
+      "trough": "2026-07-27",
+      "recover": "2026-07-29"
+    },
+    "first_trade": "2026-01-02 14:48:00+00:00",
+    "last_trade": "2026-08-07 14:15:00+00:00",
+    "monthly": [
+      {
+        "month": "2026-01",
+        "trades": 32,
+        "wr": 56.2,
+        "pnl": 3886.2,
+        "pf": 4.73,
+        "exp": 121.44
+      },
+      {
+        "month": "2026-02",
+        "trades": 36,
+        "wr": 69.4,
+        "pnl": 9903.3,
+        "pf": 7.74,
+        "exp": 275.09
+      },
+      {
+        "month": "2026-03",
+        "trades": 34,
+        "wr": 70.6,
+        "pnl": 6030.0,
+        "pf": 8.5,
+        "exp": 177.35
+      },
+      {
+        "month": "2026-04",
+        "trades": 40,
+        "wr": 65.0,
+        "pnl": 6381.0,
+        "pf": 6.51,
+        "exp": 159.53
+      },
+      {
+        "month": "2026-05",
+        "trades": 36,
+        "wr": 80.6,
+        "pnl": 8386.2,
+        "pf": 19.89,
+        "exp": 232.95
+      },
+      {
+        "month": "2026-06",
+        "trades": 40,
+        "wr": 80.0,
+        "pnl": 10443.0,
+        "pf": 16.37,
+        "exp": 261.07
+      },
+      {
+        "month": "2026-07",
+        "trades": 39,
+        "wr": 61.5,
+        "pnl": 11194.8,
+        "pf": 9.66,
+        "exp": 287.05
+      },
+      {
+        "month": "2026-08",
+        "trades": 10,
+        "wr": 80.0,
+        "pnl": 2934.0,
+        "pf": 28.55,
+        "exp": 293.4
+      }
+    ],
+    "months_pos": 8,
+    "months_total": 8,
+    "subset": "baseline_2026_live"
+  },
+  "live_2026_orb_filter": {
+    "trades": 97,
+    "wr": 67.01,
+    "pnl": 21201.0,
+    "pf": 7.41,
+    "exp": 218.57,
+    "mdd": 580.5,
+    "win_days": 63.3,
+    "losing_streak": 5,
+    "largest_loss": -241.5,
+    "longest_dd_days": 28,
+    "longest_dd": {
+      "days": 28,
+      "start": "2026-02-24",
+      "trough": "2026-03-02",
+      "recover": "2026-03-24"
+    },
+    "first_trade": "2026-01-08 14:46:00+00:00",
+    "last_trade": "2026-08-06 13:51:00+00:00",
+    "monthly": [
+      {
+        "month": "2026-01",
+        "trades": 4,
+        "wr": 25.0,
+        "pnl": -256.5,
+        "pf": 0.14,
+        "exp": -64.12
+      },
+      {
+        "month": "2026-02",
+        "trades": 20,
+        "wr": 60.0,
+        "pnl": 4821.0,
+        "pf": 5.46,
+        "exp": 241.05
+      },
+      {
+        "month": "2026-03",
+        "trades": 10,
+        "wr": 70.0,
+        "pnl": 1261.5,
+        "pf": 8.07,
+        "exp": 126.15
+      },
+      {
+        "month": "2026-04",
+        "trades": 4,
+        "wr": 0.0,
+        "pnl": -336.0,
+        "pf": 0.0,
+        "exp": -84.0
+      },
+      {
+        "month": "2026-05",
+        "trades": 12,
+        "wr": 83.3,
+        "pnl": 4279.5,
+        "pf": 78.11,
+        "exp": 356.62
+      },
+      {
+        "month": "2026-06",
+        "trades": 22,
+        "wr": 90.9,
+        "pnl": 7065.0,
+        "pf": 24.43,
+        "exp": 321.14
+      },
+      {
+        "month": "2026-07",
+        "trades": 19,
+        "wr": 52.6,
+        "pnl": 2463.0,
+        "pf": 3.58,
+        "exp": 129.63
+      },
+      {
+        "month": "2026-08",
+        "trades": 6,
+        "wr": 83.3,
+        "pnl": 1903.5,
+        "pf": 20.23,
+        "exp": 317.25
+      }
+    ],
+    "months_pos": 6,
+    "months_total": 8,
+    "subset": "orb_pct_high_2026_live"
+  },
+  "data_span": {
+    "first_trade": "2010-08-30 13:46:00+00:00",
+    "last_trade": "2026-08-07 14:15:00+00:00",
+    "last_2026_trade": "2026-08-07 14:15:00+00:00"
+  }
+}
