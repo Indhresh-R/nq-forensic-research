@@ -1,0 +1,19 @@
+{
+  "bo_frac": 0.1,
+  "stop_r": 1.0,
+  "tgt_r": 1.5,
+  "width_high": 1.5,
+  "width_non": 1.0,
+  "max_hold": 60,
+  "cost_rt": 1.0,
+  "size": 1.0,
+  "policies": [
+    "uncond_base",
+    "uncond_wide",
+    "regime_width",
+    "high_only_base"
+  ],
+  "note": "Frozen before Val/OOS; path side from first breakout touch only",
+  "decisive_contrast": "regime_width - uncond_wide",
+  "24B_folded": true
+}

@@ -3,6 +3,10 @@
 **Status:** Strategies **13–22** locked failed (price/state). Strategy **12** preserved as WHEN (A\*).  
 External family **23**: **CLOSED** (hard stop fired on 23D-ZN). **23D-ZB** remains UNTESTED (data gap — not a rescue).
 
+**HOW (Strategy 24):** **OPENED**. **24A** sizing **C CLOSED**. **24D** HIGH-harvest **C**
+(Val `VAL_WIDE_DOMINATES`; width helps unconditionally). **24B absorbed in 24D**.
+**24C held** (distinct mechanism).
+
 Do **not** open Strategy 23 as another price/state resolver.
 
 ## Locked wording (13–22)
@@ -45,13 +49,30 @@ Narrower than “direction is unpredictable.” Defensible claim:
 
 **Fired 2026-09-06 on 23D-ZN IS** (0 strong; all H30 incremental neg). Family 23 done.
 
+## HOW family 24 — OPENED
+
+| Ticket | Question | Status |
+|--------|----------|--------|
+| **24A** vol-scaled sizing | Inv-vol ± HIGH-aware vs fixed, coin-flip book | **C CLOSED** |
+| **24B** stop/target by regime | Same as 24D `regime_width` arm | **Absorbed / closed via 24D** (no separate dossier) |
+| **24C** holding period by regime | Time-stop / hold length by HIGH | **Held** — unlock after 24D Val (done); await go-ahead |
+| **24D** non-directional vol-harvest | Symmetric breakout + width policies | **C** on HIGH harvest — Val `VAL_WIDE_DOMINATES` |
+
+**Decisive 24D cell:** `regime_width` − `uncond_wide` ΔSharpe IS −3.10 → Val **−2.79**
+[−3.53, −2.12]. Best policy still E < 0.
+
+**Locked HOW reading:** Strategy 12 activity is real but does not monetize via sizing,
+width, or regime-filter of a direction-agnostic structure under costs; wider helps
+unconditionally, not because of HIGH.
+
 ## Program outcome
 
 ```text
 WHEN  -> A* (12)
 WHICH WAY (13-22) -> locked failed
 EXTERNAL (23) -> CLOSED (23A, 23D-ES, 23D-ZN = C; 23D-ZB untested, not rescue)
-HOW -> not opened (next honest branch)
+HOW -> opened, Strategy 24
+       24A C CLOSED | 24B absorbed in 24D | 24D C (wide dominates) | 24C held
 ```
 
 ## Forbidden
@@ -63,8 +84,9 @@ HOW -> not opened (next honest branch)
 - Treating **23D-ZB** as failed because ZN failed — or as a **rescue** after the hard stop
 - 23B/23C COT retunes; 5th external without new argument
 - “Just one more” external after hard stop
+- Smuggling a directional claim into HOW tickets (24A–D)
 
 ## Only re-open with
 
-1. **HOW** — sizing / stops / holding conditional on Strategy 12 WHEN (activity), without claiming a new sign resolver.
+1. **HOW** — sizing / stops / holding conditional on Strategy 12 WHEN (activity), without claiming a new sign resolver. *(opened as Strategy 24)*
 2. Or a **fundamentally new** external information class with an explicit argument why COT+ES+ZN failure does not apply — frozen before look. (ZB alone is **not** that argument after the hard stop.)

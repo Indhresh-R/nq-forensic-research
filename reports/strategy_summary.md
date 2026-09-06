@@ -31,6 +31,10 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 23D-ES | Overnight ES/NQ RS (under 12 HIGH) | **C CLOSED** | IS-only kill; strong **0**/24; H30 **all clocks neg** vs HIGH-long |
 | 23D-ZN | Overnight ZN/NQ RS (under 12 HIGH) | **C CLOSED** | IS-only; strong **0**/24; hard stop **FIRED**; family 23 done |
 | 23D-ZB | Overnight ZB/NQ RS | **UNTESTED** | data never present (ZN dump duplicated) — **not** a rescue |
+| 24A | HOW: vol-scaled sizing (inv-vol ± HIGH) | **C CLOSED** | coin-flip; ΔSharpe IS **−3.27** → Val **−0.36** → OOS **−0.18**; mechanical cost×\|size\| |
+| 24B | HOW: regime stop/target width | **Absorbed in 24D** | `regime_width` arm; no separate dossier |
+| 24D | HOW: symmetric breakout vol-harvest | **C** (HIGH harvest) | Val ΔSharpe regime−wide **−2.79** [−3.53, −2.12]; best E still **−1.74**; width helps unconditionally |
+| 24C | HOW: holding period by regime | **Held** | only remaining distinct mechanism |
 
 ## Split qualitative (with key numeric anchors)
 
@@ -56,6 +60,9 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 23D-ES | strong **0**/24; all H30 neg vs H-long | **skipped** (IS kill) | **skipped** (IS kill) |
 | 23D-ZN | strong **0**/24; all H30 neg vs H-long | **skipped** (hard stop) | **skipped** (hard stop) |
 | 23D-ZB | — | — | **UNTESTED** |
+| 24A | Sharpe fixed **−1.90** / invvol **−5.17**; CI ΔSharpe &lt; 0 | confirms null (Δ **−0.36**) | Δ invvol **−0.18**; absolute Sharpe noise+ on fixed |
+| 24D | regime−wide ΔSharpe **−3.10**; wide E **−1.24** | **VAL_WIDE_DOMINATES** Δ **−2.79**; wide E **−1.74** | optional |
+| 24C | — | — | **held** |
 
 ## Program terminal
 
@@ -82,7 +89,7 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 WHEN (12)  -> A* elevated activity/path regime
 WHICH WAY (13-22) -> locked failed (tested price/state info)
 EXTERNAL (23) -> CLOSED (hard stop)
-HOW -> not opened (next honest branch)
+HOW (24) -> 24A C; 24D C (wide dominates, E<0); 24B absorbed; 24C held
 ```
 
 **Program status**
@@ -91,11 +98,13 @@ HOW -> not opened (next honest branch)
 | **WHEN** (12) | **A\* VALIDATED** — elevated future activity/path regime |
 | **WHICH WAY** (13–22) | **LOCKED FAILED** (price/state) |
 | **EXTERNAL** (23) | **CLOSED** — COT + ES-overnight + ZN-overnight all **C** |
-| **HOW** | **Not opened** |
+| **HOW** (24) | 24A/24D **C**; 24B absorbed in 24D; **24C held** |
 
 **Locked wording (13–22):** Strategy 12 appears to be a robust detector of an elevated future activity/path regime, but the tested information does not provide a stable incremental sign resolver.
 
+**Locked HOW reading:** Strategy 12 activity does not monetize via sizing, width, or regime-filter of a direction-agnostic structure under costs; wider helps unconditionally, not because of HIGH.
+
 **Do not claim:** “Direction is unpredictable.”  
-**Do claim:** tested price/state and tested external legs failed to resolve direction incrementally over Strategy 12; ZB never tested and is not a 5th-candidate rescue.
+**Do claim:** tested price/state and tested external legs failed to resolve direction; HOW sizing/width/HIGH-filter failed to monetize activity under costs; 24C holding-period not yet tested.
 
 **Stop:** further external resolvers without a new argument; ZB-as-rescue; OHLC retunes.

@@ -1,0 +1,23 @@
+{
+  "vol_lookback": 30,
+  "rv_ref": 1.2641299083106576,
+  "size_clip": [
+    0.25,
+    4.0
+  ],
+  "s_high": 0.7,
+  "s_non": 1.0,
+  "cost_rt": 1.0,
+  "hash_seed": 24,
+  "hold_hs": [
+    30,
+    60
+  ],
+  "primary_h": 30,
+  "policies": [
+    "fixed",
+    "invvol",
+    "invvol_high_aware"
+  ],
+  "note": "rv_ref = IS median of causal return-std; frozen before Val/OOS"
+}

@@ -56,6 +56,20 @@ Next research, if any, must be a **new information class or objective** — not 
 4. **23D-ZB** — **UNTESTED** (data gap). Explicitly **not** a rescue after hard stop.
 
 **Family reading:** three tested externals failed incremental sign over Strategy 12.
-No 5th external without a new argument. Next honest branch: **HOW** (or stop).
+No 5th external without a new argument. **HOW opened** as Strategy 24.
+
+## Phase I — HOW: sizing / stops / holding under Strategy-12 HIGH (family 24)
+
+1. **24A vol-scaled sizing** — **C CLOSED**. Triple null; mechanical cost×|size|.
+2. **24D symmetric breakout** — **C** on HIGH harvest. Decisive Val cell:
+   `regime_width` − `uncond_wide` ΔSharpe **−2.79** [−3.53, −2.12]. Width helps
+   unconditionally (Q1); HIGH-conditioning adds nothing (Q2). Best E still &lt; 0.
+3. **24B** — **absorbed** into 24D (`regime_width` arm); no separate dossier.
+4. **24C holding period** — **held** as only remaining distinct mechanism; await go-ahead.
+
+**Locked HOW reading:** Strategy 12 activity is real but does not monetize via sizing,
+width, or regime-filter of a direction-agnostic structure under costs.
+
+See `strategies/24_HOW_sizing_execution/`.
 
 See `strategies/23D_cross_asset_leadlag/conclusion_family_23.md`.
