@@ -1,0 +1,39 @@
+{
+  "buy_and_hold": {
+    "strategy": "buy_and_hold",
+    "cost_rt": 0.0,
+    "entry_date": "2010-06-07",
+    "exit_date": "2026-08-07",
+    "entry_px": 1795.0,
+    "exit_px": 29839.5,
+    "gross_pts": 28044.5,
+    "net_pts": 28044.5,
+    "hand_pts": 28044.5,
+    "identity_ok": true,
+    "return_pct_gross": 1562.367688022284,
+    "n_days": 4105
+  },
+  "buy_and_hold_yearly_identity_failures": 0,
+  "sma": {
+    "strategy": "sma_50_200_long_only",
+    "cost_rt": 1.0,
+    "n_trades": 9,
+    "n_golden": 9,
+    "n_death": 9,
+    "gross_pts": 23715.75,
+    "net_pts": 23706.75,
+    "win_rate": 0.8888888888888888,
+    "avg_trade_gross": 2635.0833333333335,
+    "sma_identity_ok": true,
+    "hand_sma_fast_last": 29540.315,
+    "hand_sma_slow_last": 26816.40875,
+    "engine_sma_fast_last": 29540.315,
+    "engine_sma_slow_last": 26816.40875,
+    "net_pts_mid": 23706.75
+  },
+  "external_ndx_match_rate_10d": 0.9444444444444444,
+  "n_globex_days": 4105,
+  "date_start": "2010-06-07",
+  "date_end": "2026-08-07",
+  "verdict": "ENGINE_OK"
+}

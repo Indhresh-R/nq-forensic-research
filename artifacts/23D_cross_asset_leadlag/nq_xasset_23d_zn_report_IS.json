@@ -1,0 +1,32 @@
+{
+  "leg": "23D-ZN",
+  "zb_status": "UNAVAILABLE",
+  "grid_cells": 24,
+  "provisional_IS": "IS_HARD_STOP_FAMILY_23",
+  "hard_stop_fired": true,
+  "n_soft": 2,
+  "n_strong": 0,
+  "n_panel": 13585,
+  "candidates": [
+    {
+      "signal": "zn_follow",
+      "T_offset": 30,
+      "horizon": 15,
+      "tier": "soft",
+      "HIGH_sig_IS_win": 0.5135135135135135,
+      "lift_vs_ALL_win": 0.010573667290085131,
+      "lift_vs_HIGH_long_win": 0.0013513513513513375,
+      "HIGH_sig_IS_n": 740
+    },
+    {
+      "signal": "zn_fade",
+      "T_offset": 60,
+      "horizon": 30,
+      "tier": "soft",
+      "HIGH_sig_IS_win": 0.5254691689008043,
+      "lift_vs_ALL_win": 0.026599878986738268,
+      "lift_vs_HIGH_long_win": -0.008042895442359255,
+      "HIGH_sig_IS_n": 746
+    }
+  ]
+}

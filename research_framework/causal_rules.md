@@ -17,3 +17,6 @@
 ## External data lag
 
 - EOD options (~16:15 ET) may only condition **later** sessions (`opt_date < session_date`).
+- CFTC TFF / COT: `report_date` is the **Tuesday** snapshot; public release is the
+  following **Friday ~15:30 ET**. Usable only from the **next trading session after
+  that Friday release** — never Tuesday–Friday of the snapshot week (see Strategy 23A).

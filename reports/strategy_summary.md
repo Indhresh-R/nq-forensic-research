@@ -27,6 +27,10 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 20 | Pre-HIGH unusual displacement | **B→kill CLOSED** | soft NY_PM SESS_END only; H30 OOS med lift **−4.7pp** |
 | 21 | First post-HIGH bar revelation | **C CLOSED** | soft/strong **0**; residual burn tiny — signal fail |
 | 22 | Structural-ticket revelation | **C CLOSED** | soft/strong **0**; tested info failed sign resolve (not “unpredictable”) |
+| 23A | COT TFF positioning (under 12 HIGH) | **C CLOSED** | IS +2.5pp vs HIGH-long → Val **−7.4pp** → OOS **−11.3pp** (monotonic worse); 5/120 ≈ noise |
+| 23D-ES | Overnight ES/NQ RS (under 12 HIGH) | **C CLOSED** | IS-only kill; strong **0**/24; H30 **all clocks neg** vs HIGH-long |
+| 23D-ZN | Overnight ZN/NQ RS (under 12 HIGH) | **C CLOSED** | IS-only; strong **0**/24; hard stop **FIRED**; family 23 done |
+| 23D-ZB | Overnight ZB/NQ RS | **UNTESTED** | data never present (ZN dump duplicated) — **not** a rescue |
 
 ## Split qualitative (with key numeric anchors)
 
@@ -48,39 +52,50 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 16A | HIGH+bias ~51–52% | Val flips / weak | OOS ~45–53%; lift fails |
 | 16B | HIGH+loc ~48–54% | soft / mixed | no multi-clock strong |
 | 17 | HIGH+trap ~50–56% | Val often **negative** | OOS spikes unstable |
+| 23A | strong **5**/120; +2.5pp vs H-long | inc **−7.4pp** | inc **−11.3pp** (monotonic IS→Val→OOS worse) |
+| 23D-ES | strong **0**/24; all H30 neg vs H-long | **skipped** (IS kill) | **skipped** (IS kill) |
+| 23D-ZN | strong **0**/24; all H30 neg vs H-long | **skipped** (hard stop) | **skipped** (hard stop) |
+| 23D-ZB | — | — | **UNTESTED** |
 
 ## Program terminal
 
-**Direction branch 13–22: LOCKED FAILED. No Strategy 23.**
+**Direction branch 13–22: LOCKED FAILED** (price/state resolvers).
+
+**External branch 23: CLOSED** (hard stop fired on 23D-ZN).
+
+| Leg | Status |
+|-----|--------|
+| 23A COT | **C** — monotonic incremental degradation +2.5 → −7.4 → −11.3pp |
+| 23D-ES | **C** — IS null incremental |
+| 23D-ZN | **C** — IS null incremental; **hard stop** |
+| 23D-ZB | **UNTESTED** — not a rescue |
 
 **Still true (not trades):**
 - NY-open HIGH (06): late activity detector (A\*)
 - Multi-session quiet→vol expansion (12): elevated future **activity/path** regime (A\*) — WHEN only
 
-**Closed NO-TRADE:** Strategies **12–14** monetization; **13–22** sign resolution.
+**Closed NO-TRADE:** Strategies **12–14** monetization; **13–22** sign resolution; **family 23** external legs tested above.
 
 **Constraint:** [`research_framework/direction_resolution.md`](../research_framework/direction_resolution.md).
 
 ```text
 WHEN (12)  -> A* elevated activity/path regime
-WHICH WAY (13-22) -> locked failed (tested info)
-HOW -> not opened
+WHICH WAY (13-22) -> locked failed (tested price/state info)
+EXTERNAL (23) -> CLOSED (hard stop)
+HOW -> not opened (next honest branch)
 ```
-
-**Strategy 15–22:** all killed/closed (see table). Tree: [`artifacts/_shared/research_tree_activity_direction.md`](../artifacts/_shared/research_tree_activity_direction.md).
 
 **Program status**
 | Stage | Status |
 |-------|--------|
 | **WHEN** (12) | **A\* VALIDATED** — elevated future activity/path regime |
-| **WHICH WAY** (13–22) | **LOCKED FAILED** |
+| **WHICH WAY** (13–22) | **LOCKED FAILED** (price/state) |
+| **EXTERNAL** (23) | **CLOSED** — COT + ES-overnight + ZN-overnight all **C** |
 | **HOW** | **Not opened** |
 
-**Locked wording:** Strategy 12 appears to be a robust detector of an elevated future activity/path regime, but the tested information does not provide a stable incremental sign resolver.
+**Locked wording (13–22):** Strategy 12 appears to be a robust detector of an elevated future activity/path regime, but the tested information does not provide a stable incremental sign resolver.
 
 **Do not claim:** “Direction is unpredictable.”  
-**Do claim:** tested observable information failed to resolve direction robustly.
+**Do claim:** tested price/state and tested external legs failed to resolve direction incrementally over Strategy 12; ZB never tested and is not a 5th-candidate rescue.
 
-**Stop:** Strategy 23 as another price/state resolver; retuning tickets/windows; manufacturing a trade from residual size alone.
-
-**Optional later branch (not opened):** Strategy 12 WHEN + an **external** causal sign source — not more OHLC features.
+**Stop:** further external resolvers without a new argument; ZB-as-rescue; OHLC retunes.

@@ -1,0 +1,39 @@
+{
+  "stage": "IS",
+  "provisional_IS": "IS_SOFT_ONLY",
+  "grid_cells_preregistered": 24,
+  "expected_false_strong_approx": 1.2,
+  "n_panel": 13577,
+  "n_soft": 2,
+  "n_strong": 0,
+  "zn_zb": "UNAVAILABLE",
+  "candidates": [
+    {
+      "signal": "es_fade",
+      "session": "NY_AM",
+      "T_offset": 30,
+      "horizon": 30,
+      "tier": "soft",
+      "HIGH_sig_IS_win": 0.4979757085020243,
+      "ALL_IS_win": 0.492077863286555,
+      "HIGH_long_IS_win": 0.5344129554655871,
+      "lift_vs_ALL_win": 0.005897845215469266,
+      "lift_vs_HIGH_long_win": -0.03643724696356282,
+      "HIGH_sig_IS_n": 741
+    },
+    {
+      "signal": "es_fade",
+      "session": "NY_AM",
+      "T_offset": 30,
+      "horizon": 60,
+      "tier": "soft",
+      "HIGH_sig_IS_win": 0.4979757085020243,
+      "ALL_IS_win": 0.492077863286555,
+      "HIGH_long_IS_win": 0.5195681511470985,
+      "lift_vs_ALL_win": 0.005897845215469266,
+      "lift_vs_HIGH_long_win": -0.02159244264507426,
+      "HIGH_sig_IS_n": 741
+    }
+  ],
+  "val_oos_scored": false
+}

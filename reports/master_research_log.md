@@ -45,3 +45,17 @@ HIGH as trade engine           ❌
 ```
 
 Next research, if any, must be a **new information class or objective** — not another transform of the same killed families.
+
+## Phase H — External sign sources under Strategy-12 HIGH (family 23) — CLOSED
+
+1. **23A COT / TFF** — **C**. Incremental vs HIGH-long **+2.5 → −7.4 → −11.3pp** (monotonic worse-than-baseline).
+2. **23D-ES overnight ES/NQ RS** — **C**. IS-only; 0 strong / 24; all H30 neg vs HIGH-long.
+3. **23D-ZN overnight ZN/NQ RS** — **C**. IS-only; 0 strong / 24; all H30 neg vs HIGH-long.
+   - Hard stop (pre-registered before look) **FIRED** → **family 23 closed**.
+   - Data note: both “ZN/ZB” GLBX folders were **identical ZN** dumps; **ZB never present**.
+4. **23D-ZB** — **UNTESTED** (data gap). Explicitly **not** a rescue after hard stop.
+
+**Family reading:** three tested externals failed incremental sign over Strategy 12.
+No 5th external without a new argument. Next honest branch: **HOW** (or stop).
+
+See `strategies/23D_cross_asset_leadlag/conclusion_family_23.md`.

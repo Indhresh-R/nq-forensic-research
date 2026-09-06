@@ -98,6 +98,42 @@ def load_es(path: Path | None = None) -> pd.DataFrame:
     return out
 
 
+def load_zn(path: Path | None = None) -> pd.DataFrame:
+    candidates = []
+    if path is not None:
+        candidates.append(path)
+    candidates.extend(
+        [
+            DATA / "zn_1m_continuous.parquet",
+            ROOT / "zn_1m_continuous.parquet",
+        ]
+    )
+    src = next((p for p in candidates if p.exists()), None)
+    if src is None:
+        raise FileNotFoundError("zn_1m_continuous.parquet not found — run build_zn_continuous.py")
+    df = pd.read_parquet(src)
+    ts = pd.to_datetime(df["ts_event"], utc=True).dt.tz_convert("America/New_York")
+    out = pd.DataFrame(
+        {
+            "ts": ts,
+            "open": df["open"].to_numpy(np.float64),
+            "high": df["high"].to_numpy(np.float64),
+            "low": df["low"].to_numpy(np.float64),
+            "close": df["close"].to_numpy(np.float64),
+            "volume": df["volume"].to_numpy(np.int64),
+        }
+    )
+    out["year"] = out["ts"].dt.year.astype(np.int16)
+    out["ny_min"] = (out["ts"].dt.hour.astype(np.int16) * 60 + out["ts"].dt.minute.astype(np.int16))
+    cal = out["ts"].dt.date
+    out["session_date"] = np.where(
+        out["ny_min"].to_numpy() >= SESSION_START,
+        (pd.to_datetime(cal) + pd.Timedelta(days=1)).dt.date,
+        cal,
+    )
+    return out
+
+
 def build_day_context(df: pd.DataFrame) -> pd.DataFrame:
     facts = pd.read_parquet(art("ny_open_day_facts.parquet"))
     rows = []
