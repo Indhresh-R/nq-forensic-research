@@ -1,0 +1,10 @@
+{
+  "verdict": "C",
+  "panel_rows": 61736,
+  "n_soft": 0,
+  "n_strong": 0,
+  "multi": [],
+  "call": "Kill 22. Structural-ticket revelation does not provide stable incremental direction. Stronger call: under tested information, Strategy 12 behaves as an unsigned activity detector.",
+  "STRUCT_FRAC": 0.25,
+  "OBS_HORIZON": 60
+}

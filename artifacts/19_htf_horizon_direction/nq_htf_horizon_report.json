@@ -1,0 +1,8 @@
+{
+  "verdict": "B->kill",
+  "panel_rows": 55490,
+  "n_soft": 1,
+  "n_strong": 0,
+  "multi": [],
+  "call": "Soft/strong cells=1 without multi-clock strength. Do not promote."
+}

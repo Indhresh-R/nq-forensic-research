@@ -1,0 +1,60 @@
+{
+  "verdict": "B\u2192kill",
+  "panel_rows": 69373,
+  "n_soft": 4,
+  "n_strong": 0,
+  "hold_hs": [
+    15,
+    30,
+    60,
+    90,
+    120
+  ],
+  "call": "Soft/single-clock lift only. Do not promote. Do not open Bias B/C/D to rescue.",
+  "stability": [
+    {
+      "session": "ASIA",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        180
+      ],
+      "med_lift_win_IS": 0.034852563169891826,
+      "med_lift_win_OOS": -0.00158519501585197
+    },
+    {
+      "session": "LONDON",
+      "horizon": 90,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        120
+      ],
+      "med_lift_win_IS": 0.03250968230455398,
+      "med_lift_win_OOS": 0.015173527037933843
+    },
+    {
+      "session": "LONDON",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        120
+      ],
+      "med_lift_win_IS": 0.03675500045515112,
+      "med_lift_win_OOS": 0.0002152273338713595
+    },
+    {
+      "session": "NY_PM",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        60
+      ],
+      "med_lift_win_IS": 0.007435674584882701,
+      "med_lift_win_OOS": 0.017862844573739656
+    }
+  ]
+}

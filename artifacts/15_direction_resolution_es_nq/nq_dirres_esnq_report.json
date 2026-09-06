@@ -1,0 +1,94 @@
+{
+  "verdict": "B",
+  "panel_rows": 195058,
+  "n_soft": 8,
+  "n_strong": 0,
+  "stability": [
+    {
+      "session": "NY_PM",
+      "resolver": "follow_es",
+      "horizon": 30,
+      "n_clocks": 2,
+      "n_clocks_strong": 0,
+      "clocks": [
+        15,
+        90
+      ],
+      "med_lift_win_IS": -0.008742729295857343,
+      "med_lift_win_OOS": -0.018390525829557303
+    },
+    {
+      "session": "NY_PM",
+      "resolver": "agree_follow",
+      "horizon": 30,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        90
+      ],
+      "med_lift_win_IS": -0.011922063573006958,
+      "med_lift_win_OOS": -0.028431372549019562
+    },
+    {
+      "session": "NY_AM",
+      "resolver": "rs_continue",
+      "horizon": 30,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        60
+      ],
+      "med_lift_win_IS": -0.01127366783195588,
+      "med_lift_win_OOS": -9.518370454980607e-05
+    },
+    {
+      "session": "NY_AM",
+      "resolver": "follow_es",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.008315565031982941,
+      "med_lift_win_OOS": 0.014305779534932062
+    },
+    {
+      "session": "NY_AM",
+      "resolver": "agree_follow",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.0077664702731655155,
+      "med_lift_win_OOS": 0.02503433486735901
+    },
+    {
+      "session": "NY_PM",
+      "resolver": "follow_es",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        30
+      ],
+      "med_lift_win_IS": -0.005027237441764865,
+      "med_lift_win_OOS": -0.01133472125838536
+    },
+    {
+      "session": "NY_PM",
+      "resolver": "agree_follow",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        30
+      ],
+      "med_lift_win_IS": -0.0036618961230934777,
+      "med_lift_win_OOS": -0.010745496700552859
+    }
+  ],
+  "call": "Soft / single-clock lift only \u2014 do not promote; not a trade."
+}

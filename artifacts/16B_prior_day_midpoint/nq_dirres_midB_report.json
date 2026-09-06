@@ -1,0 +1,64 @@
+{
+  "verdict": "B->kill",
+  "panel_rows": 68629,
+  "n_soft": 3,
+  "n_strong": 2,
+  "call": "Soft/single-clock lift only. Do not promote. Do not expand to PDH/PDL variants to rescue this pass.",
+  "stability": [
+    {
+      "session": "NY_AM",
+      "horizon": 60,
+      "n_clocks": 1,
+      "n_clocks_strong": 1,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.017914969266602188,
+      "med_lift_win_OOS": 0.021763834842797536
+    },
+    {
+      "session": "NY_AM",
+      "horizon": 90,
+      "n_clocks": 1,
+      "n_clocks_strong": 1,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.012494881304154215,
+      "med_lift_win_OOS": 0.03428148352215982
+    },
+    {
+      "session": "LONDON",
+      "horizon": 90,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.014678420237561274,
+      "med_lift_win_OOS": 0.011141235279166217
+    },
+    {
+      "session": "LONDON",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        60
+      ],
+      "med_lift_win_IS": -0.0029365742146640894,
+      "med_lift_win_OOS": 0.09211822660098523
+    },
+    {
+      "session": "NY_AM",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        15
+      ],
+      "med_lift_win_IS": 0.022137908141582785,
+      "med_lift_win_OOS": 0.028806088363924398
+    }
+  ]
+}

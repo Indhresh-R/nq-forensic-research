@@ -228,6 +228,21 @@ def win_rate(series: pd.Series) -> dict[str, float]:
     return {"n": int(n), "rate": float(np.mean(x > 0))}
 
 
+# Re-export multi-session clock helpers
+from common.sessions import (  # noqa: E402
+    PRIOR_SESSION,
+    RTH_END,
+    SESSION_BY_NAME,
+    SESSION_DECISION_OFFSETS,
+    SESSION_ORDER,
+    SESSIONS,
+    bars_in_session,
+    build_session_facts,
+    decision_ny_min,
+    session_of,
+    state_at_T_session,
+)
+
 __all__ = [
     "ART",
     "DATA",
@@ -246,4 +261,15 @@ __all__ = [
     "state_at_T",
     "win_rate",
     "rate_of",
+    "RTH_END",
+    "SESSIONS",
+    "SESSION_BY_NAME",
+    "SESSION_ORDER",
+    "SESSION_DECISION_OFFSETS",
+    "PRIOR_SESSION",
+    "session_of",
+    "bars_in_session",
+    "build_session_facts",
+    "decision_ny_min",
+    "state_at_T_session",
 ]

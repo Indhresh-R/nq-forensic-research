@@ -1,0 +1,34 @@
+{
+  "verdict": "B_lead",
+  "panel_rows": 51441,
+  "n_soft": 6,
+  "n_strong": 4,
+  "survivors": [
+    "mom5_follow",
+    "vwap_follow",
+    "prior_sess_mid",
+    "gap_follow",
+    "path30_follow"
+  ],
+  "multi_clock": [
+    [
+      "prior_sess_mid",
+      "NY_PM",
+      60,
+      2
+    ]
+  ],
+  "call": "Leads with multi-clock candidates: [('prior_sess_mid', 'NY_PM', 60, 2)]. Promote only as a dedicated dossier \u2014 do not trade yet.",
+  "menu": [
+    "mom5_follow",
+    "mom15_follow",
+    "mom15_fade",
+    "vwap_follow",
+    "vwap_fade",
+    "ext_fade",
+    "prior_sess_mid",
+    "gap_follow",
+    "path30_follow",
+    "path30_fade"
+  ]
+}

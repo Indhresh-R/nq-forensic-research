@@ -1,0 +1,12 @@
+{
+  "verdict": "C",
+  "panel_rows": 65449,
+  "n_soft": 0,
+  "n_strong": 0,
+  "multi": [],
+  "call": "Kill 21. First post-HIGH bar displacement does not provide stable conditional direction on the remaining path.",
+  "resolvers": [
+    "bar1_follow",
+    "bar5_follow"
+  ]
+}

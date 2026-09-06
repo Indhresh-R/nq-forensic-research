@@ -1,0 +1,44 @@
+{
+  "verdict": "B->kill",
+  "panel_rows": 25201,
+  "n_soft": 3,
+  "n_strong": 1,
+  "lookback_W": 15,
+  "call": "Soft or single-clock only. Do not promote. Do not retune W/thr to rescue.",
+  "stability": [
+    {
+      "session": "ASIA",
+      "horizon": 120,
+      "n_clocks": 1,
+      "n_clocks_strong": 1,
+      "clocks": [
+        120
+      ],
+      "med_lift_win_IS": 0.01616843920666855,
+      "med_lift_win_OOS": 0.054482103262591175
+    },
+    {
+      "session": "ASIA",
+      "horizon": 15,
+      "n_clocks": 2,
+      "n_clocks_strong": 0,
+      "clocks": [
+        30,
+        120
+      ],
+      "med_lift_win_IS": 0.02568190529647446,
+      "med_lift_win_OOS": 0.03781892878189083
+    },
+    {
+      "session": "LONDON",
+      "horizon": 15,
+      "n_clocks": 1,
+      "n_clocks_strong": 0,
+      "clocks": [
+        90
+      ],
+      "med_lift_win_IS": 0.03012091843666498,
+      "med_lift_win_OOS": 0.119327731092437
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source": "strategies/12_multi_session_opportunity",
+  "verdict": "A*_CLOSED_NO_TRADE",
+  "status": "RESEARCH_FINDING_NOT_TRADEABLE",
+  "family_closed": ["12", "13", "14"],
+  "promoted_sessions": ["ASIA", "LONDON", "NY_AM", "NY_PM"],
+  "primary_frac": 0.25,
+  "scale": "psr",
+  "primary_high_arm": "vol_expansion_high",
+  "primary_low_arm": "quiet_wait",
+  "thresholds_artifact": "nq_multi_sess_opp_thresholds_IS.json",
+  "panel_artifact": "nq_multi_sess_opp_panel.parquet",
+  "phase_b": {
+    "direction_13": "C_NO_TRADE",
+    "residual_econ_14": "C_NO_EDGE_VS_LOW",
+    "london_high_follow_oos_enet": -0.30,
+    "oos_cover_lift_high_vs_low": 0.0
+  },
+  "notes": [
+    "Activity/opportunity detector only — not direction",
+    "Do not refit IS terciles",
+    "Do not optimize Strategies 13/14 further",
+    "May be reused only as a regime/context variable for a new causal hypothesis"
+  ]
+}

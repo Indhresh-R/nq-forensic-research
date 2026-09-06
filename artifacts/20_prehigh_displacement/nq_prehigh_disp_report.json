@@ -1,0 +1,9 @@
+{
+  "verdict": "B->kill",
+  "panel_rows": 41159,
+  "n_soft": 2,
+  "n_strong": 0,
+  "multi": [],
+  "call": "Soft/strong=2 without multi-clock strength. Do not retune W/p66. Do not fall back to ordinary mom follow.",
+  "W": 30
+}

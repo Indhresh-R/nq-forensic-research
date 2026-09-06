@@ -1,0 +1,43 @@
+{
+  "panel_rows": 138472,
+  "verdicts": [
+    {
+      "session": "LONDON",
+      "verdict": "NO_EDGE_VS_LOW",
+      "OOS_mean_resid": 38.954787234042556,
+      "OOS_mean_net_mid": 37.954787234042556,
+      "OOS_cover_mid": 1.0,
+      "OOS_cover_lift_vs_LOW": 0.0,
+      "OOS_mean_pre_exc": 64.19281914893617
+    },
+    {
+      "session": "NY_PM",
+      "verdict": "NO_EDGE_VS_LOW",
+      "OOS_mean_resid": 70.8061224489796,
+      "OOS_mean_net_mid": 69.8061224489796,
+      "OOS_cover_mid": 1.0,
+      "OOS_cover_lift_vs_LOW": 0.0,
+      "OOS_mean_pre_exc": 88.18367346938776
+    },
+    {
+      "session": "NY_AM",
+      "verdict": "NO_EDGE_VS_LOW",
+      "OOS_mean_resid": 98.38103448275862,
+      "OOS_mean_net_mid": 97.38103448275862,
+      "OOS_cover_mid": 1.0,
+      "OOS_cover_lift_vs_LOW": 0.0,
+      "OOS_mean_pre_exc": 136.21508620689656
+    },
+    {
+      "session": "ASIA",
+      "verdict": "NO_EDGE_VS_LOW",
+      "OOS_mean_resid": 42.368011182108624,
+      "OOS_mean_net_mid": 41.368011182108624,
+      "OOS_cover_mid": 1.0,
+      "OOS_cover_lift_vs_LOW": 0.0,
+      "OOS_mean_pre_exc": 64.22024760383387
+    }
+  ],
+  "primary_H": 30,
+  "primary_cost": "mid"
+}

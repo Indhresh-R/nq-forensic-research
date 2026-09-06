@@ -10,4 +10,5 @@ Shared rules for every strategy dossier in this repository.
 | [execution_assumptions.md](execution_assumptions.md) | Costs, ambiguity |
 | [audit_checklist.md](audit_checklist.md) | Hostile audit items |
 | [verdict_rubric.md](verdict_rubric.md) | A / B / C / D / A* |
+| [direction_resolution.md](direction_resolution.md) | **ACTIVE:** activity ≠ direction; next question is sign resolution + conditional lift |
 | [strategy_dossier_template.md](strategy_dossier_template.md) | Copy-paste template for new work |
