@@ -1,0 +1,6 @@
+stop_rule,target_r,IS,OOS,Validation,selection_basis
+0.75x_ib_width,2.0,1.0494275259678942,0.43158783783783783,5.832823741007195,top_5 Discovery avg_net_points only
+1.00x_ib_width,1.0,1.007318224740321,2.2581081081081082,3.043525179856115,top_5 Discovery avg_net_points only
+1.00x_ib_width,1.5,1.004131255901794,2.1983108108108107,6.70953237410072,top_5 Discovery avg_net_points only
+0.75x_ib_width,1.5,0.8795001180358829,0.6930743243243244,2.8450089928057554,top_5 Discovery avg_net_points only
+0.50x_ib_width,2.0,0.7806303116147308,-3.502027027027027,3.7021582733812948,top_5 Discovery avg_net_points only

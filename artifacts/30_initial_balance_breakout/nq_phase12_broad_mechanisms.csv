@@ -1,0 +1,7 @@
+direction,feature,consistent_sign,correlations
+downside_failure_long,excursion_ib,1,"{'Inner': 0.1043397622978402, 'OOS': 0.040018452312305386, 'Train': 0.16184406538298216, 'Validation': 0.06268169712471273}"
+downside_failure_long,outside_5m,1,"{'Inner': 0.1565150716119931, 'OOS': 0.08931199077539566, 'Train': 0.15906524207936856, 'Validation': 0.048162790379489784}"
+downside_failure_long,reentry_end,1,"{'Inner': 0.05423898767599586, 'OOS': 0.09043643226699326, 'Train': 0.10372413691255361, 'Validation': 0.012891610709797514}"
+downside_failure_long,rejection_minutes,1,"{'Inner': 0.1918713446643436, 'OOS': 0.14860840147157311, 'Train': 0.15796747474398526, 'Validation': 0.011468609299656898}"
+upside_failure_short,excursion_ib,1,"{'Inner': 0.08319140676136329, 'OOS': 0.008049722624015605, 'Train': 0.18845414019677215, 'Validation': 0.12005100933362275}"
+upside_failure_short,outside_5m,1,"{'Inner': 0.09581437461048237, 'OOS': 0.04676027806346663, 'Train': 0.1654240385673928, 'Validation': 0.17265331859414684}"

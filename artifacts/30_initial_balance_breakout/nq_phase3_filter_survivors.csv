@@ -1,0 +1,2 @@
+filter,Inner_Validation,OOS,Train,Validation,n_Inner_Validation,n_OOS,n_Train,n_Validation,selection_basis
+early_by_1130,3.7952586206896552,3.9915413533834587,-0.9188144329896907,8.144153225806452,464.0,266.0,970.0,496.0,better than baseline in Train + Inner_Validation only
