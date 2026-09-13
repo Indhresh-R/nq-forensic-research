@@ -1,0 +1,41 @@
+[
+  {
+    "split": "Discovery",
+    "error": "insufficient"
+  },
+  {
+    "split": "Validation",
+    "error": "insufficient"
+  },
+  {
+    "split": "OOS",
+    "n": 9729,
+    "r2_base_fwd_ret_5": 0.010042108075026812,
+    "r2_gamma_fwd_ret_5": 0.01985523658274524,
+    "delta_r2_fwd_ret_5": 0.009813128507718427,
+    "r2_base_fwd_rv_15": 0.33034525669040504,
+    "r2_gamma_fwd_rv_15": 0.351637218221712,
+    "delta_r2_fwd_rv_15": 0.02129196153130697
+  },
+  {
+    "split": "Discovery",
+    "error": "insufficient",
+    "instrument": "NQ"
+  },
+  {
+    "split": "Validation",
+    "error": "insufficient",
+    "instrument": "NQ"
+  },
+  {
+    "split": "OOS",
+    "n": 4670,
+    "r2_base_fwd_ret_5": 0.02371807287803418,
+    "r2_gamma_fwd_ret_5": 0.04570845598749729,
+    "delta_r2_fwd_ret_5": 0.021990383109463107,
+    "r2_base_fwd_rv_15": 0.2726427467671395,
+    "r2_gamma_fwd_rv_15": 0.2869329227450079,
+    "delta_r2_fwd_rv_15": 0.014290175977868413,
+    "instrument": "NQ"
+  }
+]

@@ -1,0 +1,4 @@
+{
+  "verdict": "E",
+  "text": "Invalid for confirmatory claim: FirmTape minute archive incomplete (sessions=26, years=[2024, 2026]). Bulk snapshot download blocked by FirmTape visitor limit \u2014 see DATA_BLOCKER.md."
+}

@@ -1,0 +1,24 @@
+{
+  "phase2_class": "C_research_signal_not_trading_edge",
+  "verdict": "MIXED_MECHANISM",
+  "note": "Some conditional structure exists, but stability / falsification / transfer checks are mixed. Do not open trading-rule search; archive or narrow only with new data.",
+  "es_rv30_identity_delta_r2": 0.011681916133920334,
+  "es_rv30_matched_null_mean_delta_r2": -0.0019047106957790494,
+  "beats_matched_nulls": true,
+  "iv_regime_spread_es30": 0.021675682613158997,
+  "vol_regime_spread_es30": 0.031099687455989344,
+  "chrono_positive_frac_es30": 0.75,
+  "tod_positive_frac_es30": 0.15384615384615385,
+  "atm_strongest_part_es30": true,
+  "nq30_delta_r2_after_es_control_mean": 0.0015810037078156647,
+  "surface_part_delta_r2_es30": {
+    "atm_share": 0.011681916133920334,
+    "near_share": 0.008164167763500485,
+    "peak_dist": 0.0007907396242032849,
+    "m_centroid": 0.0001643822236859771,
+    "m_slope": 4.6954966892220895e-05,
+    "pc_asym": 0.0005270470095430912
+  },
+  "panel_years": "2016-2024 (no 2025-26 in Vilkov data_opt)",
+  "rule": "No threshold search / no trading optimization"
+}

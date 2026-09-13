@@ -1,0 +1,13 @@
+split,instrument,rule,n
+Discovery,ES,fade_A,0
+Discovery,ES,follow_E,0
+Discovery,NQ,fade_A,0
+Discovery,NQ,follow_E,0
+Validation,ES,fade_A,0
+Validation,ES,follow_E,0
+Validation,NQ,fade_A,0
+Validation,NQ,follow_E,0
+OOS,ES,fade_A,0
+OOS,ES,follow_E,0
+OOS,NQ,fade_A,0
+OOS,NQ,follow_E,0
