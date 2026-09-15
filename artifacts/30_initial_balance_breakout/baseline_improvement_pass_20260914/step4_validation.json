@@ -1,0 +1,26 @@
+{
+  "gate": "Validation",
+  "selected_candidate": "baseline_control",
+  "selected_metrics": {
+    "trades": 695,
+    "net_points": 3149.0,
+    "avg_net_points": 4.530935251798561,
+    "profit_factor": 1.1131980516562718,
+    "max_drawdown_points": -1275.75,
+    "avg_risk_points": 151.47338129496404
+  },
+  "baseline_metrics": {
+    "trades": 695,
+    "net_points": 3149.0,
+    "avg_net_points": 4.530935251798561,
+    "profit_factor": 1.1131980516562718,
+    "max_drawdown_points": -1275.75,
+    "avg_risk_points": 151.47338129496404
+  },
+  "pass": false,
+  "criteria": {
+    "min_trades": 100,
+    "profit_factor_gt": 1.0,
+    "avg_net_points_strictly_gt_baseline": true
+  }
+}

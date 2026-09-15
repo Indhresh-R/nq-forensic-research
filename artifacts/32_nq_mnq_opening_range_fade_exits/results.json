@@ -1,0 +1,21 @@
+{
+  "research_pass_date": "2026-09-14",
+  "cost_dollars_round_trip": 2.0,
+  "selection": "fixed_2r",
+  "step4": {
+    "status": "fail",
+    "rule": "overall EOD trailing",
+    "date": "2022-03-21",
+    "ending_equity": -10103.0,
+    "max_eod_drawdown": 12651.5,
+    "n": 694,
+    "net_dollars": -10103.0,
+    "win_rate": 0.3861671469740634,
+    "payoff": 1.3287697528337268,
+    "profit_factor": 0.8359396567122976,
+    "trades_per_month": 19.27777777777778,
+    "largest_day_dollars": 348.0,
+    "largest_day_pct": NaN
+  },
+  "step5": "not run"
+}

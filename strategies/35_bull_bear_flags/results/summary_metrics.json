@@ -1,0 +1,24 @@
+{
+  "strategy": "35_bull_bear_flags",
+  "verdict": "C",
+  "reason": "Complete out-of-sample failure on ES (PF 0.53-0.71, E < 0); NQ bull flag edge is an unconditional long-beta artifact; bear flags collapse across both markets; flag consolidation adds zero incremental alpha over pure momentum.",
+  "nq_c1_measured_move": {
+    "is": {"n": 280, "win_rate": 0.4321, "profit_factor": 1.349, "e_pts": 3.23},
+    "val": {"n": 117, "win_rate": 0.4103, "profit_factor": 1.105, "e_pts": 2.74},
+    "oos": {"n": 49, "win_rate": 0.4082, "profit_factor": 1.129, "e_pts": 5.42},
+    "oos_2025_e_pts": -1.70,
+    "oos_2026_e_pts": 13.48
+  },
+  "es_c1_measured_move": {
+    "is": {"n": 189, "win_rate": 0.3757, "profit_factor": 1.085, "e_pts": 0.31},
+    "val": {"n": 96, "win_rate": 0.4375, "profit_factor": 1.382, "e_pts": 2.11},
+    "oos": {"n": 46, "win_rate": 0.3261, "profit_factor": 0.691, "e_pts": -3.16},
+    "oos_2025_e_pts": -2.34,
+    "oos_2026_e_pts": -3.91
+  },
+  "es_c3_1_5r": {
+    "is": {"n": 189, "win_rate": 0.4180, "profit_factor": 0.988, "e_pts": -0.04},
+    "val": {"n": 96, "win_rate": 0.5208, "profit_factor": 1.520, "e_pts": 2.56},
+    "oos": {"n": 46, "win_rate": 0.3261, "profit_factor": 0.717, "e_pts": -2.67}
+  }
+}

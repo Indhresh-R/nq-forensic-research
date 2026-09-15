@@ -1,0 +1,43 @@
+{
+  "total_sessions": 3470,
+  "friction_pts": 1.0,
+  "layer1_capacity": {
+    "all_sessions": {
+      "low_vol_exc_60m": 56.2,
+      "extreme_vol_exc_60m": 84.8,
+      "low_vol_drag_60m_pct": 4.24,
+      "extreme_vol_drag_60m_pct": 3.13,
+      "low_vol_exc_open": 109.1,
+      "extreme_vol_exc_open": 146.2,
+      "low_vol_drag_open_pct": 2.41,
+      "extreme_vol_drag_open_pct": 1.80
+    }
+  },
+  "layer2_benchmarks": {
+    "benchmark_a_ib_breakout": {
+      "is_extreme_vol_net_pts": -12.14,
+      "val_extreme_vol_net_pts": -9.96,
+      "oos_extreme_vol_net_pts": 8.42,
+      "all_extreme_vol_net_pts": -9.47,
+      "all_extreme_vol_pf_net": 0.775,
+      "all_low_vol_pf_net": 0.916
+    },
+    "benchmark_b1_drive_60m": {
+      "is_extreme_vol_net_pts": -2.91,
+      "val_extreme_vol_net_pts": -11.03,
+      "oos_extreme_vol_net_pts": -21.46,
+      "all_extreme_vol_net_pts": -6.46,
+      "all_extreme_vol_pf_net": 0.755,
+      "all_low_vol_pf_net": 1.073
+    },
+    "benchmark_c_fixed_clock": {
+      "is_extreme_vol_net_pts": 0.21,
+      "val_extreme_vol_net_pts": -18.60,
+      "oos_extreme_vol_net_pts": -38.58,
+      "all_extreme_vol_net_pts": -7.44,
+      "all_extreme_vol_pf_net": 0.741,
+      "all_low_vol_pf_net": 0.765
+    }
+  },
+  "verdict": "C (KILL as Economic Filter: MAE scales with MFE, friction savings dwarfed by expanded loss variance)"
+}

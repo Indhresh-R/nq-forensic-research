@@ -35,6 +35,13 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 24B | HOW: regime stop/target width | **Absorbed in 24D** | `regime_width` arm; no separate dossier |
 | 24D | HOW: symmetric breakout vol-harvest | **C** (HIGH harvest) | Val ΔSharpe regime−wide **−2.79** [−3.53, −2.12]; best E still **−1.74**; width helps unconditionally |
 | 24C | HOW: holding period by regime | **Held** | only remaining distinct mechanism |
+| 35 | Bull Flags and Bear Flags | **C** | ES OOS PF **0.691**, E **−3.16** pts; NQ bull flags = long beta; bear flags fail |
+| 36 | Unconditional NQ Long Bias | **C** | Intraday 5–60m net negative (PF 0.63–0.95); session drift dominated by passive RTH hold (Sharpe 0.085 vs 0.123) |
+| 37 | Overnight Inventory → RTH Persistence | **C (Info)** | Gap continuation 50.8% coin flip; efficiency invariant (0.46–0.50); tail regimes flip (True Gap Down Val −135 vs OOS +176 pts) |
+| 38 | Opening Auction Information → RTH Persistence | **C (Info)** | Early efficiency does not condition remaining efficiency (0.475 vs 0.464); trend day lift +1.3pp; gross return +0.77 pts (-0.23 net) |
+| 39 | Multi-Day Volatility Compression → RTH Expansion/Persistence | **C (Info)** | Volatility clusters: 4+ days compression yields 10.5% large expansion rate vs 33.0% uncompressed; NR7 range 0.881x vs 1.053x; efficiency flat ~0.47 |
+| 40 | Volatility Persistence → Directional Distribution | **C (Boundary)** | Directional continuation is 45%–50% coin flip across all vol tiers; tail variance expands symmetrically (+0.5% spread); excursion spread +0.002 ATR |
+| 41 | Volatility Regime × Signal Economics | **C (Econ Filter)** | Extreme Vol worsens net losses across all benchmarks (IB: −9.47 pts net, PF 0.775; Drive: −6.46 pts, PF 0.755; Clock: −7.44 pts, PF 0.741); MAE scales faster than MFE |
 
 ## Split qualitative (with key numeric anchors)
 
@@ -63,6 +70,13 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 24A | Sharpe fixed **−1.90** / invvol **−5.17**; CI ΔSharpe &lt; 0 | confirms null (Δ **−0.36**) | Δ invvol **−0.18**; absolute Sharpe noise+ on fixed |
 | 24D | regime−wide ΔSharpe **−3.10**; wide E **−1.24** | **VAL_WIDE_DOMINATES** Δ **−2.79**; wide E **−1.74** | optional |
 | 24C | — | — | **held** |
+| 35 | ES IS PF 1.08; NQ IS PF 1.35 | ES Val PF 1.38; NQ Val 1.10 | ES OOS PF 0.69 (E −3.16); 2025/26 NQ C1 E −1.70 / +13.48 |
+| 36 | 5–60m IS E_net <0; Mode B 0/8 | 5–60m Val E_net <0; Mode B 0/8 | OOS 60m E −3.27 to +0.98; passive RTH Sharpe 0.123 vs active 0.085 |
+| 37 | IS gap cont 51.3%; eff 0.464 | Val gap cont 50.7%; eff 0.497 | OOS gap cont 48.0%; eff 0.489; extreme tail regimes flip violently |
+| 38 | 15m IS HighEff rem eff 0.463 vs LowEff 0.460 | Val HighEff rem ret −10.91 vs LowEff −15.27 | OOS HighEff rem eff 0.464; lift in trend days +1.3pp; net ret < 0 |
+| 39 | IS 4+ days comp exp_125 9.3% vs 0d 36.0%; NR7 norm range 0.858 | Val 4+ days comp exp_125 12.5% vs 0d 23.5%; NR7 range 0.977 | OOS 4+ days comp exp_125 15.2% vs 0d 35.1%; NR7 range 0.838 |
+| 40 | IS HighVol continuation 47.7%; ExtremeVol tail spread +1.3% | Val HighVol continuation 39.0%; tail spread 0.0% | OOS HighVol continuation 41.7%; 2025 HIGH_VOL_UP −151 pts vs 2026 +132 pts |
+| 41 | IS ExtremeVol IB −12.14 pts net (PF 0.62); Drive −2.91 pts | Val ExtremeVol IB −9.96 pts; Drive −11.03 pts; Clock −18.60 pts | OOS ExtremeVol IB +8.42 pts; Drive −21.46 pts; Clock −38.58 pts |
 
 ## Program terminal
 

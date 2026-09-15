@@ -1,0 +1,258 @@
+{
+  "selection_rule": "combined Train + Inner Validation profit factor; eligibility Train >=100 and Inner Validation >=50; ties combined average net points then trade count",
+  "selected_candidate": "baseline_control",
+  "ranking": [
+    {
+      "rank": 1,
+      "candidate": "baseline_control",
+      "label": "#1 Baseline control",
+      "eligible": true,
+      "train_trades": 1441,
+      "train_net_points": -1429.0,
+      "train_avg_net_points": -0.9916724496877168,
+      "train_profit_factor": 0.8974616557538793,
+      "train_max_drawdown_points": -2117.25,
+      "train_avg_risk_points": 32.61832061068702,
+      "inner_trades": 677,
+      "inner_net_points": 2393.75,
+      "inner_avg_net_points": 3.5358197932053175,
+      "inner_profit_factor": 1.1374553180493547,
+      "inner_max_drawdown_points": -1065.25,
+      "inner_avg_risk_points": 99.67355982274742,
+      "combined_trades": 2118,
+      "combined_net_points": 964.75,
+      "combined_avg_net_points": 0.4555004721435316,
+      "combined_profit_factor": 1.0307725431405697,
+      "combined_max_drawdown_points": -2184.25,
+      "combined_avg_risk_points": 54.051935788479696
+    },
+    {
+      "rank": 2,
+      "candidate": "target_1_5r",
+      "label": "#3 1.5R target",
+      "eligible": true,
+      "train_trades": 1441,
+      "train_net_points": -1512.875,
+      "train_avg_net_points": -1.0498785565579458,
+      "train_profit_factor": 0.8941286586539303,
+      "train_max_drawdown_points": -2438.0,
+      "train_avg_risk_points": 32.61832061068702,
+      "inner_trades": 677,
+      "inner_net_points": 2328.0,
+      "inner_avg_net_points": 3.4387001477104873,
+      "inner_profit_factor": 1.131033124138125,
+      "inner_max_drawdown_points": -1099.125,
+      "inner_avg_risk_points": 99.67355982274742,
+      "combined_trades": 2118,
+      "combined_net_points": 815.125,
+      "combined_avg_net_points": 0.38485599622285177,
+      "combined_profit_factor": 1.0254279586664068,
+      "combined_max_drawdown_points": -2438.0,
+      "combined_avg_risk_points": 54.051935788479696
+    },
+    {
+      "rank": 3,
+      "candidate": "half_ib_stop",
+      "label": "#2 Half-IB stop",
+      "eligible": true,
+      "train_trades": 1441,
+      "train_net_points": -1181.5,
+      "train_avg_net_points": -0.8199167244968771,
+      "train_profit_factor": 0.8830082186355085,
+      "train_max_drawdown_points": -1602.125,
+      "train_avg_risk_points": 14.910131852879944,
+      "inner_trades": 677,
+      "inner_net_points": 1478.625,
+      "inner_avg_net_points": 2.1840841949778436,
+      "inner_profit_factor": 1.1143683106285471,
+      "inner_max_drawdown_points": -873.0,
+      "inner_avg_risk_points": 45.67115952732644,
+      "combined_trades": 2118,
+      "combined_net_points": 297.125,
+      "combined_avg_net_points": 0.14028564683663833,
+      "combined_profit_factor": 1.0129029806590997,
+      "combined_max_drawdown_points": -1630.5,
+      "combined_avg_risk_points": 24.742622757318223
+    },
+    {
+      "rank": 4,
+      "candidate": "early_breakout",
+      "label": "#4 Early-breakout filter",
+      "eligible": true,
+      "train_trades": 1115,
+      "train_net_points": -1244.75,
+      "train_avg_net_points": -1.1163677130044842,
+      "train_profit_factor": 0.8936565570269116,
+      "train_max_drawdown_points": -2031.75,
+      "train_avg_risk_points": 32.59394618834081,
+      "inner_trades": 527,
+      "inner_net_points": 1205.0,
+      "inner_avg_net_points": 2.286527514231499,
+      "inner_profit_factor": 1.0797485109199205,
+      "inner_max_drawdown_points": -1038.75,
+      "inner_avg_risk_points": 100.15749525616698,
+      "combined_trades": 1642,
+      "combined_net_points": -39.75,
+      "combined_avg_net_points": -0.024208282582216807,
+      "combined_profit_factor": 0.9985176207346634,
+      "combined_max_drawdown_points": -2031.75,
+      "combined_avg_risk_points": 54.27847137637028
+    },
+    {
+      "rank": 5,
+      "candidate": "half_ib_early",
+      "label": "#5 Half-IB stop + early-breakout filter",
+      "eligible": true,
+      "train_trades": 1115,
+      "train_net_points": -780.0,
+      "train_avg_net_points": -0.6995515695067265,
+      "train_profit_factor": 0.90324531344487,
+      "train_max_drawdown_points": -1369.0,
+      "train_avg_risk_points": 14.840022421524663,
+      "inner_trades": 527,
+      "inner_net_points": 748.75,
+      "inner_avg_net_points": 1.4207779886148009,
+      "inner_profit_factor": 1.0702326235812776,
+      "inner_max_drawdown_points": -1179.875,
+      "inner_avg_risk_points": 45.69924098671727,
+      "combined_trades": 1642,
+      "combined_net_points": -31.25,
+      "combined_avg_net_points": -0.01903166869671133,
+      "combined_profit_factor": 0.9983308964421389,
+      "combined_max_drawdown_points": -1369.0,
+      "combined_avg_risk_points": 24.744290499390985
+    }
+  ],
+  "details": {
+    "baseline_control": {
+      "train": {
+        "trades": 1441,
+        "net_points": -1429.0,
+        "avg_net_points": -0.9916724496877168,
+        "profit_factor": 0.8974616557538793,
+        "max_drawdown_points": -2117.25,
+        "avg_risk_points": 32.61832061068702
+      },
+      "inner_validation": {
+        "trades": 677,
+        "net_points": 2393.75,
+        "avg_net_points": 3.5358197932053175,
+        "profit_factor": 1.1374553180493547,
+        "max_drawdown_points": -1065.25,
+        "avg_risk_points": 99.67355982274742
+      },
+      "combined": {
+        "trades": 2118,
+        "net_points": 964.75,
+        "avg_net_points": 0.4555004721435316,
+        "profit_factor": 1.0307725431405697,
+        "max_drawdown_points": -2184.25,
+        "avg_risk_points": 54.051935788479696
+      }
+    },
+    "half_ib_stop": {
+      "train": {
+        "trades": 1441,
+        "net_points": -1181.5,
+        "avg_net_points": -0.8199167244968771,
+        "profit_factor": 0.8830082186355085,
+        "max_drawdown_points": -1602.125,
+        "avg_risk_points": 14.910131852879944
+      },
+      "inner_validation": {
+        "trades": 677,
+        "net_points": 1478.625,
+        "avg_net_points": 2.1840841949778436,
+        "profit_factor": 1.1143683106285471,
+        "max_drawdown_points": -873.0,
+        "avg_risk_points": 45.67115952732644
+      },
+      "combined": {
+        "trades": 2118,
+        "net_points": 297.125,
+        "avg_net_points": 0.14028564683663833,
+        "profit_factor": 1.0129029806590997,
+        "max_drawdown_points": -1630.5,
+        "avg_risk_points": 24.742622757318223
+      }
+    },
+    "target_1_5r": {
+      "train": {
+        "trades": 1441,
+        "net_points": -1512.875,
+        "avg_net_points": -1.0498785565579458,
+        "profit_factor": 0.8941286586539303,
+        "max_drawdown_points": -2438.0,
+        "avg_risk_points": 32.61832061068702
+      },
+      "inner_validation": {
+        "trades": 677,
+        "net_points": 2328.0,
+        "avg_net_points": 3.4387001477104873,
+        "profit_factor": 1.131033124138125,
+        "max_drawdown_points": -1099.125,
+        "avg_risk_points": 99.67355982274742
+      },
+      "combined": {
+        "trades": 2118,
+        "net_points": 815.125,
+        "avg_net_points": 0.38485599622285177,
+        "profit_factor": 1.0254279586664068,
+        "max_drawdown_points": -2438.0,
+        "avg_risk_points": 54.051935788479696
+      }
+    },
+    "early_breakout": {
+      "train": {
+        "trades": 1115,
+        "net_points": -1244.75,
+        "avg_net_points": -1.1163677130044842,
+        "profit_factor": 0.8936565570269116,
+        "max_drawdown_points": -2031.75,
+        "avg_risk_points": 32.59394618834081
+      },
+      "inner_validation": {
+        "trades": 527,
+        "net_points": 1205.0,
+        "avg_net_points": 2.286527514231499,
+        "profit_factor": 1.0797485109199205,
+        "max_drawdown_points": -1038.75,
+        "avg_risk_points": 100.15749525616698
+      },
+      "combined": {
+        "trades": 1642,
+        "net_points": -39.75,
+        "avg_net_points": -0.024208282582216807,
+        "profit_factor": 0.9985176207346634,
+        "max_drawdown_points": -2031.75,
+        "avg_risk_points": 54.27847137637028
+      }
+    },
+    "half_ib_early": {
+      "train": {
+        "trades": 1115,
+        "net_points": -780.0,
+        "avg_net_points": -0.6995515695067265,
+        "profit_factor": 0.90324531344487,
+        "max_drawdown_points": -1369.0,
+        "avg_risk_points": 14.840022421524663
+      },
+      "inner_validation": {
+        "trades": 527,
+        "net_points": 748.75,
+        "avg_net_points": 1.4207779886148009,
+        "profit_factor": 1.0702326235812776,
+        "max_drawdown_points": -1179.875,
+        "avg_risk_points": 45.69924098671727
+      },
+      "combined": {
+        "trades": 1642,
+        "net_points": -31.25,
+        "avg_net_points": -0.01903166869671133,
+        "profit_factor": 0.9983308964421389,
+        "max_drawdown_points": -1369.0,
+        "avg_risk_points": 24.744290499390985
+      }
+    }
+  }
+}

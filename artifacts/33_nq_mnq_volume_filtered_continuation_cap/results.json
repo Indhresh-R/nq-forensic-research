@@ -1,0 +1,24 @@
+{
+  "research_pass_date": "2026-09-14",
+  "cost_dollars_round_trip": 2.0,
+  "relative_volume_train_p66": 0.9417349767057853,
+  "selection": "skip_if_original_stop_over_200",
+  "step4": {
+    "status": "fail",
+    "rule": "overall EOD trailing",
+    "date": "2024-04-22",
+    "ending_equity": 1142.0,
+    "max_eod_drawdown": 1819.0,
+    "worst_daily_pnl": -199.75,
+    "consistency_pass": true,
+    "n": 152,
+    "net_dollars": 1142.0,
+    "win_rate": 0.42105263157894735,
+    "payoff": 1.5413664777242146,
+    "profit_factor": 1.120993801981247,
+    "trades_per_month": 4.3428571428571425,
+    "largest_day_dollars": 337.0,
+    "largest_day_pct": 0.29509632224168125
+  },
+  "step5": "not run"
+}

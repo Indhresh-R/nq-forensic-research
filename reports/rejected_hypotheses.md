@@ -27,6 +27,13 @@
 | Pre-HIGH unusual displacement (20) | Soft=**2** (NY_PM SESS_END only; disp≡path); strong/**multi-clock**=**0**; H30 med OOS lift **−4.7pp**; **CLOSED** |
 | First post-HIGH bar revelation (21) | Soft/strong=**0**; med lifts ~0–2pp with Val/OOS flips; residual burn tiny — **signal fail not latency**; **CLOSED** |
 | Structural-ticket revelation (22) | Soft/strong=**0**; reveal often fires; Val flips; **CLOSED** — ends tested WHICH WAY stack; wording: tested info failed to resolve direction robustly (not “unpredictable”) |
+| Bull Flags and Bear Flags (35) | ES OOS PF **0.691**, E **−3.16** pts; all ES exits fail OOS (PF 0.53--0.72) even at 0 cost; NQ bull drift = secular equity beta (pure pole beats flag 55% vs 41%); bear flags collapse |
+| Unconditional NQ Long Bias (36) | Active Long has NO Alpha; 5–60m horizons strictly net negative (PF 0.63–0.95); session drift dominated by passive RTH hold (+3,657 pts, Sharpe 0.123 vs active +2,430 pts, Sharpe 0.085); active symmetric structures 0/8 IS |
+| Overnight Inventory → RTH Persistence (37) | Failed Information Gate; Gap continuation 50.8% (coin flip); RTH efficiency invariant across all inventory location bins (0.46–0.50); tail regimes exhibit violent sign flips across splits (True Gap Down Val −135 vs OOS +176 pts) |
+| Opening Auction Information (38) | Failed Information Gate; Early path efficiency (first 5–15m) does not condition remaining efficiency (0.475 vs 0.464, diff +0.011); trend day lift +1.3pp; gross return after 15m high-eff drive +0.77 pts (-0.23 net) |
+| Multi-Day Volatility Compression (39) | Failed Information Gate; Volatility clusters instead of exploding; 4+ days compression yields 10.5% large expansion rate vs 33.0% for uncompressed; NR7 norm range 0.881x vs 1.053x; directional efficiency flat ~0.47 |
+| Volatility Persistence → Direction (40) | Boundary Established; Directional continuation is a 45%–50% coin flip across all vol regimes; tail variance expands symmetrically (+0.5% spread); excursions expand symmetrically (+0.002 ATR); directional follow-through flips signs across OOS |
+| Volatility Regime × Signal Economics (41) | Failed as Economic Filter; While friction drag % drops in high vol (3.1% vs 4.2%), adverse excursion (MAE) scales faster than MFE (ratio drops to 0.81); Extreme Vol worsens net dollar losses across all benchmarks (IB: −9.47 pts net, PF 0.775; Drive: −6.46 pts, PF 0.755; Clock: −7.44 pts, PF 0.741) |
 
 ## Economics
 
