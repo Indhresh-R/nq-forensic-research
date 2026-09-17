@@ -2,6 +2,8 @@
 
 Chronological forensic program (condensed).
 
+**Latest — Strategy 42 Timeframe Support/Resistance: C CLOSED.** The same causal 20-bar breakout and breakout→retest test at 1m through weekly produced no NQ+ES IS/Validation/OOS survivor. NQ 1m/15m retest OOS positives (+1.10/+0.49 pts) fail IS and ES; all 1h–7h arms are negative OOS in both markets. See `strategies/42_timeframe_support_resistance/`.
+
 ## Phase A — Predictive direction at NY open
 
 Named strategies, levels, simple state→return → **failed** after causal cleanup.

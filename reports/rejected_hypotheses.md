@@ -35,6 +35,13 @@
 | Volatility Persistence → Direction (40) | Boundary Established; Directional continuation is a 45%–50% coin flip across all vol regimes; tail variance expands symmetrically (+0.5% spread); excursions expand symmetrically (+0.002 ATR); directional follow-through flips signs across OOS |
 | Volatility Regime × Signal Economics (41) | Failed as Economic Filter; While friction drag % drops in high vol (3.1% vs 4.2%), adverse excursion (MAE) scales faster than MFE (ratio drops to 0.81); Extreme Vol worsens net dollar losses across all benchmarks (IB: −9.47 pts net, PF 0.775; Drive: −6.46 pts, PF 0.755; Clock: −7.44 pts, PF 0.741) |
 
+## Timeframe studies
+
+| Family | Kill number |
+|--------|-------------|
+| Timeframe S/R breakout / retest (42) | No NQ+ES IS/Val/OOS survivor across 1m–weekly; 1m/15m NQ OOS retest +1.10/+0.49 pts fail IS and ES; all >=1h arms negative OOS in both markets |
+| Event-based compression → range → breakout → pullback (43) | All 12 price-only detector cells lose in 2010–18; fade fails every split (OOS avg R -0.83); continuation is flat/negative R; combined OOS E -1.53 pts |
+
 ## Economics
 
 | Family | Kill number |

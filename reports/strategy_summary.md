@@ -1,5 +1,9 @@
 # Strategy Summary (Master Table)
 
+Latest: **42 Timeframe Support/Resistance — C**. No identical 20-bar S/R breakout/retest timeframe passes the NQ+ES IS/Validation/OOS gate; NQ 1m/15m OOS retest positives fail IS and ES, while every >=1h arm is negative OOS in both markets.
+
+Latest: **43 Event-Based Range Transition — REJECTED**. All 12 sequential compression cells lose in selection; range fading fails every later split and pullback continuation is non-positive in R after costs.
+
 Footnote: **A\*** = statistically valid **state / opportunity detector**, **not** an executable standalone trading edge.
 
 | # | Hypothesis | Verdict | Headline number |
