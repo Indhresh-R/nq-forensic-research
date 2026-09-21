@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-13",
+  "replay_version": "REPLAY_ENGINE_V2_TIMESTAMP_CORRECT",
+  "events_consumed": 15071099,
+  "spell_labels": {
+    "cancel": 1868890,
+    "fill": 124071,
+    "partial_then_cancel": 13,
+    "modify_away": 70708,
+    "left_inside": 2156119,
+    "censored": 4
+  },
+  "study_r_rows": 1992961,
+  "study_p_rows": 25059,
+  "study_p_skipped_unusable_anchor": 10,
+  "study_r_no_anchor": 0,
+  "book_mismatches": 0
+}

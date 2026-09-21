@@ -1,0 +1,170 @@
+{
+  "audit_ok": true,
+  "audit_failures": [],
+  "verdict": "MECHANISM NOT SUPPORTED",
+  "primary": {
+    "n": 95,
+    "observed_n": 70,
+    "null_n": 76,
+    "observed_rate": 0.7368421052631579,
+    "null_rate": 0.8,
+    "observed_minus_null": -0.06315789473684219,
+    "both": 58,
+    "poc_only": 12,
+    "null_only": 18,
+    "neither": 7,
+    "unstable": false
+  },
+  "exact_level": {
+    "n": 95,
+    "observed_n": 67,
+    "null_n": 68,
+    "observed_rate": 0.7052631578947368,
+    "null_rate": 0.7157894736842105,
+    "observed_minus_null": -0.010526315789473717,
+    "both": 50,
+    "poc_only": 17,
+    "null_only": 18,
+    "neither": 10,
+    "unstable": false
+  },
+  "open_inside_band": {
+    "n": 38,
+    "observed_n": 38,
+    "null_n": 38,
+    "observed_rate": 1.0,
+    "null_rate": 1.0,
+    "observed_minus_null": 0.0,
+    "both": 38,
+    "poc_only": 0,
+    "null_only": 0,
+    "neither": 0,
+    "unstable": false
+  },
+  "open_outside_band": {
+    "n": 57,
+    "observed_n": 32,
+    "null_n": 38,
+    "observed_rate": 0.5614035087719298,
+    "null_rate": 0.6666666666666666,
+    "observed_minus_null": -0.10526315789473684,
+    "both": 20,
+    "poc_only": 12,
+    "null_only": 18,
+    "neither": 7,
+    "unstable": false
+  },
+  "poc_location_third": {
+    "middle": {
+      "n": 38,
+      "observed_n": 27,
+      "null_n": 34,
+      "observed_rate": 0.7105263157894737,
+      "null_rate": 0.8947368421052632,
+      "observed_minus_null": -0.1842105263157895,
+      "both": 23,
+      "poc_only": 4,
+      "null_only": 11,
+      "neither": 0,
+      "unstable": false
+    },
+    "upper": {
+      "n": 35,
+      "observed_n": 28,
+      "null_n": 26,
+      "observed_rate": 0.8,
+      "null_rate": 0.7428571428571429,
+      "observed_minus_null": 0.05714285714285716,
+      "both": 23,
+      "poc_only": 5,
+      "null_only": 3,
+      "neither": 4,
+      "unstable": false
+    },
+    "lower": {
+      "n": 22,
+      "observed_n": 15,
+      "null_n": 16,
+      "observed_rate": 0.6818181818181818,
+      "null_rate": 0.7272727272727273,
+      "observed_minus_null": -0.045454545454545525,
+      "both": 12,
+      "poc_only": 3,
+      "null_only": 4,
+      "neither": 3,
+      "unstable": false
+    }
+  },
+  "calendar_descriptive": {
+    "before_2026-06-20": {
+      "n": 46,
+      "observed_n": 30,
+      "null_n": 33,
+      "observed_rate": 0.6521739130434783,
+      "null_rate": 0.717391304347826,
+      "observed_minus_null": -0.06521739130434778,
+      "both": 23,
+      "poc_only": 7,
+      "null_only": 10,
+      "neither": 6,
+      "unstable": false
+    },
+    "from_2026-06-20": {
+      "n": 49,
+      "observed_n": 40,
+      "null_n": 43,
+      "observed_rate": 0.8163265306122449,
+      "null_rate": 0.8775510204081632,
+      "observed_minus_null": -0.061224489795918324,
+      "both": 35,
+      "poc_only": 5,
+      "null_only": 8,
+      "neither": 1,
+      "unstable": false
+    }
+  },
+  "touch_order_counts": {
+    "tie": 46,
+    "null_sooner": 26,
+    "poc_sooner": 23
+  },
+  "minutes_to_poc_band_among_touches": 0.0,
+  "minutes_to_null_band_among_touches": 0.0,
+  "poc_band_zero_minute_touches": 41,
+  "null_band_zero_minute_touches": 42,
+  "mean_abs_migration_poc": 0.5262342809015209,
+  "mean_abs_migration_null": 0.52374488573665,
+  "abs_migration_poc_minus_null": 0.0024893951648709,
+  "closer_counts": {
+    "poc": 48,
+    "null": 46,
+    "tie": 1
+  },
+  "imbalance_poc_among_crosses": {
+    "n": 67,
+    "mean": 29.70149253731343,
+    "median": 89.0,
+    "p25": -686.5,
+    "p75": 639.0
+  },
+  "imbalance_null_among_crosses": {
+    "n": 68,
+    "mean": 8.852941176470589,
+    "median": 10.0,
+    "p25": -660.75,
+    "p75": 481.25
+  },
+  "both_levels_crossed_n": 50,
+  "both_levels_crossed_unstable": false,
+  "paired_imbalance_both_crossed": {
+    "n": 50,
+    "mean": 23.42,
+    "median": 15.5,
+    "p25": -277.25,
+    "p75": 368.25
+  },
+  "null_center_outside_prior_range_n": 40,
+  "sample_altered": false,
+  "clipped": false,
+  "randomized": false
+}
