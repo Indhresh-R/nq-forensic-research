@@ -1,0 +1,10 @@
+signal,horizon,n_trades,mean_spread_pts,gross_mid_pts,net_taker_pts,profitable_after_friction
+cvd_5s,5s,48010,0.908,0.952,-0.221,False
+cvd_5s,15s,47996,0.908,0.967,-0.213,False
+cvd_5s,60s,46809,0.909,0.636,-0.546,False
+div_sig_15s,5s,5552,0.909,0.883,-0.295,False
+div_sig_15s,15s,5548,0.909,1.039,-0.138,False
+div_sig_15s,60s,5521,0.909,1.285,0.112,True
+absorb_l3_sig_5s,5s,883,0.909,-1.384,-2.679,False
+absorb_l3_sig_5s,15s,883,0.909,-1.967,-3.228,False
+absorb_l3_sig_5s,60s,883,0.909,-5.135,-6.417,False

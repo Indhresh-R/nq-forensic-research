@@ -1,0 +1,16 @@
+{
+  "analysis_sessions": 96,
+  "stored_geometry_matches": true,
+  "region_volumes_partition_each_profile": true,
+  "structure_counts": {
+    "one_region": 49,
+    "two_regions": 40,
+    "many_regions": 7
+  },
+  "clean_two_regions": 14,
+  "gap_cuts": {
+    "separation_min": 0.2,
+    "valley_depth_min": 0.3
+  },
+  "major_peak_volume_frac": 0.5
+}

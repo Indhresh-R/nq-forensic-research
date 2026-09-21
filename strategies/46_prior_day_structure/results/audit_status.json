@@ -1,0 +1,52 @@
+{
+  "audit": {
+    "n_bars_total": 4788194,
+    "n_sessions": 4175,
+    "n_complete": 3400,
+    "n_incomplete": 775,
+    "n_corrupt_bars_high_lt_low": 0,
+    "ts_min": "2010-06-06 18:00:00-04:00",
+    "ts_max": "2026-08-07 16:59:00-04:00",
+    "session_start_ny": 1080
+  },
+  "pair_counts": {
+    "adjacent_slots": 4174,
+    "blocked_by_incomplete": 1097,
+    "doji_previous": 9,
+    "undefined_reference": 0,
+    "eligible_pairs": 3068,
+    "entered_before_separation": 2297,
+    "separated_no_return": 75,
+    "retracement": 696,
+    "retracement_on_last_bar": 0
+  },
+  "incomplete_reasons": {
+    "n_bars<1100,no_1600_hour": 603,
+    "n_bars<1100,open_not_in_1800_1805,no_1600_hour": 11,
+    "n_bars<1100": 63,
+    "n_bars<1100,open_not_in_1800_1805": 8,
+    "open_not_in_1800_1805": 9,
+    "no_1600_hour": 81
+  },
+  "verdict": "MECHANISM UNCLEAR",
+  "spearman_30m": 0.02345927756962549,
+  "spearman_60m": 0.004666642793411075,
+  "wick_associations": {
+    "spearman_body_vs_max_penetration": -0.2866532684062118,
+    "spearman_upper_wick_vs_max_penetration": 0.18308837383538693,
+    "spearman_lower_wick_vs_max_penetration": 0.1812948994635164,
+    "spearman_body_vs_30m": -0.11303778164340657,
+    "spearman_upper_wick_vs_30m": 0.06309452373629254,
+    "spearman_lower_wick_vs_30m": 0.0860581580344866
+  },
+  "range_distribution_eligible_previous_day": {
+    "n": 3068,
+    "mean": 212.130704041721,
+    "p10": 38.25,
+    "p25": 63.75,
+    "p50": 158.875,
+    "p75": 296.8125,
+    "p90": 457.07500000000005
+  },
+  "label": "Pre-cost mechanism analysis \u2014 no executable strategy."
+}

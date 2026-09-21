@@ -1,0 +1,136 @@
+{
+  "strongest": {
+    "P-like": {
+      "kind": "strongest",
+      "session_date": "2026-04-07",
+      "primary_class": "P-like",
+      "path": "results/figures/strongest_P_like.png",
+      "poc_location": 0.8037694013303769,
+      "rule_shortfall": 0.0,
+      "conflict": false
+    },
+    "b-like": {
+      "kind": "strongest",
+      "session_date": "2026-08-17",
+      "primary_class": "b-like",
+      "path": "results/figures/strongest_b_lower.png",
+      "poc_location": 0.13338822560724578,
+      "rule_shortfall": 0.0,
+      "conflict": false
+    },
+    "B-like": {
+      "kind": "strongest",
+      "session_date": "2026-04-01",
+      "primary_class": "B-like",
+      "path": "results/figures/strongest_B_double.png",
+      "poc_location": 0.8056595921764461,
+      "rule_shortfall": 0.0,
+      "conflict": false
+    }
+  },
+  "ambiguous": {
+    "kind": "ambiguous",
+    "session_date": "2026-05-07",
+    "primary_class": "UNCLASSIFIED",
+    "path": "results/figures/ambiguous_unclassified.png",
+    "poc_location": 0.8796925805498078,
+    "rule_shortfall": 0.0,
+    "conflict": true
+  },
+  "random": {
+    "P-like": [
+      {
+        "kind": "random",
+        "session_date": "2026-04-07",
+        "primary_class": "P-like",
+        "path": "results/figures/random_P_like_1.png",
+        "poc_location": 0.8037694013303769,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      }
+    ],
+    "b-like": [
+      {
+        "kind": "random",
+        "session_date": "2026-06-22",
+        "primary_class": "b-like",
+        "path": "results/figures/random_b_lower_1.png",
+        "poc_location": 0.13589857651245552,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      },
+      {
+        "kind": "random",
+        "session_date": "2026-08-17",
+        "primary_class": "b-like",
+        "path": "results/figures/random_b_lower_2.png",
+        "poc_location": 0.13338822560724578,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      }
+    ],
+    "D-like": [],
+    "B-like": [
+      {
+        "kind": "random",
+        "session_date": "2026-06-29",
+        "primary_class": "B-like",
+        "path": "results/figures/random_B_double_1.png",
+        "poc_location": 0.887593984962406,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      },
+      {
+        "kind": "random",
+        "session_date": "2026-07-08",
+        "primary_class": "B-like",
+        "path": "results/figures/random_B_double_2.png",
+        "poc_location": 0.8437761069340016,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      },
+      {
+        "kind": "random",
+        "session_date": "2026-08-03",
+        "primary_class": "B-like",
+        "path": "results/figures/random_B_double_3.png",
+        "poc_location": 0.9319848855301178,
+        "rule_shortfall": 0.0,
+        "conflict": false
+      }
+    ],
+    "UNCLASSIFIED": [
+      {
+        "kind": "random",
+        "session_date": "2026-04-15",
+        "primary_class": "UNCLASSIFIED",
+        "path": "results/figures/random_UNCLASSIFIED_1.png",
+        "poc_location": 0.6048526863084922,
+        "rule_shortfall": 1.2002014880660694,
+        "conflict": false
+      },
+      {
+        "kind": "random",
+        "session_date": "2026-04-30",
+        "primary_class": "UNCLASSIFIED",
+        "path": "results/figures/random_UNCLASSIFIED_2.png",
+        "poc_location": 0.7715036112934996,
+        "rule_shortfall": 0.3434011818778726,
+        "conflict": false
+      },
+      {
+        "kind": "random",
+        "session_date": "2026-07-27",
+        "primary_class": "UNCLASSIFIED",
+        "path": "results/figures/random_UNCLASSIFIED_3.png",
+        "poc_location": 0.55484387510008,
+        "rule_shortfall": 1.3177208433413397,
+        "conflict": false
+      }
+    ]
+  },
+  "roll_artifact": null,
+  "missing": [
+    "no analysis-sample session with primary label D-like"
+  ]
+}

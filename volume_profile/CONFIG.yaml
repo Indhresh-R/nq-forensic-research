@@ -1,0 +1,54 @@
+timezone: America/New_York
+session_open: "18:00"
+session_close: "17:00"
+value_area_pct: 0.70
+tick_size: 0.25
+price_scale: 1000000000
+interaction_tolerance_ticks: 1
+# Fixed before any result was inspected. Not a searched threshold.
+cross_ticks: 4
+cross_observe_minutes: 60
+# A session is complete only if prints exist near both the open and the close.
+completeness_slack_minutes: 30
+# Primary roll mark: instrument_id changes. Gap rule is the fallback if the id never changes.
+roll_detection: instrument_id_change
+roll_gap_points: 150.0
+poc_tie_break: lower_price
+va_tie_break: expand_lower_price_on_equal_volume
+open_reference: first_trade
+bootstrap_seed: 42
+bootstrap_draws: 1000
+horizons_minutes:
+  - 1
+  - 5
+  - 15
+  - 30
+  - 60
+distance_bins:
+  - [0.0, 0.25, "0-25%"]
+  - [0.25, 0.50, "25-50%"]
+  - [0.50, 0.75, "50-75%"]
+  - [0.75, 1.00, "75-100%"]
+  - [1.00, null, ">100%"]
+migration_bins:
+  - [null, -0.50, "<=-50% range"]
+  - [-0.50, -0.25, "-50% to -25%"]
+  - [-0.25, 0.25, "-25% to +25%"]
+  - [0.25, 0.50, "+25% to +50%"]
+  - [0.50, null, ">+50% range"]
+expected_file_count: 126
+expected_first_file: trades_24h_2026-03-25.dbn.zst
+expected_last_file: trades_24h_2026-09-16.dbn.zst
+expected_symbol: NQ.c.0
+trades_dir: data/trades_24h_6m
+# Second study. These do not replace the frozen first-run horizons.
+followup_horizons_minutes: [1, 3, 5, 10, 15, 30]
+followup_excursion_points: [5, 10, 15, 20]
+followup_passage_points: 5
+followup_passage_window_minutes: 30
+followup_control_step_minutes: 5
+followup_hist_edges: [-80, -40, -20, -10, -5, 0, 5, 10, 20, 40, 80]
+followup_time_buckets:
+  cash_open: "09:30"
+  cash_rest: "10:30"
+  cash_close: "16:00"

@@ -1,0 +1,10 @@
+{
+  "material_gaps": 54,
+  "with_next_session": 53,
+  "without_next_session": 1,
+  "both_regions_sized": 36,
+  "clean": 18,
+  "size_share_min": 0.25,
+  "low_volume_frac": 0.7,
+  "sync_tolerance": 1.0
+}

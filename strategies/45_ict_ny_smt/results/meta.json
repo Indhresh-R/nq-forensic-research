@@ -1,0 +1,136 @@
+{
+  "assumptions": [
+    "Timestamps in parquet are UTC; converted to America/New_York with DST via zoneinfo.",
+    "session_date = CME Globex day labeled by the calendar date of the RTH portion (bars from 18:00 ET map to next calendar date), matching repo convention.",
+    "Daily candle = 18:00 -> 17:00 ET (mins_from_anchor < 23h). Known after its close_ts.",
+    "7H NY filter uses ONLY bin0 (18:00\u201301:00) as C1 and bin1 (01:00\u201308:00) as C2. The 08:00\u201315:00 bin is NOT used for morning entries because it has not closed by 08:30\u201311:30 (lookahead).",
+    "Daily bias: C2 vs C1 continuation/reversal direction; if neither, fallback to C2 close vs open.",
+    "Daily FVG reaction: CONFIRMED if price traded into FVG and a subsequent 1m close resumed through the FVG in bias direction (last event wins if both resume and against occurred). UNCONFIRMED if closed against. Untested/pending/no_fvg require HTF 1H C1->C2 in bias direction before trades.",
+    "Protected level: latest 1H engulfing (prior opposite candle, close beyond its extreme); fallback to 4H. Invalidation on wick through level.",
+    "Variant A SMT: require 1H SMT (NQ vs ES) AND 5m SMT confirmation, both at/inside a 1H FVG, live during 1H C2 (after C1 close, before C2 close).",
+    "SMT swings: fractal with lookback=3 each side; usable only after right-side bars close (confirmed_at).",
+    "Bearish SMT = one market HH vs prior swing high, other fails; bullish = one LL, other fails.",
+    "Variant B entry: 5m market structure shift (sweep prior confirmed swing and close beyond) OR bullish/bearish close inside 1H FVG.",
+    "Entry at confirming 5m candle close (decision_ts = close_ts - 1m).",
+    "Same-bar SL+TP -> SL first. Force flat at 15:55 ET. Costs: $2.50/side + N ticks slippage/side.",
+    "Liquidity TP: nearest equal high/low (2-tick tol) or nearest confirmed 15m swing beyond entry; fallback 2R if none.",
+    "IS/OOS = chronological 60/40 by session_date count. No parameter choice on OOS.",
+    "Random baseline samples 400 sessions/run \u00d7 500 runs; not identical trade-count matched \u2014 used as expectancy distribution reference.",
+    "MNQ P&L uses $2/point with same commission (conservative vs typical MNQ fees).",
+    "Do not tune parameters to fit; defaults from the brief only."
+  ],
+  "data_quality": [
+    {
+      "symbol": "NQ",
+      "path": "D:\\NQ-2\\data\\nq_1m_continuous.parquet",
+      "tz_detected": "UTC",
+      "date_start": "2010-06-06 18:00:00-04:00",
+      "date_end": "2026-08-07 16:59:00-04:00",
+      "bar_count": 4788194,
+      "duplicate_ts": 0,
+      "gaps_gt_5m": 8595,
+      "gaps_gt_60m": 4650,
+      "median_gap_min": 1.0,
+      "missing_rth_estimate": 23403
+    },
+    {
+      "symbol": "ES",
+      "path": "D:\\NQ-2\\data\\es_1m_continuous.parquet",
+      "tz_detected": "UTC",
+      "date_start": "2010-06-06 18:00:00-04:00",
+      "date_end": "2026-08-26 19:59:00-04:00",
+      "bar_count": 4916275,
+      "duplicate_ts": 0,
+      "gaps_gt_5m": 6470,
+      "gaps_gt_60m": 4626,
+      "median_gap_min": 1.0,
+      "missing_rth_estimate": 22886
+    }
+  ],
+  "fvg_state_counts": {
+    "no_fvg": 581,
+    "untested": 1119,
+    "unconfirmed": 179,
+    "confirmed": 1728,
+    "touched_pending": 4
+  },
+  "aligned_range": [
+    "2010-06-06 18:00:00-04:00",
+    "2026-08-07 16:59:00-04:00"
+  ],
+  "n_setups": 15585,
+  "primary": {
+    "cell": "A / SL-A / TP-2R",
+    "all": {
+      "label": "primary_all",
+      "n_trades": 39,
+      "win_rate": 0.3076923076923077,
+      "avg_win": 384.1666666666667,
+      "avg_loss": -248.5185185185185,
+      "avg_r": -0.24214107595571996,
+      "expectancy_r": -0.24214107595571996,
+      "expectancy_usd": -53.84615384615385,
+      "profit_factor": 0.6870342771982116,
+      "total_pnl_nq": -2100.0,
+      "max_dd_usd": -4535.0,
+      "max_dd_pct": -59.0,
+      "longest_lose_streak": 6,
+      "sharpe": -1.9765137421869565,
+      "sortino": -3.602054001445759,
+      "pct_profitable_months": 0.34285714285714286,
+      "avg_duration_min": 38.1025641025641
+    },
+    "is": {
+      "label": "primary_is",
+      "n_trades": 23,
+      "win_rate": 0.2608695652173913,
+      "avg_win": 185.0,
+      "avg_loss": -145.0,
+      "avg_r": -0.46081813943834343,
+      "expectancy_r": -0.46081813943834343,
+      "expectancy_usd": -58.91304347826087,
+      "profit_factor": 0.45030425963488846,
+      "total_pnl_nq": -1355.0,
+      "max_dd_usd": -1615.0,
+      "max_dd_pct": -59.0,
+      "longest_lose_streak": 6,
+      "sharpe": -4.503948888929017,
+      "sortino": -6.825300182066618,
+      "pct_profitable_months": 0.3157894736842105,
+      "avg_duration_min": 48.52173913043478
+    },
+    "oos": {
+      "label": "primary_oos",
+      "n_trades": 16,
+      "win_rate": 0.375,
+      "avg_win": 583.3333333333334,
+      "avg_loss": -424.5,
+      "avg_r": 0.07220720280055126,
+      "expectancy_r": 0.07220720280055126,
+      "expectancy_usd": -46.5625,
+      "profit_factor": 0.8244994110718492,
+      "total_pnl_nq": -745.0,
+      "max_dd_usd": -3470.0,
+      "max_dd_pct": -6.3090909090909095,
+      "longest_lose_streak": 4,
+      "sharpe": -1.1536998043399103,
+      "sortino": -2.705293458603618,
+      "pct_profitable_months": 0.375,
+      "avg_duration_min": 23.125
+    },
+    "bootstrap_E_R_all": {
+      "mean": -0.2337413378288589,
+      "lo": -0.6437271581915667,
+      "hi": 0.21776130748693076
+    },
+    "bootstrap_E_R_oos": {
+      "mean": 0.06616690027582499,
+      "lo": -0.5145245135540772,
+      "hi": 0.8065635793344671
+    },
+    "random_percentile_E_R": 0.8
+  },
+  "runtime_sec": 7296.385196208954,
+  "years_filter": null,
+  "quick": false
+}
