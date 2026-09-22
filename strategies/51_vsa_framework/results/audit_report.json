@@ -1,0 +1,101 @@
+{
+  "checks": {
+    "t_event_lt_t_confirmation": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "confirm_is_event_plus_1": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "C_bg_flag": {
+      "pass": true,
+      "detail": "n=78"
+    },
+    "C_nd_flag": {
+      "pass": true,
+      "detail": "n=78"
+    },
+    "C_confirm_ok": {
+      "pass": true,
+      "detail": "n=78"
+    },
+    "A_bg_flag": {
+      "pass": true,
+      "detail": "n=1535"
+    },
+    "A_nd_flag": {
+      "pass": true,
+      "detail": "n=1535"
+    },
+    "A_confirm_ok": {
+      "pass": true,
+      "detail": "n=1535"
+    },
+    "B_bg_flag": {
+      "pass": true,
+      "detail": "n=4674"
+    },
+    "B_nd_flag": {
+      "pass": true,
+      "detail": "n=4674"
+    },
+    "B_confirm_ok": {
+      "pass": true,
+      "detail": "n=4674"
+    },
+    "unique_t_event": {
+      "pass": true,
+      "detail": ""
+    },
+    "min_separation": {
+      "pass": true,
+      "detail": "min_diff=3"
+    },
+    "event_confirm_same_segment": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "event_is_up_bar": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "confirm_is_down_bar": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "ND_close_frac_le_050": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "no_outcome_or_signed_columns": {
+      "pass": true,
+      "detail": "banned=[]"
+    },
+    "indices_in_range": {
+      "pass": true,
+      "detail": "n_bars=288266"
+    },
+    "event_has_causal_medians": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "sequence_complete_eq_confirm": {
+      "pass": true,
+      "detail": ""
+    }
+  },
+  "n_events": 6287,
+  "all_pass": true,
+  "meta_summary": {
+    "n_1m": 4788194,
+    "n_15m": 288266,
+    "n_segments": 8069,
+    "class_counts": {
+      "B": 4674,
+      "A": 1535,
+      "C": 78
+    },
+    "n_failed_confirm_attempts": 7188
+  }
+}

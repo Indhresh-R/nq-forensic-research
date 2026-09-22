@@ -1,0 +1,38 @@
+{
+  "n_violations_recorded": 1817,
+  "funnel_terminal_violations": 4491,
+  "note": "Violation starts follow frozen TR/late/min-violation grammar; recovery counterfactuals vary only recovery constraints.",
+  "frozen_return": 771,
+  "return_within_6_exc_capped": 771,
+  "return_ignoring_exc_within_6": 952,
+  "return_within_12_exc_capped": 813,
+  "return_ignoring_exc_within_12": 1101,
+  "return_within_24_exc_capped": 814,
+  "return_ignoring_exc_within_24": 1177,
+  "return_within_48_exc_capped": 814,
+  "return_ignoring_exc_within_48": 1202,
+  "killed_by_exc_cap_only_at_6": 181,
+  "no_return_even_ignoring_exc_6": 865,
+  "extra_returns_from_extending_6_to_12_ignore_exc": 149,
+  "extra_returns_from_extending_12_to_24_ignore_exc": 76,
+  "funnel_recover_abort_timeout": 0,
+  "interpretation_timeout": "Funnel recover_abort_timeout=0: under the joint frozen rules, pure 6-bar timeout almost never fires; inside-window failures are excursion/acceptance/gap.",
+  "among_return_ign6": {
+    "n": 952,
+    "max_exc_le_1": 771,
+    "max_exc_gt_1": 181,
+    "max_exc_median": 0.3003608637448344,
+    "max_exc_p75": 0.7601547517579373,
+    "max_exc_p90": 1.355263157894737
+  },
+  "prevalence_ladder_recovery_only": {
+    "P0_frozen_return_Rmax6_exc1x": 771,
+    "P0b_return_within_6_exc_capped": 771,
+    "P1_return_within_6_ignore_exc_cap": 952,
+    "P2_return_within_12_ignore_exc_cap": 1101,
+    "P3_return_within_24_ignore_exc_cap": 1177,
+    "P4_return_within_48_ignore_exc_cap": 1202,
+    "P5_step2_candidate_tests_confirm_attempt": 221,
+    "P6_step2_class_C_full_sequence": 20
+  }
+}

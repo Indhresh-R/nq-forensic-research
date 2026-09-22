@@ -1,0 +1,97 @@
+{
+  "all_pass": true,
+  "checks": {
+    "t_viol_le_t_return": {
+      "pass": true,
+      "detail": "violations=0"
+    },
+    "C_t_return_lt_t_confirm": {
+      "pass": true,
+      "detail": "n_C=20 bad=0"
+    },
+    "C_confirm_within_W": {
+      "pass": true,
+      "detail": "max_lag=11.0"
+    },
+    "return_within_R_max": {
+      "pass": true,
+      "detail": "max=5"
+    },
+    "A_has_no_confirm": {
+      "pass": true,
+      "detail": ""
+    },
+    "C_has_sequence_complete": {
+      "pass": true,
+      "detail": ""
+    },
+    "C_confirm_ok_true": {
+      "pass": true,
+      "detail": ""
+    },
+    "BC_tr_low_lt_tr_high": {
+      "pass": true,
+      "detail": ""
+    },
+    "spring_E_below_tr_low": {
+      "pass": true,
+      "detail": ""
+    },
+    "upthrust_E_above_tr_high": {
+      "pass": true,
+      "detail": ""
+    },
+    "viol_return_same_segment": {
+      "pass": true,
+      "detail": "bad=0"
+    },
+    "no_outcome_columns": {
+      "pass": true,
+      "detail": "banned=[]"
+    },
+    "indices_in_range": {
+      "pass": true,
+      "detail": ""
+    },
+    "C_test_pivot_plus_L_eq_confirm": {
+      "pass": true,
+      "detail": "mismatches=0"
+    },
+    "years_in_sample_span": {
+      "pass": true,
+      "detail": "min=2010 max=2026"
+    }
+  },
+  "n_events": 13510,
+  "meta": {
+    "n_1m": 4788194,
+    "n_15m": 288266,
+    "n_segments": 8069,
+    "n_swing_lows": 33523,
+    "n_swing_highs": 33159,
+    "n_trs": 2402,
+    "n_events": 13510,
+    "n_A": 13072,
+    "n_B": 418,
+    "n_C": 20,
+    "funnel": {
+      "eligible_trs": 2402,
+      "terminal_violations": 4491,
+      "terminal_violations_spring": 2058,
+      "terminal_violations_upthrust": 2433,
+      "recover_abort_timeout": 0,
+      "recover_abort_excursion": 3538,
+      "recover_abort_acceptance": 285,
+      "recover_abort_segment_break": 188,
+      "returns_into_tr": 480,
+      "returns_spring": 270,
+      "returns_upthrust": 210,
+      "candidate_tests": 221,
+      "confirm_success_C": 20,
+      "confirm_fail_test_quality": 201,
+      "confirm_fail_window_expire": 32,
+      "confirm_fail_adverse_close": 185,
+      "confirm_abort_segment_break": 42
+    }
+  }
+}

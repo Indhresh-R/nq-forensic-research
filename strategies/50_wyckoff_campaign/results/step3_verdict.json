@@ -1,0 +1,61 @@
+{
+  "primary_C_vs_A": {
+    "verdict": "INCONCLUSIVE",
+    "reason": "Sample floors not met: IS C=10 A=7386 (need >=30 each); OOS C=4 A=1918 (need >=20 each).",
+    "n_C_IS": 10,
+    "n_A_IS": 7386,
+    "n_C_OOS": 4,
+    "n_A_OOS": 1918,
+    "underpowered": true,
+    "horizon_detail": {
+      "8": {
+        "stable_sign": true,
+        "is_p": 0.0006625535325074586,
+        "is_significant": true,
+        "deltas": {
+          "IS": 0.5085567289466558,
+          "Validation": 0.27441613588110403,
+          "OOS": 0.5690823774765381
+        },
+        "passes_horizon_rule": true
+      },
+      "16": {
+        "stable_sign": true,
+        "is_p": 0.011428316000306495,
+        "is_significant": true,
+        "deltas": {
+          "IS": 0.3964527484430002,
+          "Validation": 0.32882165605095537,
+          "OOS": 0.46115745568300315
+        },
+        "passes_horizon_rule": true
+      },
+      "32": {
+        "stable_sign": true,
+        "is_p": 0.11821134353047924,
+        "is_significant": false,
+        "deltas": {
+          "IS": 0.25930138099106415,
+          "Validation": 0.18312101910828021,
+          "OOS": 0.3039906103286385
+        },
+        "passes_horizon_rule": false
+      }
+    },
+    "stable_horizons": [
+      8,
+      16
+    ]
+  },
+  "secondary_C_vs_B": {
+    "label": "INCONCLUSIVE",
+    "underpowered": true,
+    "stable_horizons": [
+      8
+    ],
+    "n_C_IS": 10,
+    "n_B_IS": 204,
+    "n_C_OOS": 4,
+    "n_B_OOS": 93
+  }
+}

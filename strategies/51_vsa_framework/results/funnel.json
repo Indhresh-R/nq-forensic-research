@@ -1,0 +1,19 @@
+{
+  "bars_15m": 288266,
+  "warmup_ok": 193071,
+  "up_bars": 97716,
+  "location_near_high": 18870,
+  "sow_seed": 85204,
+  "bg_weak": 18420,
+  "nd_morphology": 4120,
+  "nd_and_bg_candidates": 456,
+  "nd_without_bg_candidates": 3664,
+  "bg_up_without_nd_candidates": 17964,
+  "confirm_gap_abort": 249,
+  "confirm_fail_not_down": 6939,
+  "confirm_ok_C": 78,
+  "confirm_ok_A": 1535,
+  "confirm_ok_B": 4674,
+  "skipped_separation": 8609,
+  "skipped_overlap": 0
+}
