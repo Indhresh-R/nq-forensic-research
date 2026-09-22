@@ -1,0 +1,54 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_DEFINITION_FROZEN": true,
+  "TARGET_ADVERSE_CO_DEFINED": true,
+  "NO_PARAMETER_RETUNE": true,
+  "NO_52_58_REOPEN": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "frozen_constants",
+      "pass": true,
+      "detail": {
+        "W_or": 30,
+        "H_wait": 90,
+        "H_cap": 60
+      }
+    },
+    {
+      "name": "break_dir_pm1",
+      "pass": true,
+      "detail": [
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "adverse_is_or_mid",
+      "pass": true,
+      "detail": "adverse=OR_mid"
+    },
+    {
+      "name": "target_formula",
+      "pass": true,
+      "detail": "OR\u00b11R"
+    },
+    {
+      "name": "fp_splits",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    },
+    {
+      "name": "final_ok",
+      "pass": true,
+      "detail": "KILL"
+    }
+  ],
+  "final": "KILL",
+  "n_events": 3319
+}

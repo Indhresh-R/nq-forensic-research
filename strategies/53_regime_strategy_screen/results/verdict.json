@@ -1,0 +1,116 @@
+{
+  "cells": {
+    "A": {
+      "cell_id": "A",
+      "cell_name": "TRENDING_CONTINUATION",
+      "state_label": "TRENDING",
+      "family": "continuation",
+      "classification": "REJECTED",
+      "detail": {
+        "IS": {
+          "n_trades": 274147,
+          "mean_net": -1.0674811323851803,
+          "median_mfe_15": 4.5,
+          "pass": false
+        },
+        "Validation": {
+          "n_trades": 98494,
+          "mean_net": -0.9458469551444758,
+          "median_mfe_15": 16.5,
+          "pass": false
+        },
+        "OOS": {
+          "n_trades": 49772,
+          "mean_net": -1.1388280559350639,
+          "median_mfe_15": 22.75,
+          "pass": false
+        }
+      }
+    },
+    "B": {
+      "cell_id": "B",
+      "cell_name": "CHOP_MEAN_REVERSION",
+      "state_label": "CHOP_RANGE",
+      "family": "mean_reversion",
+      "classification": "REJECTED",
+      "detail": {
+        "IS": {
+          "n_trades": 196852,
+          "mean_net": -1.0410816247739418,
+          "median_mfe_15": 3.5,
+          "pass": false
+        },
+        "Validation": {
+          "n_trades": 60162,
+          "mean_net": -1.1239860709417906,
+          "median_mfe_15": 14.5,
+          "pass": false
+        },
+        "OOS": {
+          "n_trades": 33442,
+          "mean_net": -1.0203710902457988,
+          "median_mfe_15": 18.75,
+          "pass": false
+        }
+      }
+    },
+    "C": {
+      "cell_id": "C",
+      "cell_name": "COMPRESSION_BREAKOUT",
+      "state_label": "COMPRESSION",
+      "family": "breakout",
+      "classification": "REJECTED",
+      "detail": {
+        "IS": {
+          "n_trades": 24501,
+          "mean_net": -1.0340598342924778,
+          "median_mfe_15": 4.5,
+          "pass": false
+        },
+        "Validation": {
+          "n_trades": 9970,
+          "mean_net": -1.6541624874623873,
+          "median_mfe_15": 15.75,
+          "pass": false
+        },
+        "OOS": {
+          "n_trades": 5246,
+          "mean_net": -1.8960636675562332,
+          "median_mfe_15": 20.5,
+          "pass": false
+        }
+      }
+    },
+    "D": {
+      "cell_id": "D",
+      "cell_name": "EXPANSION_EXHAUSTION",
+      "state_label": "EXPANSION",
+      "family": "exhaustion_reversal",
+      "classification": "REJECTED",
+      "detail": {
+        "IS": {
+          "n_trades": 143168,
+          "mean_net": -0.6782765701832811,
+          "median_mfe_15": 4.0,
+          "pass": false
+        },
+        "Validation": {
+          "n_trades": 41421,
+          "mean_net": -1.3454045049612515,
+          "median_mfe_15": 16.0,
+          "pass": false
+        },
+        "OOS": {
+          "n_trades": 21112,
+          "mean_net": -0.5732758620689655,
+          "median_mfe_15": 23.0,
+          "pass": false
+        }
+      }
+    }
+  },
+  "cost_rt": 1.0,
+  "hold_minutes": 15,
+  "min_n_split": 200,
+  "note": "Cells classified independently; no ranking."
+}

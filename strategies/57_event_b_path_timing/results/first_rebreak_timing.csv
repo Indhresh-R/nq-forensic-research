@@ -1,0 +1,5 @@
+split,n_events_h60_valid,n_hit_rebreak_by_60,med_first_rebreak_bars,p25_first_rebreak_bars,p75_first_rebreak_bars
+IS,31883,20960,11.0,4.0,23.0
+Validation,11851,7733,12.0,5.0,26.0
+OOS,6129,3895,11.0,5.0,25.0
+ALL,49863,32588,11.0,5.0,24.0

@@ -315,4 +315,4 @@ Machine-readable detail: `results/audit_report.json` (all_pass=True).
 
 ~~Given that **direct** COMPRESSION→EXPANSION is rare…~~ **Addressed in Step 1** (`STEP1_PATH_GEOMETRY.md`): four-cell path geometry (A/B compression × directionality; C/D expansion × directionality).
 
-**Current status (from Step 9):** Single executable hypothesis (D fade-to-mid, 15m, 1.0 pt RT) → **`KILL`**. Mechanism remains interesting; this conversion to expectancy failed. See `STEP9_EXECUTABLE_HYPOTHESIS.md`. **Do not build a strategy.**
+**Research ledger (52–54 frozen):** Broad state routing did not yield an edge. See `strategies/RESEARCH_LEDGER_52_54.md`. Strategy 53 COMPLETE (all REJECTED). Strategy 54 COMPLETE (no clean path-magnitude candidate; activity hits definitional). Strategy 52 Step 9 executable **KILL** — do not rescue.

@@ -1,0 +1,13 @@
+split,outcome,n,med_bars,p25,p75
+IS,target_first,347,29.0,15.0,42.0
+IS,adverse_first,810,22.0,13.0,38.0
+IS,unresolved,1046,60.0,60.0,60.0
+Validation,target_first,130,30.0,15.0,43.0
+Validation,adverse_first,272,21.0,11.0,32.25
+Validation,unresolved,325,60.0,60.0,60.0
+OOS,target_first,51,28.0,15.5,45.0
+OOS,adverse_first,148,22.5,12.0,32.25
+OOS,unresolved,190,60.0,60.0,60.0
+ALL,target_first,528,29.0,15.0,42.25
+ALL,adverse_first,1230,22.0,13.0,36.0
+ALL,unresolved,1561,60.0,60.0,60.0

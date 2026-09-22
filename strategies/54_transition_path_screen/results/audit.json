@@ -1,0 +1,50 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "STATE_AT_T_CAUSAL": true,
+  "PATH_STRICTLY_AFTER_T": true,
+  "NO_STRATEGY_PNL": true,
+  "NO_PARAMETER_OPTIMIZATION": true,
+  "NO_POST_HOC_TRANSITION_PICK": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "catalogs_R_and_C",
+      "pass": true,
+      "detail": [
+        "C",
+        "R"
+      ]
+    },
+    {
+      "name": "primary_horizon_15",
+      "pass": true,
+      "detail": [
+        5,
+        15,
+        30
+      ]
+    },
+    {
+      "name": "classes_ok",
+      "pass": true,
+      "detail": [
+        "INTERESTING",
+        "KILL",
+        "THIN",
+        "UNSTABLE"
+      ]
+    },
+    {
+      "name": "no_trades_in_verdict",
+      "pass": true,
+      "detail": "No trades. INTERESTING = path distinct from stay baseline. Transitions into HIGH_ACTIVITY/LOW_ACTIVITY flagged definitional_overlap (activity labels entangle with subsequent range)."
+    },
+    {
+      "name": "no_self_transitions",
+      "pass": true,
+      "detail": 0
+    }
+  ],
+  "n_transition_types": 46,
+  "n_interesting": 6
+}

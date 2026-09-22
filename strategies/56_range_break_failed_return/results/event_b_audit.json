@@ -1,0 +1,53 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_DEFINITION_FROZEN": true,
+  "NO_PARAMETER_RETUNE": true,
+  "NO_EVENT_A_COMBINE": true,
+  "COST_RT": 1.0,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "frozen_constants",
+      "pass": true,
+      "detail": {
+        "W": 60,
+        "H_wait": 60,
+        "rebreak": 0.25
+      }
+    },
+    {
+      "name": "break_dir_pm1",
+      "pass": true,
+      "detail": [
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "wait_return_bounds",
+      "pass": true,
+      "detail": [
+        1,
+        60
+      ]
+    },
+    {
+      "name": "dest_has_splits",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    },
+    {
+      "name": "final_ok",
+      "pass": true,
+      "detail": "KILL_AFTER_TRADE"
+    }
+  ],
+  "n_events": 63725,
+  "final": "KILL_AFTER_TRADE",
+  "classification": "KILL"
+}
