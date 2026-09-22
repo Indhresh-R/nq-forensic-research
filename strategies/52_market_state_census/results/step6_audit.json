@@ -1,0 +1,37 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "POST_EVENT_INFO_IN_COMPONENTS": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "SCOPE_EXPEXIT_ONLY": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "expexit_only",
+      "pass": "True",
+      "detail": [
+        "ExpExit"
+      ]
+    },
+    {
+      "name": "no_compexit_cells",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cuts_from_is",
+      "pass": true,
+      "detail": "IS ExpExit component terciles at/near te"
+    },
+    {
+      "name": "has_te_er60",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict_class_ok",
+      "pass": true,
+      "detail": "CONDITIONAL"
+    }
+  ]
+}

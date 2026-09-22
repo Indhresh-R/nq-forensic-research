@@ -1,0 +1,53 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "MATCHING_USES_POST_EVENT_INFO": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "MATCHING_RECIPE_FROZEN": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "geometry_cuts_is_source",
+      "pass": true,
+      "detail": "IS pre-event geometry terciles by family"
+    },
+    {
+      "name": "has_unmatched_and_cem",
+      "pass": true,
+      "detail": [
+        "CEM",
+        "unmatched"
+      ]
+    },
+    {
+      "name": "pre_event_features_no_post_te_cols",
+      "pass": true,
+      "detail": [
+        "event_id",
+        "origin_cell",
+        "family",
+        "split",
+        "wait_to_event",
+        "pre_er",
+        "pre_range_atr",
+        "dist_mid_atr",
+        "dist_edge_atr",
+        "origin_run_bars",
+        "pre_bars"
+      ]
+    },
+    {
+      "name": "no_trade_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "verdict_has_expexit",
+      "pass": true,
+      "detail": [
+        "ExpExit_C_vs_D",
+        "CompExit_A_vs_B"
+      ]
+    }
+  ]
+}

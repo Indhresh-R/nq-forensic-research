@@ -1,0 +1,59 @@
+{
+  "classification": "KILL",
+  "decision": "STOP_DO_NOT_BUILD_STRATEGY",
+  "hypothesis": "Low-ER ExpExit D: fade toward P_mid; entry open[te+1]; exit close[te+15]; cost 1.0 pt RT; no SL/TP",
+  "cost_rt": 1.0,
+  "hold_minutes": 15,
+  "min_trades_split": 200,
+  "primary_gate": {
+    "IS": {
+      "n_trades": 3496,
+      "mean_net": -1.1362986270022883,
+      "eligible": true,
+      "pass": false
+    },
+    "Validation": {
+      "n_trades": 818,
+      "mean_net": -1.2833129584352079,
+      "eligible": true,
+      "pass": false
+    },
+    "OOS": {
+      "n_trades": 506,
+      "mean_net": 0.8868577075098815,
+      "eligible": true,
+      "pass": true
+    }
+  },
+  "control_c": {
+    "IS": {
+      "n_trades": 3320,
+      "mean_net": -0.5967620481927711
+    },
+    "Validation": {
+      "n_trades": 741,
+      "mean_net": -1.3704453441295548
+    },
+    "OOS": {
+      "n_trades": 413,
+      "mean_net": -3.6634382566585955
+    },
+    "ALL": {
+      "n_trades": 4474,
+      "mean_net": -1.007990612427358
+    }
+  },
+  "research_question_answer": "No \u2014 primary D arm fails the preregistered expectancy gate; kill.",
+  "population_check": {
+    "ok": true,
+    "n": 9442,
+    "n_c": 4529,
+    "n_d": 4913,
+    "expected_n": 9442,
+    "expected_c": 4529,
+    "expected_d": 4913
+  },
+  "n_trades_total": 9294,
+  "n_trades_primary_d": 4820,
+  "n_trades_control_c": 4474
+}

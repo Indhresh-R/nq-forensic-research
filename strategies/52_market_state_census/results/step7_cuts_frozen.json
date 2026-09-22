@@ -1,0 +1,11 @@
+{
+  "source": "IS low-ER ExpExit duration_bars terciles",
+  "low_er_cut_source": "step6_cuts_frozen.json features.te_er_60.q33",
+  "low_er_cut": 0.12101910828025478,
+  "n_is": 6949,
+  "q33": 4.0,
+  "q67": 12.0,
+  "DUR_T1": "duration_bars <= 4.0",
+  "DUR_T2": "4.0 < duration_bars <= 12.0",
+  "DUR_T3": "duration_bars > 12.0"
+}

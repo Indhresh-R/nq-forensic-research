@@ -1,0 +1,12 @@
+{
+  "n_eligible_bars": 1377851,
+  "n_bars_in_four_cells": 826137,
+  "n_bars_residual": 551714,
+  "n_episodes": 140102,
+  "episodes_by_cell": {
+    "B_COMP_MIDHIGH_DIR": 52656,
+    "A_COMP_LOW_DIR": 46606,
+    "C_EXP_HIGH_DIR": 29704,
+    "D_EXP_LOW_DIR": 11136
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "POST_EVENT_INFO_IN_FEATURE": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "SCOPE_EXPEXIT_ONLY": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "expexit_only",
+      "pass": true,
+      "detail": [
+        "ExpExit"
+      ]
+    },
+    {
+      "name": "no_compexit_cells",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cuts_from_is",
+      "pass": true,
+      "detail": "IS ExpExit signed_exit_pos terciles"
+    },
+    {
+      "name": "signed_feature_mostly_finite",
+      "pass": true,
+      "detail": 0.999966558539277
+    },
+    {
+      "name": "no_trade_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "verdict_class_present",
+      "pass": true,
+      "detail": "REMAIN"
+    }
+  ]
+}

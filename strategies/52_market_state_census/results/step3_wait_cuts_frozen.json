@@ -1,0 +1,21 @@
+{
+  "source": "IS wait_to_event terciles by family",
+  "families": {
+    "CompExit": {
+      "n_is": 16429,
+      "q33": 2.0,
+      "q67": 5.0,
+      "SHORT": "wait <= 2.0",
+      "MEDIUM": "2.0 < wait <= 5.0",
+      "LONG": "wait > 5.0"
+    },
+    "ExpExit": {
+      "n_is": 20835,
+      "q33": 4.0,
+      "q67": 15.0,
+      "SHORT": "wait <= 4.0",
+      "MEDIUM": "4.0 < wait <= 15.0",
+      "LONG": "wait > 15.0"
+    }
+  }
+}

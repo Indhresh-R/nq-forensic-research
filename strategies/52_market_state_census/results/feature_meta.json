@@ -1,0 +1,37 @@
+{
+  "dataset_path": "D:\\NQ-2\\data\\nq_1m_continuous.parquet",
+  "timezone": "America/New_York",
+  "session_roll": "18:00 ET",
+  "analysis_window": "09:30\u201316:00 ET (end exclusive)",
+  "n_1m_bars": 4788194,
+  "n_sessions": 4175,
+  "n_segments": 94870,
+  "ts_min": "2010-06-06 18:00:00-04:00",
+  "ts_max": "2026-08-07 16:59:00-04:00",
+  "n_analysis_window": 1382157,
+  "n_census_eligible": 1377851,
+  "windows": {
+    "er": [
+      30,
+      60,
+      120
+    ],
+    "rv": [
+      30,
+      60
+    ],
+    "atr": 30,
+    "range": [
+      30,
+      60
+    ],
+    "rvol": 30,
+    "rvol_hist_sessions": 60,
+    "primary_er": 60,
+    "primary_rv": 60,
+    "primary_range": 60
+  },
+  "gap_tolerance_minutes": 1.5,
+  "lookahead": false,
+  "outcomes": false
+}

@@ -1,0 +1,68 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_USES_POST_EVENT_INFO": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "FORWARD_PATH_USED": true,
+  "FORWARD_PATH_NOTE": "Path after te is descriptive only; event at first NORMAL does not use post-te info.",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "no_trade_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "origins_abcd",
+      "pass": true,
+      "detail": [
+        "A_COMP_LOW_DIR",
+        "B_COMP_MIDHIGH_DIR",
+        "C_EXP_HIGH_DIR",
+        "D_EXP_LOW_DIR"
+      ]
+    },
+    {
+      "name": "horizons_frozen",
+      "pass": true,
+      "detail": [
+        5,
+        15,
+        30,
+        60
+      ]
+    },
+    {
+      "name": "at_most_one_event_per_episode",
+      "pass": true,
+      "detail": 0
+    },
+    {
+      "name": "wait_at_least_1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "valid_finite_abs_net",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "family_matches_origin",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "funnel_adds_up",
+      "pass": true,
+      "detail": {
+        "n_onsets": 140102,
+        "n_events": 54099,
+        "n_censored": 86003
+      }
+    }
+  ],
+  "n_events": 54099,
+  "n_metric_rows": 216396,
+  "n_valid_metric_rows": 200972
+}

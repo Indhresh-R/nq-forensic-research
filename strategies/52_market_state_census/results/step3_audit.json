@@ -1,0 +1,51 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "WAIT_CUTS_FROZEN_BEFORE_DESTINATION_CLAIMS": true,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "COVARIATES_AT_EVENT_BAR_ONLY": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "wait_cuts_have_is_source",
+      "pass": true,
+      "detail": "IS wait_to_event terciles by family"
+    },
+    {
+      "name": "primary_horizon_present",
+      "pass": true,
+      "detail": [
+        30,
+        60
+      ]
+    },
+    {
+      "name": "secondary_horizon_present",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "no_trade_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "no_crossed_covariates",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "min_n_rule_documented",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "verdict_file_present",
+      "pass": true,
+      "detail": [
+        "CompExit_A_vs_B",
+        "ExpExit_C_vs_D"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "classification": "CONDITIONAL",
+  "primary_er60_te_class": "CONDITIONAL",
+  "path_or_net_feature": null,
+  "detail": [
+    {
+      "bin": "T1",
+      "n_c": 4235,
+      "n_d": 4590,
+      "return_diff": 0.1992033911820008,
+      "opposite_diff": -0.20242455108765267,
+      "return_keeps": true,
+      "opposite_keeps": true
+    },
+    {
+      "bin": "T2",
+      "n_c": 8556,
+      "n_d": 590,
+      "return_diff": 0.016123881744201707,
+      "opposite_diff": 0.04567515312873904,
+      "return_keeps": false,
+      "opposite_keeps": false
+    }
+  ],
+  "reference_unmatched": {
+    "n_c": 22560,
+    "n_d": 5231,
+    "return_diff": 0.1485915593210687,
+    "return_ci": [
+      0.13419884050803105,
+      0.16317839253437064
+    ],
+    "opposite_diff": -0.14806830461067477,
+    "opposite_ci": [
+      -0.16286428766141017,
+      -0.13324928403719372
+    ]
+  },
+  "tm_er60_c_min": 0.07172995780590717,
+  "tm_er60_d_max": 0.15949367088607594,
+  "tm_er60_ranges_disjoint_expected": true
+}

@@ -1,0 +1,59 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "POST_EVENT_INFO_IN_HISTORY": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "SCOPE_LOW_ER_EXPEXIT_ONLY": true,
+  "LOW_ER_CUT_FROZEN_FROM_STEP6": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "low_er_cut_matches_step6",
+      "pass": true,
+      "detail": {
+        "step7": 0.12101910828025478,
+        "step6": 0.12101910828025478
+      }
+    },
+    {
+      "name": "all_te_er60_le_cut",
+      "pass": true,
+      "detail": 0.12101910828025478
+    },
+    {
+      "name": "expexit_only",
+      "pass": "True",
+      "detail": [
+        "ExpExit"
+      ]
+    },
+    {
+      "name": "no_compexit_cells",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cuts_from_is_low_er",
+      "pass": true,
+      "detail": "IS low-ER ExpExit duration_bars terciles"
+    },
+    {
+      "name": "primary_feature_duration",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict_class_ok",
+      "pass": true,
+      "detail": "PROGRESSIVE"
+    },
+    {
+      "name": "duration_positive",
+      "pass": true,
+      "detail": 1
+    }
+  ],
+  "n_population": 9442,
+  "n_c": 4529,
+  "n_d": 4913
+}
