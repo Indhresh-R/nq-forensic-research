@@ -92,6 +92,13 @@ That is the purpose of the repository's inventory, frontier, preregistrations, a
 
 ## Repository map
 
+- [RESEARCH_FRAMEWORKS/](../RESEARCH_FRAMEWORKS/) — framework-discovery and source-translation work
+- [research/](../research/) — supporting research material
+- [scripts/](../scripts/) — shared utility/orchestration scripts
+- [archive/](../archive/) — historical engines retained for forensic reference
+
+
+
 - [research_framework/](../research_framework/) — methodology and audit controls
 - [strategies/](../strategies/) — chronological dossiers
 - [strategy_summary.md](strategy_summary.md) — detailed verdict table
