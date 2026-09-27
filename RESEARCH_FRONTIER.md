@@ -1,4 +1,9 @@
-# Research frontier
+# Research Frontier
+
+**Current status: closed for the existing data classes.** The latest tests through Strategy 65 do not justify another parameter search inside the already-tested directional, profile, MBO-summary, or simple event→hold families.
+
+For the chronological program story see [reports/research_overview.md](reports/research_overview.md). For experiment-level status see [RESEARCH_INVENTORY.md](RESEARCH_INVENTORY.md).
+
 
 This file follows `RESEARCH_INVENTORY.md`. It does not propose a strategy. It asks whether any information class still open in this repository is different from the claims already closed.
 
@@ -62,6 +67,8 @@ The freeze, including the split between completed-order association and real-tim
 # Recommended Next Research Question
 
 The order-fate information test is closed on this sample.
+
+**Portfolio-level interpretation:** no new standalone directional feature search is currently authorized by the existing evidence. A future branch should begin only with a genuinely new data source, information class, objective, or execution mechanism and a fresh preregistration.
 
 After controlling for one-second inside imbalance, depth change, trade imbalance, and replenishment, neither resting age / trade exposure while the order is live, nor completed lifetime / fill-versus-cancel after the order ends, cleared the frozen 1-second gate.
 
