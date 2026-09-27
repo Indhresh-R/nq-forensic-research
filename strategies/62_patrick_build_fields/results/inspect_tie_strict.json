@@ -1,0 +1,88 @@
+{
+  "p6a_flagged_n": 706052,
+  "p6a_tie_frac": 0.4934707358664801,
+  "p6a_strict_frac": 0.50652926413352,
+  "p7_n": 2135,
+  "p7_tie_n": 964,
+  "p7_strict_n": 1171,
+  "p7_sessions": 79,
+  "level_counts": {
+    "prev_poc": {
+      "strict": 611,
+      "tie": 437
+    },
+    "prev_vah": {
+      "strict": 280,
+      "tie": 283
+    },
+    "prev_val": {
+      "strict": 280,
+      "tie": 244
+    }
+  },
+  "rth_open_09_10_share": {
+    "strict": 0.38770281810418444,
+    "tie": 0.36410788381742737
+  },
+  "distance_describe": {
+    "count": {
+      "strict": 1171.0,
+      "tie": 964.0
+    },
+    "mean": {
+      "strict": 0.42783945345858243,
+      "tie": 0.5134854771784232
+    },
+    "std": {
+      "strict": 0.49497684813098475,
+      "tie": 0.5000775524453073
+    },
+    "min": {
+      "strict": 0.0,
+      "tie": 0.0
+    },
+    "25%": {
+      "strict": 0.0,
+      "tie": 0.0
+    },
+    "50%": {
+      "strict": 0.0,
+      "tie": 1.0
+    },
+    "75%": {
+      "strict": 1.0,
+      "tie": 1.0
+    },
+    "max": {
+      "strict": 1.0,
+      "tie": 1.0
+    }
+  },
+  "joins_per_session": {
+    "mean": 27.025316455696203,
+    "p50": 23.0,
+    "max": 88,
+    "top5_share": 0.1756440281030445
+  },
+  "tie_mass_stability": {
+    "mean": 0.48615347407983717,
+    "std": 0.04019413579109578,
+    "p10": 0.44254225913301853,
+    "p50": 0.4870424360220278,
+    "p90": 0.5369575137961295,
+    "n_gt_0_55": 7,
+    "n_lt_0_40": 3,
+    "n_sessions": 127
+  },
+  "p6a_valid_frac": {
+    "mean": 0.9932334288153217,
+    "p50": 0.9986518732221578,
+    "min": 0.5
+  },
+  "sample_framing": {
+    "sessions_with_p7": 79,
+    "joins_total": 2135,
+    "joins_strict": 1171,
+    "note": "Same order as 47 small POC cells; descriptive fold only \u2014 not promotable IS/Val/OOS"
+  }
+}

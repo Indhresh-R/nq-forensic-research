@@ -1,0 +1,59 @@
+{
+  "verdict": "KILL",
+  "reason": "IS mean_net=-0.1070 \u2264 0",
+  "promote": false,
+  "summary": [
+    {
+      "split": "All",
+      "n": 928,
+      "mean_gross": 2.965126616379322,
+      "mean_net": 1.965126616379322,
+      "med_net": -1.0,
+      "stop_rate": 0.33728448275862066,
+      "time_exit_rate": 0.6616379310344828,
+      "med_mfe": 15.75,
+      "med_mae": 13.25,
+      "mfe_mae_rel_diff": 0.18867924528301888,
+      "win_rate_net": 0.47413793103448276
+    },
+    {
+      "split": "IS",
+      "n": 421,
+      "mean_gross": 0.8929928741092675,
+      "mean_net": -0.10700712589073245,
+      "med_net": -1.25,
+      "stop_rate": 0.37292161520190026,
+      "time_exit_rate": 0.6247030878859857,
+      "med_mfe": 7.25,
+      "med_mae": 6.75,
+      "mfe_mae_rel_diff": 0.07407407407407407,
+      "win_rate_net": 0.4489311163895487
+    },
+    {
+      "split": "Val",
+      "n": 263,
+      "mean_gross": 3.537927756653987,
+      "mean_net": 2.537927756653987,
+      "med_net": -0.75,
+      "stop_rate": 0.27756653992395436,
+      "time_exit_rate": 0.7224334600760456,
+      "med_mfe": 31.0,
+      "med_mae": 22.75,
+      "mfe_mae_rel_diff": 0.3626373626373626,
+      "win_rate_net": 0.4828897338403042
+    },
+    {
+      "split": "OOS",
+      "n": 244,
+      "mean_gross": 5.923002049180371,
+      "mean_net": 4.923002049180371,
+      "med_net": 2.25,
+      "stop_rate": 0.3401639344262295,
+      "time_exit_rate": 0.6598360655737705,
+      "med_mfe": 43.875,
+      "med_mae": 44.125,
+      "mfe_mae_rel_diff": -0.0056657223796034,
+      "win_rate_net": 0.5081967213114754
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "n_strict": 338,
+  "timestamps_unchanged": true,
+  "dist_into_away_unchanged": true,
+  "same_print_both_count": 0,
+  "sigma_uses_pre_event_only": true,
+  "null_does_not_alter_observed_labels": true,
+  "SEED": 20260923,
+  "N_SIM": 10000,
+  "DT_SEC": 15.0,
+  "H_CAP_SEC": 3600.0,
+  "W_PRE_MIN": 30
+}

@@ -1,0 +1,110 @@
+{
+  "verdict": {
+    "verdict": "KILL",
+    "code": "A",
+    "reason": "Observed \u0394 statistically consistent with the distance-matched null (barrier geometry explains pooled first-passage asymmetry)."
+  },
+  "pooled": {
+    "label": "strict_primary",
+    "n": 338,
+    "p_into": 0.20118343195266272,
+    "p_away": 0.4378698224852071,
+    "p_unresolved": 0.3609467455621302,
+    "delta": -0.2366863905325444,
+    "null_mean_delta": -0.21337426035502957,
+    "null_p2_5": -0.29881656804733725,
+    "null_p97_5": -0.1272189349112426,
+    "empirical_p_two_sided": 0.6,
+    "obs_below_null_p2_5": false,
+    "obs_above_null_p97_5": false,
+    "obs_inside_95": true,
+    "obs_lt_null_mean": true,
+    "null_mean_p_into": 0.26804970414201185,
+    "null_mean_p_away": 0.48142396449704145,
+    "null_mean_p_unresolved": 0.25052633136094676
+  },
+  "terciles": [
+    {
+      "label": "T1_low",
+      "n": 114,
+      "p_into": 0.3333333333333333,
+      "p_away": 0.39473684210526316,
+      "p_unresolved": 0.2719298245614035,
+      "delta": -0.06140350877192985,
+      "null_mean_delta": 0.05126228070175439,
+      "null_p2_5": -0.11403508771929821,
+      "null_p97_5": 0.2192982456140351,
+      "empirical_p_two_sided": 0.1746,
+      "obs_below_null_p2_5": false,
+      "obs_above_null_p97_5": false,
+      "obs_inside_95": true,
+      "obs_lt_null_mean": true,
+      "null_mean_p_into": 0.4291105263157895,
+      "null_mean_p_away": 0.37784824561403507,
+      "null_mean_p_unresolved": 0.19304122807017543
+    },
+    {
+      "label": "T2_mid",
+      "n": 111,
+      "p_into": 0.2072072072072072,
+      "p_away": 0.4954954954954955,
+      "p_unresolved": 0.2972972972972973,
+      "delta": -0.2882882882882883,
+      "null_mean_delta": -0.2949072072072072,
+      "null_p2_5": -0.45045045045045046,
+      "null_p97_5": -0.13513513513513514,
+      "empirical_p_two_sided": 0.9442,
+      "obs_below_null_p2_5": false,
+      "obs_above_null_p97_5": false,
+      "obs_inside_95": true,
+      "obs_lt_null_mean": false,
+      "null_mean_p_into": 0.27091441441441444,
+      "null_mean_p_away": 0.5658216216216216,
+      "null_mean_p_unresolved": 0.16326396396396398
+    },
+    {
+      "label": "T3_high",
+      "n": 113,
+      "p_into": 0.061946902654867256,
+      "p_away": 0.4247787610619469,
+      "p_unresolved": 0.5132743362831859,
+      "delta": -0.36283185840707965,
+      "null_mean_delta": -0.40026283185840705,
+      "null_p2_5": -0.5221238938053098,
+      "null_p97_5": -0.2743362831858407,
+      "empirical_p_two_sided": 0.59,
+      "obs_below_null_p2_5": false,
+      "obs_above_null_p97_5": false,
+      "obs_inside_95": true,
+      "obs_lt_null_mean": false,
+      "null_mean_p_into": 0.10274955752212389,
+      "null_mean_p_away": 0.5030123893805309,
+      "null_mean_p_unresolved": 0.3942380530973451
+    }
+  ],
+  "barrier_medians": {
+    "med_dist_into": 87.0,
+    "med_dist_away": 45.375,
+    "med_dist_ratio": 2.090452261306533
+  },
+  "sigma_meta": {
+    "n_finite": 338,
+    "n_fill": 0,
+    "median_fill": 1.5650272513722374
+  },
+  "audit": {
+    "LOOKAHEAD_CHECK": "PASS",
+    "n_strict": 338,
+    "timestamps_unchanged": true,
+    "dist_into_away_unchanged": true,
+    "same_print_both_count": 0,
+    "sigma_uses_pre_event_only": true,
+    "null_does_not_alter_observed_labels": true,
+    "SEED": 20260923,
+    "N_SIM": 10000,
+    "DT_SEC": 15.0,
+    "H_CAP_SEC": 3600.0,
+    "W_PRE_MIN": 30
+  },
+  "no_trade_tested": true
+}

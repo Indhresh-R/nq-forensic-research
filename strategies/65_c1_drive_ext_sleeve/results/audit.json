@@ -1,0 +1,15 @@
+{
+  "GATE_CLOCK": "10:30",
+  "GATE_CHARACTER": "C1_DRIVE_EXT",
+  "ENTRY_MIN": 631,
+  "EXIT_MIN": 720,
+  "STOP_RANGE_FRAC": 0.35,
+  "STOP_FLOOR": 2.0,
+  "COST_RT": 1.0,
+  "NO_TARGET": true,
+  "NO_TRAIL": true,
+  "NOT_ORB": true,
+  "NOT_VA_FADE": true,
+  "n_gates": 930,
+  "n_trades": 928
+}

@@ -1,0 +1,23 @@
+{
+  "classification": "DESCRIPTIVE_ONLY",
+  "promote": false,
+  "n_strict_onset": 338,
+  "n_sessions": 70,
+  "delta": -0.2366863905325444,
+  "p_into": 0.20118343195266272,
+  "p_away": 0.4378698224852071,
+  "p_unresolved": 0.3609467455621302,
+  "med_dist_ratio": 2.090452261306533,
+  "same_print_both_rate": 0.0,
+  "strict_meta": {
+    "n_pre_dedup": 560,
+    "n_onset": 338,
+    "n_dedup_dropped": 222
+  },
+  "tie_meta": {
+    "n_pre_dedup": 527,
+    "n_onset": 362,
+    "n_dedup_dropped": 165
+  },
+  "note": "No IS/Val/OOS; no SUPPORTED; \u0394 must be read with dist_ratio strata"
+}

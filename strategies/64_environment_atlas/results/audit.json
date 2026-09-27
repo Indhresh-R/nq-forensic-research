@@ -1,0 +1,22 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "NO_TRADE": true,
+  "NO_PROMOTE": true,
+  "CLOCKS": [
+    "08:30",
+    "09:30",
+    "10:30",
+    "11:30"
+  ],
+  "TRAIL_SESSIONS": 60,
+  "n_sessions_raw": 3611,
+  "n_label_rows_raw": 14435,
+  "n_sessions_labeled": 14195,
+  "n_unique_sessions_labeled": 3551,
+  "va_source": "1m_bar_proxy_v1",
+  "p1_prior_min": "2010-06-07",
+  "p1_prior_max": "2026-08-07",
+  "character_cells_ge_50": 20,
+  "character_cells_thin": 0,
+  "coverage_note": "Prior VA from 1m_bar_proxy_v1 over full 1m history. Scaffold for atlas idea validation \u2014 not Patrick trade-tape VA."
+}

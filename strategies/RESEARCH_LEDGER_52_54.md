@@ -1,121 +1,73 @@
-# Research ledger — Strategies 52 → 58 (frozen)
+# Research ledger — Strategies 52 → 65
 
-**Purpose:** Close market-state routing and the Strategy 55–58 price-event family search; constrain what may open next.
-
-**Date context:** 2026-09-22 / 2026-09-23.
-
----
-
-## Verdict on the original thesis
-
-> **Market state as a routing variable for generic strategy families has not demonstrated an edge.**
-
-State remains useful as a **descriptive map / context**, not as the source of a trade by itself.
+**Operational mode (2026-09-27):** **PAUSE — weather + refusals.**  
+See `OPERATOR_PAUSE_WEATHER_MODE.md` and `BRANCH_CLOSED_USE_ATLAS.md`.  
+No new sleeve/backtest without a **new mechanism** charter.
 
 ---
 
-## Evidence stack (do not reopen)
+## Bottom line
 
-| Layer | Strategy | Result |
-| --- | --- | --- |
-| State census | 52 Step 0 | Persistent, measurable states exist |
-| Transition / destination mechanism | 52 Steps 1–8 | Exp→Normal destination asymmetry under controls; Step 9 trade **KILL** |
-| Broad state → generic family | 53 | All 4 cells **REJECTED** |
-| Transition → path vs stay | 54 | No clean candidate; activity hits **definitional** |
-| Event A | 55 | Destination yes → trade **KILL_AFTER_TRADE** |
-| Event B | 56 | Destination yes → trade **KILL_AFTER_TRADE** |
-| Event B path | 57 | **PATH_KILL** (touches ≠ directional close path; MFE ≈ MAE) |
-| Event C | 58 | **KILL** at destination Step 1 (Δ wrong sign) |
+> **No executable long/short edge promoted from 52–65.**  
+> **61:** refusal map in force.  
+> **64:** morning weather catalog (usable, not a trade).  
+> **65:** C1 continuation sleeve **KILL** on IS.  
+> **Now:** pause hunting; operate with R1–R6 + weather labels.
+
+```text
+CLOSED / PAUSED  →  R1–R6 + atlas weather  →  no Strategy 66 from “next character”
+```
 
 ---
 
-## Closed: Event family search (55–58)
+## Evidence (do not reopen)
 
-**Status: STOP.** Do not invent Event D from the Strategy 55 menu. Do not retune A/B/C. Do not horizon-shop.
-
-| Project | What happened |
+| Strategy | Result |
 | --- | --- |
-| 55 — Displacement → retracement | Destination asymmetry → path/trade failed |
-| 56 — Range break → failed return | Destination asymmetry → trade failed |
-| 57 — Event B timing | Destination probability ≠ tradable drift |
-| 58 — Extreme excursion → rejection | **Destination hypothesis failed immediately** (anchor 59.2% vs extreme 62.0%, Δ = −2.8 pp) |
-
-Event C: no path analysis, no trade, no retuning — correct kill.
-
-### Hard conclusion from 55–58
-
-> **Finding statistically stable destination relationships is relatively easy; finding a destination relationship with a favorable first-passage path and acceptable adverse excursion is the real bottleneck.**
-
-Also (from 57): high eventual destination probability ≠ favorable holding path.
+| 52–54 | State/transition routing — no edge |
+| 55–57 | Destination ≠ holdable path |
+| 58 | Destination wrong sign |
+| 59 | ORB adverse before target |
+| 60 | `CLASS_STRUCTURALLY_UNDERWATER` |
+| 61 | `MAP_LOCKED` (Frame C) |
+| 62–63 | Patrick fields; VA first-passage → geometry null KILL |
+| 64 | `DESCRIPTIVE_ATLAS` (1m VA proxy) |
+| 65 | C1 @ 10:30 continuation → **KILL** |
 
 ---
 
-## What died
+## Frames
 
-```text
-STATE → GENERIC STRATEGY
-TRANSITION → MORE/LESS MOVEMENT THAN STAYING
-ACTIVITY TRANSITIONS AS PATH “EDGE”
-RESCUING 52–54 WITH MORE FILTERS
-DESTINATION-FIRST EVENT MENU (Families 1–4) AS THE SEARCH FORM
-EVENT WITH DESTINATION ASYMMETRY → ASSUME HOLDABLE PATH
-HORIZON SHOPPING AFTER A FAILED FIXED HOLD
-DRILLING FURTHER INTO EVENT A / B / C
-AUTOMATIC EVENT D
-```
+| Frame | Status |
+| --- | --- |
+| A — Cost / feasibility | Done (60) |
+| C — Refusal map | Done (61) — **in force** |
+| B — Payoff-defined risk unit | Shelved (needs new charter, not auto-next) |
+| Weather catalog | Done (64) — **context only** |
+| First atlas sleeve | Killed (65) |
+| **Operator pause** | **Active** — `OPERATOR_PAUSE_WEATHER_MODE.md` |
 
 ---
 
-## Next research frame (after 52–58)
+## Key paths
 
-Do **not** start from another arbitrary price event and hope destination + path appear later.
-
-Start from a **specific executable mechanism/path**, with **target and adverse barrier defined together** from the beginning:
-
-```text
-EVENT
-  ↓
-TARGET + ADVERSE BARRIER
-  ↓
-Which is reached first?
-  ↓
-How much MAE before target?
-  ↓
-How long?
-  ↓
-ONE trade
-```
-
-**Project size (hard):** one mechanism → first-passage (target vs adverse) → MAE/time diagnostics → **one** execution if it survives.
-
-Forbidden until a new prereg names a concrete mechanism:
-
-- Reopening 52–58 closed branches
-- Menu-style Event D/E/F without a first-passage design
-- CVD/VWAP/ATR/TOD as post-hoc filters
-- Horizon P&L shopping
-- Combining killed events
-
-Market state may appear only as **context**, not as the signal.
-
----
-
-## Next project status
-
-Strategy 59 (ORB first-passage): **KILL** at Step 1 (adverse before target; Δ_fp ≈ −21 pp IS).  
-See `59_orb_first_passage/COMPLETE.md`.
-
----
-
-## Frozen artifact index
-
-| Strategy | Status | Key report |
-| --- | --- | --- |
-| 52 | Mechanism complete; Step 9 **KILL** | `52_market_state_census/` |
-| 53 | **COMPLETE / FROZEN** all REJECTED | `53_regime_strategy_screen/COMPLETE.md` |
-| 54 | **COMPLETE / FROZEN** no clean path candidate | `54_transition_path_screen/COMPLETE.md` |
-| 55 | Event A **KILL_AFTER_TRADE** | `55_price_path_events/EVENT_A_COMPLETE.md` |
-| 56 | Event B **KILL_AFTER_TRADE** | `56_range_break_failed_return/EVENT_B_COMPLETE.md` |
-| 57 | Event B path **PATH_KILL** | `57_event_b_path_timing/COMPLETE.md` |
-| 58 | Event C **KILL** (destination; path not run) | `58_extreme_rejection_path/EVENT_C_COMPLETE.md` |
-| 59 | ORB first-passage **KILL** (adverse before target) | `59_orb_first_passage/COMPLETE.md` |
+| Doc | Role |
+| --- | --- |
+| `OPERATOR_PAUSE_WEATHER_MODE.md` | **Start here — daily mode** |
+| `BRANCH_CLOSED_USE_ATLAS.md` | Branch close / pointers |
+| `61_refusal_map/results/REFUSAL_MAP.md` | R1–R6 detail |
+| `RESEARCH_POSTMORTEM_52_59.md` | Kill taxonomy |
+| `60_cost_feasibility/COMPLETE.md` | Why the class is dead |
+| `CHARTER_PATRICK_INFO_DATA.md` | Patrick info ↔ data charter |
+| `PATRICK_BUILD_FIELDS_PREREGISTRATION.md` | P1/P2/P6a/P7 build freeze |
+| `62_patrick_build_fields/COMPLETE.md` | Fields built; tie/strict inspection done |
+| `62_patrick_build_fields/P6A_SUBGROUP_DECISION.md` | **B confirmed** — strict primary |
+| `PATRICK_STRICT_VA_FIRST_PASSAGE_PREREGISTRATION.md` | **v2 frozen** — fade vs accept first-passage |
+| `63_patrick_strict_va_first_passage/COMPLETE.md` | Step-1 DESCRIPTIVE; **Step-2 KILL** |
+| `PATRICK_VA_STEP2_DISTANCE_NULL_PREREGISTRATION.md` | Step-2 null freeze |
+| `63_patrick_strict_va_first_passage/results/STEP2_DISTANCE_MATCHED_NULL_REPORT.md` | Step-2 report |
+| `CHARTER_ENVIRONMENT_ATLAS.md` | Morning characters |
+| `CHARTER_ENVIRONMENT_ATLAS_1M_VA_PROXY.md` | 1m bar VA proxy freeze |
+| `64_environment_atlas/COMPLETE.md` | **DESCRIPTIVE_ATLAS usable** via 1m VA proxy |
+| `CHARTER_C1_DRIVE_EXT_SLEEVE.md` | First atlas sleeve freeze |
+| `65_c1_drive_ext_sleeve/COMPLETE.md` | **KILL** — IS net≤0 after 1pt RT |

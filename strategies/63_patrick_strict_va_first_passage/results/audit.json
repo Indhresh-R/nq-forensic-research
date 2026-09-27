@@ -1,0 +1,14 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "P6A_SUBGROUP": "strict_primary",
+  "LEVELS": "prev_vah_prev_val",
+  "TPO": false,
+  "RESOLUTION": "trade_level",
+  "NO_IS_SPLIT": true,
+  "NO_PROMOTE": true,
+  "H_CAP_MIN": 60,
+  "same_print_both_count": 0,
+  "same_print_both_rate": 0.0,
+  "n_strict": 338,
+  "n_tie": 362
+}
