@@ -208,3 +208,19 @@ Failing LVN rejection does not mean order flow failed. Failing POC location does
 - Absorption and the named H04 cancellation-velocity test were not completed on a valid clock.
 
 Order lifetime, fill-versus-cancel fate, and real-time age / trade exposure were tested under `mbo_orderflow/order_fate/PREREGISTRATION.md` and are `NOT SUPPORTED` on this sample. Liquidity migration across prices and the ordering of unrelated events inside one second remain untested. Expanding the same features to other hours, or joining them to a prior POC touch, would not introduce a new object. The frontier argument and the closed recommended question are in `RESEARCH_FRONTIER.md`.
+
+
+## Program-level index for Strategies 42–65
+
+The later research phase is summarized in [reports/strategy_summary.md](reports/strategy_summary.md) and [reports/research_overview.md](reports/research_overview.md).
+
+| Family | Studies | Role |
+|---|---|---|
+| Structure / information | 42–49 | Timeframe structure, event transitions, MBO, SMT, profile and daily-state tests |
+| Framework translation | 50–51 | Wyckoff and VSA mechanism translation; not strategy validation |
+| Market-state | 52–54 | State census, regime screens, transition paths |
+| Path / feasibility | 55–61 | First-passage, cost feasibility, refusal map |
+| Value-area / environment | 62–64 | Descriptive value-area and morning environment work |
+| Executable sleeve | 65 | Frozen C1 drive-exterior continuation test; IS gate failed |
+
+**Evidence labels matter:** KILL, CLOSED, NOT SUPPORTED, INCONCLUSIVE, and NOT TESTED are deliberately different. See the underlying dossier before interpreting any result.
