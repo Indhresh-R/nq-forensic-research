@@ -1,10 +1,10 @@
 # Strategy Summary (Master Table)
 
-Latest: **42 Timeframe Support/Resistance — C**. No identical 20-bar S/R breakout/retest timeframe passes the NQ+ES IS/Validation/OOS gate; NQ 1m/15m OOS retest positives fail IS and ES, while every >=1h arm is negative OOS in both markets.
+**Coverage:** Strategies 01–65. The table below is chronological; it is not a performance leaderboard.
 
-Latest: **43 Event-Based Range Transition — REJECTED**. All 12 sequential compression cells lose in selection; range fading fails every later split and pullback continuation is non-positive in R after costs.
+**Latest program phase:** Strategies 52–65 shifted the program toward market-state description, path/first-passage feasibility, refusal rules, value-area research, and environment characterization. No current study is presented here as a validated live trading system.
 
-Footnote: **A\*** = statistically valid **state / opportunity detector**, **not** an executable standalone trading edge.
+**Important:** `A*` means a statistically supported state/opportunity property, not an executable standalone edge. `INCONCLUSIVE` and `NOT TESTED` are evidence states, not positive results.
 
 | # | Hypothesis | Verdict | Headline number |
 | - | ---------- | ------- | --------------- |
@@ -46,6 +46,37 @@ Footnote: **A\*** = statistically valid **state / opportunity detector**, **not*
 | 39 | Multi-Day Volatility Compression → RTH Expansion/Persistence | **C (Info)** | Volatility clusters: 4+ days compression yields 10.5% large expansion rate vs 33.0% uncompressed; NR7 range 0.881x vs 1.053x; efficiency flat ~0.47 |
 | 40 | Volatility Persistence → Directional Distribution | **C (Boundary)** | Directional continuation is 45%–50% coin flip across all vol tiers; tail variance expands symmetrically (+0.5% spread); excursion spread +0.002 ATR |
 | 41 | Volatility Regime × Signal Economics | **C (Econ Filter)** | Extreme Vol worsens net losses across all benchmarks (IB: −9.47 pts net, PF 0.775; Drive: −6.46 pts, PF 0.755; Clock: −7.44 pts, PF 0.741); MAE scales faster than MFE |
+
+
+## Strategies 42–65 — later research phase
+
+| # | Research object | Verdict | Key result / interpretation |
+|---|---|---|---|
+| 42 | Timeframe Support/Resistance | **CLOSED** | No NQ+ES IS/Val/OOS survivor for the frozen 20-bar breakout/retest across tested timeframes; small OOS positives did not replicate. |
+| 43 | Event-Based Range Transition | **REJECTED** | Sequential compression cells failed selection; range fade and pullback continuation did not clear later gates after costs. |
+| 44 | MBO Orderflow | **NOT SUPPORTED / INCONCLUSIVE by subtest** | Top-book imbalance failed the prespecified gate; corrected one-second diagnostics were economically tiny. Some absorption/queue subtests were not validly completed and are not treated as negatives. |
+| 45 | ICT NY SMT | **INCONCLUSIVE** | Only 16 OOS trades; insufficient evidence for a durable claim and not a basis for retuning. |
+| 46 | Prior-Day Structure | **INCONCLUSIVE** | Prior-day penetration remained unresolved; explicitly not a promotion or rescue. |
+| 47 | Volume Profile Shapes | **CLOSED / INCONCLUSIVE by step** | LVN/POC geometry claims failed or lacked an adequate null; the branch was closed rather than parameter-shopped. |
+| 48 | Daily Candle Continuation | **CLOSED** | Tested continuation formulation did not produce a stable executable directional edge. |
+| 49 | Daily Streak Persistence | **NOT SUPPORTED** | Directional streak persistence did not survive the frozen tests; pooled and OOS lifts were negative. |
+| 50 | Wyckoff Campaign | **Framework research** | Translation/audit of the sourced Wyckoff framework; not presented as a validated strategy. |
+| 51 | VSA Framework | **Framework research** | Translation/audit of VSA concepts; not presented as a validated strategy. |
+| 52 | Market State Census | **Descriptive / mechanism branch** | Established a reusable state taxonomy and tested successive path/transition/executable hypotheses without converting the census into a claimed trading edge. |
+| 53 | Regime Strategy Screen | **CLOSED** | Screened regime-conditioned ideas; results were treated as routing/mechanism evidence rather than a winner-selection exercise. |
+| 54 | Transition Path Screen | **CLOSED** | Transition/path claims did not establish a cost-positive mechanism. |
+| 55 | Price-Path Events | **KILL** | Destination statistics did not translate into a cost-positive holdable path. |
+| 56 | Range Break → Failed Return | **KILL / class evidence** | Gross expectancy stayed near cost and did not produce a robust paid path. |
+| 57 | Event-B Path Timing | **KILL** | Rebreak/touch behavior did not survive close-path and MFE/MAE checks; MFE was approximately MAE. |
+| 58 | Extreme Rejection Path | **KILL** | Anchor-vs-extreme first-passage contrast had the wrong sign. |
+| 59 | ORB First Passage | **KILL** | Target-first probability was below the required breakeven region; adverse-first dominated. |
+| 60 | Cost Feasibility | **CLASS_STRUCTURALLY_UNDERWATER** | Formalized the feasibility envelope for simple event→hold / 1R-extension mechanisms under 1.0 pt RT cost. |
+| 61 | Refusal Map | **MAP_LOCKED** | Locked explicit rules against reopening killed mechanisms through retuning or destination/horizon shopping. |
+| 62 | Patrick Build Fields | **COMPLETE / DESCRIPTIVE** | Built value-area fields; high round-lot tie mass was recorded before any hypothesis promotion. |
+| 63 | Patrick Strict VA First-Passage | **KILL** | Step 1 remained descriptive; Step 2 distance-matched null killed the proposed first-passage claim. |
+| 64 | Morning Environment Atlas | **DESCRIPTIVE_ATLAS** | Built a reusable morning environment catalog; this is a context object, not a trade claim. |
+| 65 | C1 Drive-Exterior Continuation Sleeve | **KILL** | Frozen sleeve failed the IS mean-net gate: −0.107 pt/trade after 1.0 pt RT cost. |
+
 
 ## Split qualitative (with key numeric anchors)
 
