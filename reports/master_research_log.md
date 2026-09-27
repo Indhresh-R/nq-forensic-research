@@ -1,8 +1,36 @@
 # Master Research Log
 
-Chronological forensic program (condensed).
+Chronological forensic program.
 
-**Latest — Strategy 42 Timeframe Support/Resistance: C CLOSED.** The same causal 20-bar breakout and breakout→retest test at 1m through weekly produced no NQ+ES IS/Validation/OOS survivor. NQ 1m/15m retest OOS positives (+1.10/+0.49 pts) fail IS and ES; all 1h–7h arms are negative OOS in both markets. See `strategies/42_timeframe_support_resistance/`.
+> This log is the historical record. For the recruiter-facing explanation, start with [Research Overview](research_overview.md). For the experiment-level audit, use [Research Inventory](../RESEARCH_INVENTORY.md).
+
+## Program phases
+
+| Phase | Studies | Research question | Program-level outcome |
+|---|---:|---|---|
+| A | 01–05 | Can simple NY-open price/level hypotheses provide stable directional information? | Closed after causal and chronological testing. |
+| B | 06–14 | Is activity/opportunity state real, and can it be monetized? | Activity state survives as information; direction/monetization branches close. |
+| C | 15–22 | Can price/state information resolve direction inside and outside the activity state? | Direction-resolution branch locked failed. |
+| D | 23–24 | Can external information or execution design unlock the activity state? | External family closed; tested sizing/width branches did not create a trade edge. |
+| E | 25–34 | Can options, cross-market, opening, and volatility mechanisms add information? | No stable executable directional survivor; several branches became information/state findings. |
+| F | 35–41 | Do classical continuation, drift, inventory, auction, or volatility states create an edge? | Closed; volatility/activity persistence remained descriptive rather than directional. |
+| G | 42–49 | Do timeframe structure, event transitions, MBO, SMT, profile, or daily-state objects add information? | Mostly closed; MBO and a few geometry branches retain explicit sample limitations. |
+| H | 50–51 | Can sourced discretionary frameworks be translated into testable objects without indicator stacking? | Framework translation/audit, not validated strategies. |
+| I | 52–54 | Can market state and transitions provide a cleaner context/mechanism object? | Descriptive state structure survives; executable screens fail to establish a standalone edge. |
+| J | 55–59 | Do destination, rejection, rebreak, and first-passage statistics produce a paid path? | Repeated path failures. |
+| K | 60–61 | Is the simple event→hold class economically feasible, and how should repeated failures be locked? | Cost feasibility class closed; refusal map locked. |
+| L | 62–64 | Can value-area structure and morning environment be represented cleanly? | Descriptive/structural research; no strategy promotion. |
+| M | 65 | Does a frozen C1 drive-exterior sleeve clear the IS cost gate? | **KILL** — IS mean net −0.107 pt/trade. |
+
+## Current program boundary
+
+The research program has moved from broad feature hunting toward a constrained question:
+
+**What genuinely new information or execution mechanism is not already represented by the closed families?**
+
+The repository does not claim that no future strategy can exist. It records that repeated reparameterization of already-tested information classes is not supported by the evidence collected so far.
+
+## Detailed historical record
 
 ## Phase A — Predictive direction at NY open
 
