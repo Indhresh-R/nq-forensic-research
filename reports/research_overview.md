@@ -94,20 +94,13 @@ That is the purpose of the repository's inventory, frontier, preregistrations, a
 
 - [RESEARCH_FRAMEWORKS/](../RESEARCH_FRAMEWORKS/) — framework-discovery and source-translation work
 - [research/](../research/) — supporting research material
-- [scripts/](../scripts/) — shared utility/orchestration scripts
-- [archive/](../archive/) — historical engines retained for forensic reference
-
-
-
-- [research_framework/](../research_framework/) — methodology and audit controls
-- [strategies/](../strategies/) — chronological dossiers
-- [strategy_summary.md](strategy_summary.md) — detailed verdict table
-- [master_research_log.md](master_research_log.md) — chronological program history
-- [rejected_hypotheses.md](rejected_hypotheses.md) — closed hypotheses and evidence
-- [RESEARCH_INVENTORY.md](../RESEARCH_INVENTORY.md) — experiment inventory
-- [RESEARCH_FRONTIER.md](../RESEARCH_FRONTIER.md) — current frontier and explicit closures
+- [research_framework/](../research_framework/) — formal testing methodology and audit controls
+- [strategies/](../strategies/) — chronological research dossiers
+- [reports/](./) — program-level summaries and logs
 - [mbo_orderflow/](../mbo_orderflow/) — MBO infrastructure
 - [volume_profile/](../volume_profile/) — profile research infrastructure
+- [scripts/](../scripts/) — shared utility/orchestration scripts
+- [archive/](../archive/) — historical engines retained for forensic reference
 
 ## Recommended reading path
 
