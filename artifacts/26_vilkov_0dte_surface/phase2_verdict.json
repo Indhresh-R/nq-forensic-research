@@ -1,0 +1,27 @@
+{
+  "verdict": "WEAK_OR_UNSTABLE",
+  "note": "Some positive incremental RV R\u00b2, but small / not clearly surviving both legs and placebos. Do not promote to strategy search yet.",
+  "headline": {
+    "nq_rv_15_atm_delta_r2_oos": -0.0005419021396307899,
+    "nq_rv_15_atm_r2A_oos": 0.3048579532376612,
+    "nq_rv_15_atm_r2ext_oos": 0.3043160510980304,
+    "nq_rv_30_atm_delta_r2_oos": -0.004239304460401994,
+    "nq_rv_30_atm_r2A_oos": 0.33250038541733107,
+    "nq_rv_30_atm_r2ext_oos": 0.3282610809569291,
+    "nq_rv_60_atm_delta_r2_oos": 0.0063111367822351605,
+    "nq_rv_60_atm_r2A_oos": 0.30710336640734626,
+    "nq_rv_60_atm_r2ext_oos": 0.3134145031895814,
+    "es_rv_15_atm_delta_r2_oos": 0.00039100606342301614,
+    "es_rv_15_atm_r2A_oos": 0.33173726836465756,
+    "es_rv_15_atm_r2ext_oos": 0.33212827442808057,
+    "es_rv_30_atm_delta_r2_oos": 0.011681916133920334,
+    "es_rv_30_atm_r2A_oos": 0.3892783846774507,
+    "es_rv_30_atm_r2ext_oos": 0.400960300811371,
+    "es_rv_60_atm_delta_r2_oos": 0.014402683174855824,
+    "es_rv_60_atm_r2A_oos": 0.37032277921173784,
+    "es_rv_60_atm_r2ext_oos": 0.38472546238659366
+  },
+  "placebo_nq_rv30_identity_delta_r2": -0.004239304460401994,
+  "placebo_nq_rv30_permute_delta_r2": -4.491185241173312e-05,
+  "panel_years": "2016-2024 (no 2025-26 in Vilkov data_opt)"
+}

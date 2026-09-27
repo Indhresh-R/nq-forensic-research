@@ -1,0 +1,83 @@
+{
+  "total_sessions": 3470,
+  "baselines": {
+    "IS": {
+      "n_sessions": 2326,
+      "mean_ret_pts": 2.21,
+      "mean_norm_ret": 0.027,
+      "up_day_pct": 54.4,
+      "continuation_pct": 46.9,
+      "large_up_pct": 6.1,
+      "large_down_pct": 7.5,
+      "tail_asym_pct": -1.5,
+      "bull_trend_pct": 10.5,
+      "bear_trend_pct": 9.4
+    },
+    "Validation": {
+      "n_sessions": 747,
+      "mean_ret_pts": -0.18,
+      "mean_norm_ret": 0.004,
+      "up_day_pct": 53.4,
+      "continuation_pct": 49.9,
+      "large_up_pct": 5.2,
+      "large_down_pct": 7.4,
+      "tail_asym_pct": -2.1,
+      "bull_trend_pct": 10.8,
+      "bear_trend_pct": 12.4
+    },
+    "OOS": {
+      "n_sessions": 397,
+      "mean_ret_pts": 5.58,
+      "mean_norm_ret": 0.003,
+      "up_day_pct": 55.4,
+      "continuation_pct": 50.9,
+      "large_up_pct": 5.3,
+      "large_down_pct": 6.5,
+      "tail_asym_pct": -1.3,
+      "bull_trend_pct": 9.6,
+      "bear_trend_pct": 9.6
+    },
+    "OOS_2025": {
+      "n_sessions": 247,
+      "mean_ret_pts": 2.77,
+      "mean_norm_ret": -0.014,
+      "up_day_pct": 57.1,
+      "continuation_pct": 48.2,
+      "large_up_pct": 4.0,
+      "large_down_pct": 7.3,
+      "tail_asym_pct": -3.2,
+      "bull_trend_pct": 8.1,
+      "bear_trend_pct": 10.5
+    },
+    "OOS_2026": {
+      "n_sessions": 150,
+      "mean_ret_pts": 10.21,
+      "mean_norm_ret": 0.03,
+      "up_day_pct": 52.7,
+      "continuation_pct": 55.3,
+      "large_up_pct": 7.3,
+      "large_down_pct": 5.3,
+      "tail_asym_pct": 2.0,
+      "bull_trend_pct": 12.0,
+      "bear_trend_pct": 8.0
+    },
+    "ALL": {
+      "n_sessions": 3470,
+      "mean_ret_pts": 2.08,
+      "mean_norm_ret": 0.019,
+      "up_day_pct": 54.3,
+      "continuation_pct": 48.0,
+      "large_up_pct": 5.8,
+      "large_down_pct": 7.4,
+      "tail_asym_pct": -1.6,
+      "bull_trend_pct": 10.5,
+      "bear_trend_pct": 10.1
+    }
+  },
+  "features_evaluated": [
+    "bin_vol_regime",
+    "bin_vol_x_dir",
+    "bin_prev_dir",
+    "bin_range_to_med"
+  ]
+}

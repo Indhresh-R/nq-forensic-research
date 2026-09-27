@@ -1,0 +1,22 @@
+{
+  "n_onsets": 140102,
+  "n_events": 54099,
+  "censored": {
+    "session_end_or_gap": 2797,
+    "hit_opposite_range_before_normal": 413,
+    "switched_abcd_cell_before_normal": 82793,
+    "no_normal_before_end": 0
+  },
+  "events_by_origin": {
+    "A_COMP_LOW_DIR": 9283,
+    "B_COMP_MIDHIGH_DIR": 14913,
+    "C_EXP_HIGH_DIR": 24298,
+    "D_EXP_LOW_DIR": 5605
+  },
+  "censored_by_origin": {
+    "A_COMP_LOW_DIR": 37323,
+    "B_COMP_MIDHIGH_DIR": 37743,
+    "C_EXP_HIGH_DIR": 5406,
+    "D_EXP_LOW_DIR": 5531
+  }
+}

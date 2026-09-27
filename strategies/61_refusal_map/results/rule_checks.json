@@ -1,0 +1,68 @@
+{
+  "checks": [
+    {
+      "rule": "R1",
+      "pass": true,
+      "detail": {
+        "p_target_first_IS": 0.1575124829777576,
+        "p_star": 0.34767025089605735,
+        "delta_fp_IS": -0.2101679527916477,
+        "p_adverse_first_IS": 0.3676804357694053
+      },
+      "text": "Refuse ORB continuation (\u22641R target, adverse=OR_mid)"
+    },
+    {
+      "rule": "R2",
+      "pass": true,
+      "detail": {
+        "med_mfe_15": 0.1979780601642081,
+        "med_mae_15": 0.1941462021701884,
+        "rel_diff": 0.01935496282184729
+      },
+      "text": "Refuse promote when MFE\u2248MAE (path symmetry)"
+    },
+    {
+      "rule": "R3",
+      "pass": true,
+      "detail": {
+        "mean_gross_55_IS": -0.035771750930521,
+        "mean_gross_56_IS": -0.177192799916762
+      },
+      "text": "Refuse promote fixed hold if |IS mean_gross|\u22640.25"
+    },
+    {
+      "rule": "R4",
+      "pass": true,
+      "detail": {
+        "56_final": "KILL_AFTER_TRADE",
+        "55_mean_net_IS": -1.035771750930521,
+        "58_delta_IS": -0.02790555713008791
+      },
+      "text": "Destination alone is not an edge"
+    },
+    {
+      "rule": "R5",
+      "pass": true,
+      "detail": {
+        "artifact": "D:\\NQ-2\\strategies\\53_regime_strategy_screen\\results\\verdict.json"
+      },
+      "text": "Refuse state\u2192generic family routing"
+    },
+    {
+      "rule": "R6",
+      "pass": true,
+      "detail": {
+        "60_classification": "CLASS_STRUCTURALLY_UNDERWATER",
+        "60_action": "MORATORIUM_simple_event_hold_and_1R_extension_mechanisms"
+      },
+      "text": "Refuse reopen/retune of killed event costumes (moratorium)"
+    }
+  ],
+  "verdict": {
+    "classification": "MAP_LOCKED",
+    "n_pass": 6,
+    "n_rules": 6,
+    "frame": "C",
+    "not_a_strategy": true
+  }
+}

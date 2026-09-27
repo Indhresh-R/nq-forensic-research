@@ -1,0 +1,17 @@
+{
+  "source": "1m_bar_proxy_v1",
+  "n_sessions": 4175,
+  "n_complete": 3612,
+  "session_min": "2010-06-07",
+  "session_max": "2026-08-07",
+  "med_va_width": 56.25,
+  "overlap_vs_trade_p1": {
+    "available": true,
+    "n_overlap": 74,
+    "med_abs_poc_diff": 267.625,
+    "med_abs_vah_diff": 256.75,
+    "med_abs_val_diff": 298.625,
+    "midprice_L_agree_rate": 0.2972972972972973,
+    "note": "Diagnostic only; proxy is not trade VA."
+  }
+}

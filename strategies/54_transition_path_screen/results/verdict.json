@@ -1,0 +1,1310 @@
+{
+  "cells": {
+    "R:COMPRESSION->EXPANSION": {
+      "catalog": "R",
+      "transition": "COMPRESSION->EXPANSION",
+      "from_state": "COMPRESSION",
+      "to_state": "EXPANSION",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 120,
+          "rel_gap": 0.5875,
+          "delta": 5.875,
+          "median_hl_trans": 15.875,
+          "median_hl_stay": 10.0
+        },
+        "Validation": {
+          "n": 22,
+          "rel_gap": 0.7647058823529411,
+          "delta": 29.25
+        },
+        "OOS": {
+          "n": 16,
+          "rel_gap": 1.9261083743842364,
+          "delta": 97.75
+        }
+      }
+    },
+    "R:COMPRESSION->NORMAL_RANGE": {
+      "catalog": "R",
+      "transition": "COMPRESSION->NORMAL_RANGE",
+      "from_state": "COMPRESSION",
+      "to_state": "NORMAL_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 15744,
+          "rel_gap": -0.025,
+          "delta": -0.25,
+          "median_hl_trans": 9.75,
+          "median_hl_stay": 10.0
+        },
+        "Validation": {
+          "n": 4776,
+          "rel_gap": -0.013071895424836602,
+          "delta": -0.5
+        },
+        "OOS": {
+          "n": 2654,
+          "rel_gap": 0.014778325123152709,
+          "delta": 0.75
+        }
+      }
+    },
+    "R:EXPANSION->COMPRESSION": {
+      "catalog": "R",
+      "transition": "EXPANSION->COMPRESSION",
+      "from_state": "EXPANSION",
+      "to_state": "COMPRESSION",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 101,
+          "rel_gap": -0.10526315789473684,
+          "delta": -1.0,
+          "median_hl_trans": 8.5,
+          "median_hl_stay": 9.5
+        },
+        "Validation": {
+          "n": 21,
+          "rel_gap": 0.11258278145695365,
+          "delta": 4.25
+        },
+        "OOS": {
+          "n": 15,
+          "rel_gap": -0.1291866028708134,
+          "delta": -6.75
+        }
+      }
+    },
+    "R:EXPANSION->NORMAL_RANGE": {
+      "catalog": "R",
+      "transition": "EXPANSION->NORMAL_RANGE",
+      "from_state": "EXPANSION",
+      "to_state": "NORMAL_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 14589,
+          "rel_gap": 0.02631578947368421,
+          "delta": 0.25,
+          "median_hl_trans": 9.75,
+          "median_hl_stay": 9.5
+        },
+        "Validation": {
+          "n": 4210,
+          "rel_gap": 0.019867549668874173,
+          "delta": 0.75
+        },
+        "OOS": {
+          "n": 2247,
+          "rel_gap": 0.028708133971291867,
+          "delta": 1.5
+        }
+      }
+    },
+    "R:NORMAL_RANGE->COMPRESSION": {
+      "catalog": "R",
+      "transition": "NORMAL_RANGE->COMPRESSION",
+      "from_state": "NORMAL_RANGE",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 16051,
+          "rel_gap": 0.05263157894736842,
+          "delta": 0.5,
+          "median_hl_trans": 10.0,
+          "median_hl_stay": 9.5
+        },
+        "Validation": {
+          "n": 4926,
+          "rel_gap": 0.04421768707482993,
+          "delta": 1.625
+        },
+        "OOS": {
+          "n": 2716,
+          "rel_gap": 0.024752475247524754,
+          "delta": 1.25
+        }
+      }
+    },
+    "R:NORMAL_RANGE->EXPANSION": {
+      "catalog": "R",
+      "transition": "NORMAL_RANGE->EXPANSION",
+      "from_state": "NORMAL_RANGE",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 14323,
+          "rel_gap": 0.0,
+          "delta": 0.0,
+          "median_hl_trans": 9.5,
+          "median_hl_stay": 9.5
+        },
+        "Validation": {
+          "n": 4102,
+          "rel_gap": 0.034013605442176874,
+          "delta": 1.25
+        },
+        "OOS": {
+          "n": 2193,
+          "rel_gap": 0.04950495049504951,
+          "delta": 2.5
+        }
+      }
+    },
+    "C:CHOP_RANGE->COMPRESSION": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->COMPRESSION",
+      "from_state": "CHOP_RANGE",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 22817,
+          "rel_gap": 0.08333333333333333,
+          "delta": 0.75,
+          "median_hl_trans": 9.75,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 8179,
+          "rel_gap": 0.06896551724137931,
+          "delta": 2.5
+        },
+        "OOS": {
+          "n": 4496,
+          "rel_gap": 0.05181347150259067,
+          "delta": 2.5
+        }
+      }
+    },
+    "C:CHOP_RANGE->EXPANSION": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->EXPANSION",
+      "from_state": "CHOP_RANGE",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6676,
+          "rel_gap": -0.027777777777777776,
+          "delta": -0.25,
+          "median_hl_trans": 8.75,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 1645,
+          "rel_gap": -0.034482758620689655,
+          "delta": -1.25
+        },
+        "OOS": {
+          "n": 927,
+          "rel_gap": 0.0,
+          "delta": 0.0
+        }
+      }
+    },
+    "C:CHOP_RANGE->HIGH_ACTIVITY": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->HIGH_ACTIVITY",
+      "from_state": "CHOP_RANGE",
+      "to_state": "HIGH_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 7397,
+          "rel_gap": 0.6944444444444444,
+          "delta": 6.25,
+          "median_hl_trans": 15.25,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 2994,
+          "rel_gap": 0.2206896551724138,
+          "delta": 8.0
+        },
+        "OOS": {
+          "n": 1468,
+          "rel_gap": 0.43005181347150256,
+          "delta": 20.75
+        }
+      }
+    },
+    "C:CHOP_RANGE->LOW_ACTIVITY": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->LOW_ACTIVITY",
+      "from_state": "CHOP_RANGE",
+      "to_state": "LOW_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 4028,
+          "rel_gap": -0.4444444444444444,
+          "delta": -4.0,
+          "median_hl_trans": 5.0,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 396,
+          "rel_gap": -0.43103448275862066,
+          "delta": -15.625
+        },
+        "OOS": {
+          "n": 381,
+          "rel_gap": -0.5129533678756477,
+          "delta": -24.75
+        }
+      }
+    },
+    "C:CHOP_RANGE->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->TRANSITION_MIXED",
+      "from_state": "CHOP_RANGE",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6267,
+          "rel_gap": -0.1388888888888889,
+          "delta": -1.25,
+          "median_hl_trans": 7.75,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 1579,
+          "rel_gap": -0.22758620689655173,
+          "delta": -8.25
+        },
+        "OOS": {
+          "n": 938,
+          "rel_gap": -0.22797927461139897,
+          "delta": -11.0
+        }
+      }
+    },
+    "C:CHOP_RANGE->TRENDING": {
+      "catalog": "C",
+      "transition": "CHOP_RANGE->TRENDING",
+      "from_state": "CHOP_RANGE",
+      "to_state": "TRENDING",
+      "classification": "UNSTABLE",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 542,
+          "rel_gap": 0.3888888888888889,
+          "delta": 3.5,
+          "median_hl_trans": 12.5,
+          "median_hl_stay": 9.0
+        },
+        "Validation": {
+          "n": 101,
+          "rel_gap": 0.3931034482758621,
+          "delta": 14.25
+        },
+        "OOS": {
+          "n": 76,
+          "rel_gap": 0.3471502590673575,
+          "delta": 16.75
+        }
+      }
+    },
+    "C:COMPRESSION->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "COMPRESSION->CHOP_RANGE",
+      "from_state": "COMPRESSION",
+      "to_state": "CHOP_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 22938,
+          "rel_gap": -0.07142857142857142,
+          "delta": -0.75,
+          "median_hl_trans": 9.75,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 8240,
+          "rel_gap": -0.01948051948051948,
+          "delta": -0.75
+        },
+        "OOS": {
+          "n": 4538,
+          "rel_gap": -0.03398058252427184,
+          "delta": -1.75
+        }
+      }
+    },
+    "C:COMPRESSION->EXPANSION": {
+      "catalog": "C",
+      "transition": "COMPRESSION->EXPANSION",
+      "from_state": "COMPRESSION",
+      "to_state": "EXPANSION",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 3,
+          "rel_gap": 0.16666666666666666,
+          "delta": 1.75,
+          "median_hl_trans": 12.25,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 1,
+          "rel_gap": 2.2532467532467533,
+          "delta": 86.75
+        },
+        "OOS": {
+          "n": 1,
+          "rel_gap": 2.116504854368932,
+          "delta": 109.0
+        }
+      }
+    },
+    "C:COMPRESSION->HIGH_ACTIVITY": {
+      "catalog": "C",
+      "transition": "COMPRESSION->HIGH_ACTIVITY",
+      "from_state": "COMPRESSION",
+      "to_state": "HIGH_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 2068,
+          "rel_gap": 0.47619047619047616,
+          "delta": 5.0,
+          "median_hl_trans": 15.5,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 911,
+          "rel_gap": 0.19480519480519481,
+          "delta": 7.5
+        },
+        "OOS": {
+          "n": 458,
+          "rel_gap": 0.3155339805825243,
+          "delta": 16.25
+        }
+      }
+    },
+    "C:COMPRESSION->LOW_ACTIVITY": {
+      "catalog": "C",
+      "transition": "COMPRESSION->LOW_ACTIVITY",
+      "from_state": "COMPRESSION",
+      "to_state": "LOW_ACTIVITY",
+      "classification": "UNSTABLE",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 1151,
+          "rel_gap": -0.5,
+          "delta": -5.25,
+          "median_hl_trans": 5.25,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 126,
+          "rel_gap": -0.461038961038961,
+          "delta": -17.75
+        },
+        "OOS": {
+          "n": 107,
+          "rel_gap": -0.49029126213592233,
+          "delta": -25.25
+        }
+      }
+    },
+    "C:COMPRESSION->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "COMPRESSION->TRANSITION_MIXED",
+      "from_state": "COMPRESSION",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1634,
+          "rel_gap": -0.23809523809523808,
+          "delta": -2.5,
+          "median_hl_trans": 8.0,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 472,
+          "rel_gap": -0.2792207792207792,
+          "delta": -10.75
+        },
+        "OOS": {
+          "n": 252,
+          "rel_gap": -0.2766990291262136,
+          "delta": -14.25
+        }
+      }
+    },
+    "C:COMPRESSION->TRENDING": {
+      "catalog": "C",
+      "transition": "COMPRESSION->TRENDING",
+      "from_state": "COMPRESSION",
+      "to_state": "TRENDING",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6834,
+          "rel_gap": 0.14285714285714285,
+          "delta": 1.5,
+          "median_hl_trans": 12.0,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 2634,
+          "rel_gap": 0.11688311688311688,
+          "delta": 4.5
+        },
+        "OOS": {
+          "n": 1326,
+          "rel_gap": 0.1553398058252427,
+          "delta": 8.0
+        }
+      }
+    },
+    "C:EXPANSION->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "EXPANSION->CHOP_RANGE",
+      "from_state": "EXPANSION",
+      "to_state": "CHOP_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6481,
+          "rel_gap": 0.0,
+          "delta": 0.0,
+          "median_hl_trans": 8.5,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 1586,
+          "rel_gap": 0.013986013986013986,
+          "delta": 0.5
+        },
+        "OOS": {
+          "n": 871,
+          "rel_gap": 0.03684210526315789,
+          "delta": 1.75
+        }
+      }
+    },
+    "C:EXPANSION->COMPRESSION": {
+      "catalog": "C",
+      "transition": "EXPANSION->COMPRESSION",
+      "from_state": "EXPANSION",
+      "to_state": "COMPRESSION",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 13,
+          "rel_gap": -0.38235294117647056,
+          "delta": -3.25,
+          "median_hl_trans": 5.25,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 1,
+          "rel_gap": 0.13286713286713286,
+          "delta": 4.75
+        },
+        "OOS": {
+          "n": 1,
+          "rel_gap": 0.2631578947368421,
+          "delta": 12.5
+        }
+      }
+    },
+    "C:EXPANSION->HIGH_ACTIVITY": {
+      "catalog": "C",
+      "transition": "EXPANSION->HIGH_ACTIVITY",
+      "from_state": "EXPANSION",
+      "to_state": "HIGH_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 1403,
+          "rel_gap": 0.7352941176470589,
+          "delta": 6.25,
+          "median_hl_trans": 14.75,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 462,
+          "rel_gap": 0.23076923076923078,
+          "delta": 8.25
+        },
+        "OOS": {
+          "n": 219,
+          "rel_gap": 0.6105263157894737,
+          "delta": 29.0
+        }
+      }
+    },
+    "C:EXPANSION->LOW_ACTIVITY": {
+      "catalog": "C",
+      "transition": "EXPANSION->LOW_ACTIVITY",
+      "from_state": "EXPANSION",
+      "to_state": "LOW_ACTIVITY",
+      "classification": "UNSTABLE",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 593,
+          "rel_gap": -0.4411764705882353,
+          "delta": -3.75,
+          "median_hl_trans": 4.75,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 48,
+          "rel_gap": -0.541958041958042,
+          "delta": -19.375
+        },
+        "OOS": {
+          "n": 45,
+          "rel_gap": -0.5368421052631579,
+          "delta": -25.5
+        }
+      }
+    },
+    "C:EXPANSION->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "EXPANSION->TRANSITION_MIXED",
+      "from_state": "EXPANSION",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1065,
+          "rel_gap": -0.17647058823529413,
+          "delta": -1.5,
+          "median_hl_trans": 7.0,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 197,
+          "rel_gap": -0.23776223776223776,
+          "delta": -8.5
+        },
+        "OOS": {
+          "n": 114,
+          "rel_gap": -0.11315789473684211,
+          "delta": -5.375
+        }
+      }
+    },
+    "C:EXPANSION->TRENDING": {
+      "catalog": "C",
+      "transition": "EXPANSION->TRENDING",
+      "from_state": "EXPANSION",
+      "to_state": "TRENDING",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 12263,
+          "rel_gap": 0.029411764705882353,
+          "delta": 0.25,
+          "median_hl_trans": 8.75,
+          "median_hl_stay": 8.5
+        },
+        "Validation": {
+          "n": 3253,
+          "rel_gap": 0.013986013986013986,
+          "delta": 0.5
+        },
+        "OOS": {
+          "n": 1745,
+          "rel_gap": 0.010526315789473684,
+          "delta": 0.5
+        }
+      }
+    },
+    "C:HIGH_ACTIVITY->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "HIGH_ACTIVITY->CHOP_RANGE",
+      "from_state": "HIGH_ACTIVITY",
+      "to_state": "CHOP_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 7731,
+          "rel_gap": -0.016129032258064516,
+          "delta": -0.25,
+          "median_hl_trans": 15.25,
+          "median_hl_stay": 15.5
+        },
+        "Validation": {
+          "n": 3074,
+          "rel_gap": 0.017142857142857144,
+          "delta": 0.75
+        },
+        "OOS": {
+          "n": 1521,
+          "rel_gap": 0.01838235294117647,
+          "delta": 1.25
+        }
+      }
+    },
+    "C:HIGH_ACTIVITY->COMPRESSION": {
+      "catalog": "C",
+      "transition": "HIGH_ACTIVITY->COMPRESSION",
+      "from_state": "HIGH_ACTIVITY",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1913,
+          "rel_gap": 0.06451612903225806,
+          "delta": 1.0,
+          "median_hl_trans": 16.5,
+          "median_hl_stay": 15.5
+        },
+        "Validation": {
+          "n": 841,
+          "rel_gap": 0.09142857142857143,
+          "delta": 4.0
+        },
+        "OOS": {
+          "n": 434,
+          "rel_gap": 0.06066176470588235,
+          "delta": 4.125
+        }
+      }
+    },
+    "C:HIGH_ACTIVITY->EXPANSION": {
+      "catalog": "C",
+      "transition": "HIGH_ACTIVITY->EXPANSION",
+      "from_state": "HIGH_ACTIVITY",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1663,
+          "rel_gap": -0.14516129032258066,
+          "delta": -2.25,
+          "median_hl_trans": 13.25,
+          "median_hl_stay": 15.5
+        },
+        "Validation": {
+          "n": 581,
+          "rel_gap": -0.05714285714285714,
+          "delta": -2.5
+        },
+        "OOS": {
+          "n": 280,
+          "rel_gap": -0.06985294117647059,
+          "delta": -4.75
+        }
+      }
+    },
+    "C:HIGH_ACTIVITY->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "HIGH_ACTIVITY->TRANSITION_MIXED",
+      "from_state": "HIGH_ACTIVITY",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "UNSTABLE",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 527,
+          "rel_gap": -0.4838709677419355,
+          "delta": -7.5,
+          "median_hl_trans": 8.0,
+          "median_hl_stay": 15.5
+        },
+        "Validation": {
+          "n": 153,
+          "rel_gap": -0.26857142857142857,
+          "delta": -11.75
+        },
+        "OOS": {
+          "n": 85,
+          "rel_gap": -0.4007352941176471,
+          "delta": -27.25
+        }
+      }
+    },
+    "C:HIGH_ACTIVITY->TRENDING": {
+      "catalog": "C",
+      "transition": "HIGH_ACTIVITY->TRENDING",
+      "from_state": "HIGH_ACTIVITY",
+      "to_state": "TRENDING",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6075,
+          "rel_gap": 0.06451612903225806,
+          "delta": 1.0,
+          "median_hl_trans": 16.5,
+          "median_hl_stay": 15.5
+        },
+        "Validation": {
+          "n": 2737,
+          "rel_gap": 0.04,
+          "delta": 1.75
+        },
+        "OOS": {
+          "n": 1262,
+          "rel_gap": 0.014705882352941176,
+          "delta": 1.0
+        }
+      }
+    },
+    "C:LOW_ACTIVITY->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "LOW_ACTIVITY->CHOP_RANGE",
+      "from_state": "LOW_ACTIVITY",
+      "to_state": "CHOP_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 3870,
+          "rel_gap": 0.0,
+          "delta": 0.0,
+          "median_hl_trans": 5.0,
+          "median_hl_stay": 5.0
+        },
+        "Validation": {
+          "n": 371,
+          "rel_gap": 0.0379746835443038,
+          "delta": 0.75
+        },
+        "OOS": {
+          "n": 377,
+          "rel_gap": -0.07142857142857142,
+          "delta": -1.75
+        }
+      }
+    },
+    "C:LOW_ACTIVITY->COMPRESSION": {
+      "catalog": "C",
+      "transition": "LOW_ACTIVITY->COMPRESSION",
+      "from_state": "LOW_ACTIVITY",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1226,
+          "rel_gap": 0.1,
+          "delta": 0.5,
+          "median_hl_trans": 5.5,
+          "median_hl_stay": 5.0
+        },
+        "Validation": {
+          "n": 123,
+          "rel_gap": 0.0379746835443038,
+          "delta": 0.75
+        },
+        "OOS": {
+          "n": 121,
+          "rel_gap": 0.030612244897959183,
+          "delta": 0.75
+        }
+      }
+    },
+    "C:LOW_ACTIVITY->EXPANSION": {
+      "catalog": "C",
+      "transition": "LOW_ACTIVITY->EXPANSION",
+      "from_state": "LOW_ACTIVITY",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 656,
+          "rel_gap": 0.0,
+          "delta": 0.0,
+          "median_hl_trans": 5.0,
+          "median_hl_stay": 5.0
+        },
+        "Validation": {
+          "n": 66,
+          "rel_gap": -0.0759493670886076,
+          "delta": -1.5
+        },
+        "OOS": {
+          "n": 44,
+          "rel_gap": -0.04591836734693878,
+          "delta": -1.125
+        }
+      }
+    },
+    "C:LOW_ACTIVITY->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "LOW_ACTIVITY->TRANSITION_MIXED",
+      "from_state": "LOW_ACTIVITY",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 343,
+          "rel_gap": 0.2,
+          "delta": 1.0,
+          "median_hl_trans": 6.0,
+          "median_hl_stay": 5.0
+        },
+        "Validation": {
+          "n": 50,
+          "rel_gap": 0.14556962025316456,
+          "delta": 2.875
+        },
+        "OOS": {
+          "n": 43,
+          "rel_gap": 0.5,
+          "delta": 12.25
+        }
+      }
+    },
+    "C:LOW_ACTIVITY->TRENDING": {
+      "catalog": "C",
+      "transition": "LOW_ACTIVITY->TRENDING",
+      "from_state": "LOW_ACTIVITY",
+      "to_state": "TRENDING",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 3210,
+          "rel_gap": 0.1,
+          "delta": 0.5,
+          "median_hl_trans": 5.5,
+          "median_hl_stay": 5.0
+        },
+        "Validation": {
+          "n": 383,
+          "rel_gap": 0.0759493670886076,
+          "delta": 1.5
+        },
+        "OOS": {
+          "n": 287,
+          "rel_gap": 0.061224489795918366,
+          "delta": 1.5
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->CHOP_RANGE",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "CHOP_RANGE",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 6308,
+          "rel_gap": 0.0,
+          "delta": 0.0,
+          "median_hl_trans": 7.5,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 1548,
+          "rel_gap": 0.027777777777777776,
+          "delta": 0.75
+        },
+        "OOS": {
+          "n": 939,
+          "rel_gap": 0.09285714285714286,
+          "delta": 3.25
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->COMPRESSION": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->COMPRESSION",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1682,
+          "rel_gap": 0.1,
+          "delta": 0.75,
+          "median_hl_trans": 8.25,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 521,
+          "rel_gap": 0.07407407407407407,
+          "delta": 2.0
+        },
+        "OOS": {
+          "n": 270,
+          "rel_gap": 0.12142857142857143,
+          "delta": 4.25
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->EXPANSION": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->EXPANSION",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 1167,
+          "rel_gap": -0.1,
+          "delta": -0.75,
+          "median_hl_trans": 6.75,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 232,
+          "rel_gap": -0.037037037037037035,
+          "delta": -1.0
+        },
+        "OOS": {
+          "n": 159,
+          "rel_gap": 0.0,
+          "delta": 0.0
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->HIGH_ACTIVITY": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->HIGH_ACTIVITY",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "HIGH_ACTIVITY",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 417,
+          "rel_gap": -0.03333333333333333,
+          "delta": -0.25,
+          "median_hl_trans": 7.25,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 119,
+          "rel_gap": 0.25925925925925924,
+          "delta": 7.0
+        },
+        "OOS": {
+          "n": 50,
+          "rel_gap": 0.35,
+          "delta": 12.25
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->LOW_ACTIVITY": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->LOW_ACTIVITY",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "LOW_ACTIVITY",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 411,
+          "rel_gap": -0.23333333333333334,
+          "delta": -1.75,
+          "median_hl_trans": 5.75,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 63,
+          "rel_gap": -0.19444444444444445,
+          "delta": -5.25
+        },
+        "OOS": {
+          "n": 36,
+          "rel_gap": -0.21428571428571427,
+          "delta": -7.5
+        }
+      }
+    },
+    "C:TRANSITION_MIXED->TRENDING": {
+      "catalog": "C",
+      "transition": "TRANSITION_MIXED->TRENDING",
+      "from_state": "TRANSITION_MIXED",
+      "to_state": "TRENDING",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 4762,
+          "rel_gap": 0.13333333333333333,
+          "delta": 1.0,
+          "median_hl_trans": 8.5,
+          "median_hl_stay": 7.5
+        },
+        "Validation": {
+          "n": 1495,
+          "rel_gap": 0.06481481481481481,
+          "delta": 1.75
+        },
+        "OOS": {
+          "n": 878,
+          "rel_gap": 0.1,
+          "delta": 3.5
+        }
+      }
+    },
+    "C:TRENDING->CHOP_RANGE": {
+      "catalog": "C",
+      "transition": "TRENDING->CHOP_RANGE",
+      "from_state": "TRENDING",
+      "to_state": "CHOP_RANGE",
+      "classification": "THIN",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 442,
+          "rel_gap": 0.3333333333333333,
+          "delta": 3.5,
+          "median_hl_trans": 14.0,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 125,
+          "rel_gap": 0.5668789808917197,
+          "delta": 22.25
+        },
+        "OOS": {
+          "n": 86,
+          "rel_gap": 0.43243243243243246,
+          "delta": 24.0
+        }
+      }
+    },
+    "C:TRENDING->COMPRESSION": {
+      "catalog": "C",
+      "transition": "TRENDING->COMPRESSION",
+      "from_state": "TRENDING",
+      "to_state": "COMPRESSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 7061,
+          "rel_gap": 0.09523809523809523,
+          "delta": 1.0,
+          "median_hl_trans": 11.5,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 2771,
+          "rel_gap": 0.044585987261146494,
+          "delta": 1.75
+        },
+        "OOS": {
+          "n": 1374,
+          "rel_gap": -0.018018018018018018,
+          "delta": -1.0
+        }
+      }
+    },
+    "C:TRENDING->EXPANSION": {
+      "catalog": "C",
+      "transition": "TRENDING->EXPANSION",
+      "from_state": "TRENDING",
+      "to_state": "EXPANSION",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 11573,
+          "rel_gap": -0.16666666666666666,
+          "delta": -1.75,
+          "median_hl_trans": 8.75,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 2990,
+          "rel_gap": -0.03821656050955414,
+          "delta": -1.5
+        },
+        "OOS": {
+          "n": 1568,
+          "rel_gap": -0.09009009009009009,
+          "delta": -5.0
+        }
+      }
+    },
+    "C:TRENDING->HIGH_ACTIVITY": {
+      "catalog": "C",
+      "transition": "TRENDING->HIGH_ACTIVITY",
+      "from_state": "TRENDING",
+      "to_state": "HIGH_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 6650,
+          "rel_gap": 0.5238095238095238,
+          "delta": 5.5,
+          "median_hl_trans": 16.0,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 2896,
+          "rel_gap": 0.16560509554140126,
+          "delta": 6.5
+        },
+        "OOS": {
+          "n": 1397,
+          "rel_gap": 0.24324324324324326,
+          "delta": 13.5
+        }
+      }
+    },
+    "C:TRENDING->LOW_ACTIVITY": {
+      "catalog": "C",
+      "transition": "TRENDING->LOW_ACTIVITY",
+      "from_state": "TRENDING",
+      "to_state": "LOW_ACTIVITY",
+      "classification": "INTERESTING",
+      "oos_caution": false,
+      "definitional_overlap": true,
+      "detail": {
+        "IS": {
+          "n": 3128,
+          "rel_gap": -0.47619047619047616,
+          "delta": -5.0,
+          "median_hl_trans": 5.5,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 366,
+          "rel_gap": -0.4713375796178344,
+          "delta": -18.5
+        },
+        "OOS": {
+          "n": 303,
+          "rel_gap": -0.5495495495495496,
+          "delta": -30.5
+        }
+      }
+    },
+    "C:TRENDING->TRANSITION_MIXED": {
+      "catalog": "C",
+      "transition": "TRENDING->TRANSITION_MIXED",
+      "from_state": "TRENDING",
+      "to_state": "TRANSITION_MIXED",
+      "classification": "KILL",
+      "oos_caution": false,
+      "definitional_overlap": false,
+      "detail": {
+        "IS": {
+          "n": 4907,
+          "rel_gap": -0.23809523809523808,
+          "delta": -2.5,
+          "median_hl_trans": 8.0,
+          "median_hl_stay": 10.5
+        },
+        "Validation": {
+          "n": 1512,
+          "rel_gap": -0.2802547770700637,
+          "delta": -11.0
+        },
+        "OOS": {
+          "n": 881,
+          "rel_gap": -0.3108108108108108,
+          "delta": -17.25
+        }
+      }
+    }
+  },
+  "interesting": [
+    "C:CHOP_RANGE->HIGH_ACTIVITY",
+    "C:CHOP_RANGE->LOW_ACTIVITY",
+    "C:COMPRESSION->HIGH_ACTIVITY",
+    "C:EXPANSION->HIGH_ACTIVITY",
+    "C:TRENDING->HIGH_ACTIVITY",
+    "C:TRENDING->LOW_ACTIVITY"
+  ],
+  "interesting_non_definitional": [],
+  "thresholds": {
+    "min_is": 500,
+    "min_val": 200,
+    "min_oos": 100,
+    "g_is": 0.25,
+    "g_val": 0.15,
+    "primary_horizon": 15
+  },
+  "note": "No trades. INTERESTING = path distinct from stay baseline. Transitions into HIGH_ACTIVITY/LOW_ACTIVITY flagged definitional_overlap (activity labels entangle with subsequent range)."
+}

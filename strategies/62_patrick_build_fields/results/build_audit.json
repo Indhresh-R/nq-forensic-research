@@ -1,0 +1,29 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "P7_CAUSAL": "prior_session_levels",
+  "NO_IB_FIELD_NAME": true,
+  "q": 0.99,
+  "N": 5000,
+  "N_min": 500,
+  "tick": 0.25,
+  "tol_ticks": 1,
+  "n_p1_sessions": 127,
+  "n_p1_complete": 96,
+  "n_sessions_streamed": 127,
+  "p6a_flag_rate_mean": 0.015349863954413498,
+  "p6a_flag_rate_p10": 0.01449135090932411,
+  "p6a_flag_rate_p50": 0.015202328364383117,
+  "p6a_flag_rate_p90": 0.0162830860269576,
+  "p6a_flag_rate_max": 0.026,
+  "tie_mass_mean": 0.48615347407983717,
+  "threshold_on_round_lot_frac_mean": 0.4171514152069202,
+  "n_p6a_flagged_prints": 706052,
+  "n_p7_joins": 2135,
+  "n_p7_sessions_with_hit": 79,
+  "p2_sessions": 127,
+  "globex_open_60m_fields": [
+    "globex_open_60m_high",
+    "globex_open_60m_low"
+  ],
+  "note_p6a_store": "p6a_print_flags.parquet stores flagged prints only; rates from p6a_session_stats.csv"
+}

@@ -1,0 +1,99 @@
+# Phase 13 — pre-failure state
+
+## State distributions
+
+| period     | feature        |   up_median |   down_median |        ks |            p |
+|:-----------|:---------------|------------:|--------------:|----------:|-------------:|
+| Inner      | ib_width       |   75.5      |    84.375     | 0.0748324 | 0.472946     |
+| Inner      | signal_end     |  659        |   654         | 0.0781018 | 0.419492     |
+| Inner      | reentry_end    |  694        |   689         | 0.094168  | 0.212391     |
+| Inner      | failure_delay  |   15        |    15         | 0.0723061 | 0.516718     |
+| Inner      | pre_loc_ib     |    1.04061  |    -0.0643352 | 1         | 1.65291e-146 |
+| Inner      | pre_vwap_ib    |    0.459326 |    -0.527127  | 1         | 1.65291e-146 |
+| Inner      | ib_drift       |    0.368421 |    -0.3575    | 0.479921  | 5.6114e-26   |
+| Inner      | ib_half_change |    0.206573 |    -0.20607   | 0.433869  | 3.69844e-21  |
+| Inner      | ret_5m_ib      |    0.150715 |    -0.232317  | 1         | 1.65291e-146 |
+| Inner      | ret_10m_ib     |    0.208122 |    -0.337154  | 1         | 1.65291e-146 |
+| Inner      | ret_15m_ib     |    0.235294 |    -0.384632  | 1         | 1.65291e-146 |
+| Inner      | ret_30m_ib     |    0.349398 |    -0.525817  | 1         | 1.65291e-146 |
+| OOS        | ib_width       |  173        |   199.625     | 0.170034  | 0.0341505    |
+| OOS        | signal_end     |  654        |   654         | 0.0541041 | 0.980202     |
+| OOS        | reentry_end    |  679        |   676.5       | 0.0698646 | 0.864396     |
+| OOS        | failure_delay  |   10        |    10         | 0.0486038 | 0.993777     |
+| OOS        | pre_loc_ib     |    1.02808  |    -0.0449714 | 1         | 2.2708e-81   |
+| OOS        | pre_vwap_ib    |    0.450231 |    -0.501898  | 1         | 2.2708e-81   |
+| OOS        | ib_drift       |    0.423754 |    -0.438646  | 0.541728  | 7.92026e-19  |
+| OOS        | ib_half_change |    0.192389 |    -0.206663  | 0.441771  | 1.95413e-12  |
+| OOS        | ret_5m_ib      |    0.122309 |    -0.200464  | 1         | 2.2708e-81   |
+| OOS        | ret_10m_ib     |    0.188742 |    -0.284256  | 1         | 2.2708e-81   |
+| OOS        | ret_15m_ib     |    0.220807 |    -0.333321  | 1         | 2.2708e-81   |
+| OOS        | ret_30m_ib     |    0.345955 |    -0.489843  | 1         | 2.2708e-81   |
+| Train      | ib_width       |   22.125    |    24.25      | 0.0792012 | 0.0794241    |
+| Train      | signal_end     |  664        |   659         | 0.0531046 | 0.456489     |
+| Train      | reentry_end    |  699        |   689         | 0.0664279 | 0.204733     |
+| Train      | failure_delay  |   15        |    15         | 0.0601433 | 0.306435     |
+| Train      | pre_loc_ib     |    1.03984  |    -0.0601724 | 1         | 3.15313e-302 |
+| Train      | pre_vwap_ib    |    0.470134 |    -0.497394  | 1         | 3.15313e-302 |
+| Train      | ib_drift       |    0.33399  |    -0.30866   | 0.431074  | 1.60388e-42  |
+| Train      | ib_half_change |    0.168696 |    -0.201501  | 0.416714  | 1.11649e-39  |
+| Train      | ret_5m_ib      |    0.162551 |    -0.211292  | 1         | 3.15313e-302 |
+| Train      | ret_10m_ib     |    0.221843 |    -0.302015  | 1         | 3.15313e-302 |
+| Train      | ret_15m_ib     |    0.28125  |    -0.359422  | 1         | 3.15313e-302 |
+| Train      | ret_30m_ib     |    0.368236 |    -0.485178  | 1         | 3.15313e-302 |
+| Validation | ib_width       |  117.5      |   130.5       | 0.138972  | 0.0107201    |
+| Validation | signal_end     |  654        |   654         | 0.0520913 | 0.840532     |
+| Validation | reentry_end    |  689        |   689         | 0.0815685 | 0.31971      |
+| Validation | failure_delay  |   15        |    15         | 0.092897  | 0.188405     |
+| Validation | pre_loc_ib     |    1.04197  |    -0.0546139 | 1         | 7.89295e-158 |
+| Validation | pre_vwap_ib    |    0.479414 |    -0.498368  | 1         | 7.89295e-158 |
+| Validation | ib_drift       |    0.33931  |    -0.335196  | 0.495556  | 5.51732e-30  |
+| Validation | ib_half_change |    0.197183 |    -0.242389  | 0.496834  | 3.74879e-30  |
+| Validation | ret_5m_ib      |    0.153846 |    -0.194118  | 1         | 7.89295e-158 |
+| Validation | ret_10m_ib     |    0.248815 |    -0.279581  | 1         | 7.89295e-158 |
+| Validation | ret_15m_ib     |    0.275    |    -0.320513  | 1         | 7.89295e-158 |
+| Validation | ret_30m_ib     |    0.392157 |    -0.450199  | 1         | 7.89295e-158 |
+
+## Aligned breakout paths
+
+| period     | direction        |   bar_after_break |   n |        mean |      median |
+|:-----------|:-----------------|------------------:|----:|------------:|------------:|
+| Inner      | downside_failure |                 1 | 214 | -0.0120599  | -0.0215823  |
+| Inner      | downside_failure |                 2 | 214 | -0.0186074  | -0.0458864  |
+| Inner      | downside_failure |                 3 | 214 | -0.034984   | -0.0601404  |
+| Inner      | downside_failure |                 4 | 214 | -0.047139   | -0.0726089  |
+| Inner      | downside_failure |                 5 | 214 | -0.0595542  | -0.0670492  |
+| Inner      | upside_failure   |                 1 | 283 | -0.0123414  | -0.00980392 |
+| Inner      | upside_failure   |                 2 | 283 | -0.0265381  | -0.0201613  |
+| Inner      | upside_failure   |                 3 | 283 | -0.0276765  | -0.0182371  |
+| Inner      | upside_failure   |                 4 | 283 | -0.0369862  | -0.027933   |
+| Inner      | upside_failure   |                 5 | 283 | -0.0424398  | -0.0188679  |
+| OOS        | downside_failure |                 1 | 116 | -0.023058   | -0.0224102  |
+| OOS        | downside_failure |                 2 | 116 | -0.0420571  | -0.0421875  |
+| OOS        | downside_failure |                 3 | 116 | -0.0546987  | -0.0494831  |
+| OOS        | downside_failure |                 4 | 116 | -0.048213   | -0.0839719  |
+| OOS        | downside_failure |                 5 | 116 | -0.0574597  | -0.0725919  |
+| OOS        | upside_failure   |                 1 | 163 | -0.0190681  | -0.0160467  |
+| OOS        | upside_failure   |                 2 | 163 | -0.0303837  | -0.028      |
+| OOS        | upside_failure   |                 3 | 163 | -0.0410966  | -0.0392562  |
+| OOS        | upside_failure   |                 4 | 163 | -0.0343201  | -0.0361545  |
+| OOS        | upside_failure   |                 5 | 163 | -0.0218237  | -0.0184049  |
+| Train      | downside_failure |                 1 | 468 | -0.0117519  | -0.0308689  |
+| Train      | downside_failure |                 2 | 468 | -0.030011   | -0.0389315  |
+| Train      | downside_failure |                 3 | 468 | -0.0211851  | -0.0333467  |
+| Train      | downside_failure |                 4 | 468 | -0.0365735  | -0.0545635  |
+| Train      | downside_failure |                 5 | 468 | -0.0451117  | -0.0711156  |
+| Train      | upside_failure   |                 1 | 544 | -0.0098816  | -0.0155048  |
+| Train      | upside_failure   |                 2 | 544 | -0.0116983  | -0.019871   |
+| Train      | upside_failure   |                 3 | 544 | -0.0156792  | -0.0249514  |
+| Train      | upside_failure   |                 4 | 544 | -0.0145326  | -0.0220019  |
+| Train      | upside_failure   |                 5 | 544 | -0.0199838  | -0.0238129  |
+| Validation | downside_failure |                 1 | 257 | -0.0202176  | -0.0163934  |
+| Validation | downside_failure |                 2 | 257 | -0.0246054  | -0.0259259  |
+| Validation | downside_failure |                 3 | 257 | -0.0293116  | -0.0388128  |
+| Validation | downside_failure |                 4 | 257 | -0.0190385  | -0.04329    |
+| Validation | downside_failure |                 5 | 257 | -0.031496   | -0.04       |
+| Validation | upside_failure   |                 1 | 271 | -0.00771822 | -0.0138504  |
+| Validation | upside_failure   |                 2 | 271 | -0.0236764  | -0.0226365  |
+| Validation | upside_failure   |                 3 | 271 | -0.0325766  | -0.0138249  |
+| Validation | upside_failure   |                 4 | 271 | -0.0446963  | -0.0440252  |
+| Validation | upside_failure   |                 5 | 271 | -0.0433093  | -0.0104987  |

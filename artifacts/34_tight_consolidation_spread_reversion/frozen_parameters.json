@@ -1,0 +1,21 @@
+{
+  "research_pass_date": "2026-09-14",
+  "family_a": {
+    "window_minutes": 30,
+    "train_range_percentile": 0.25,
+    "frozen_x_points": 6.5,
+    "volume_multiple": 1.5
+  },
+  "family_b": {
+    "pair": "1 MNQ + 1 MES",
+    "point_values": {
+      "MNQ": 2.0,
+      "MES": 5.0
+    },
+    "combined_round_trip_cost": 4.0,
+    "spread": "2*NQ - 5*ES",
+    "lookback_minutes": 60,
+    "z_entry": 2.0,
+    "stop_dollars": 150.0
+  }
+}

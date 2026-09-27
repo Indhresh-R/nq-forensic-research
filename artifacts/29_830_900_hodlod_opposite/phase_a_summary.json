@@ -1,0 +1,11 @@
+{
+  "day_range_definition": "[08:30, 16:00) ET extremes",
+  "primary_discovery": {
+    "pct_hod": 0.10260653702937526,
+    "pct_lod": 0.12949937939594539,
+    "pct_hod_or_lod": 0.2312784443525031,
+    "pct_xor": 0.23045097227968556,
+    "n": 2417
+  },
+  "note": "xor = exactly one of HOD/LOD (tradable oracle universe)"
+}

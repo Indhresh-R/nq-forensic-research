@@ -1,0 +1,53 @@
+{
+  "classification": "PROGRESSIVE",
+  "base_class": "HISTORY_RESIDUAL",
+  "progressive_upgrade": true,
+  "detail": [
+    {
+      "bin": "DUR_T1",
+      "n_c": 987,
+      "n_d": 2473,
+      "return_diff": 0.22559099264969473,
+      "opposite_diff": -0.2511214326478757,
+      "return_keeps": true,
+      "opposite_keeps": true
+    },
+    {
+      "bin": "DUR_T2",
+      "n_c": 1106,
+      "n_d": 1355,
+      "return_diff": 0.18254872783809206,
+      "opposite_diff": -0.18821390203052124,
+      "return_keeps": true,
+      "opposite_keeps": true
+    },
+    {
+      "bin": "DUR_T3",
+      "n_c": 2142,
+      "n_d": 762,
+      "return_diff": 0.14116250174610534,
+      "opposite_diff": -0.14886006896196802,
+      "return_keeps": true,
+      "opposite_keeps": true
+    }
+  ],
+  "reference_low_er_pooled": {
+    "n_c": 4235,
+    "n_d": 4590,
+    "n_total": 8825,
+    "return_diff": 0.1992033911820008,
+    "return_ci": [
+      0.1790767409266468,
+      0.2195587618019667
+    ],
+    "return_rate_c": 0.47508854781582055,
+    "return_rate_d": 0.6742919389978214,
+    "opposite_diff": -0.20242455108765267,
+    "opposite_ci": [
+      -0.22252074966087868,
+      -0.18258139095063353
+    ],
+    "opposite_rate_c": 0.7017709563164108,
+    "opposite_rate_d": 0.4993464052287582
+  }
+}

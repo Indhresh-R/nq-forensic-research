@@ -1,0 +1,63 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_DEFINITION_FROZEN": true,
+  "NO_PARAMETER_RETUNE": true,
+  "COST_RT": 1.0,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "frozen_constants",
+      "pass": true,
+      "detail": {
+        "W": 30,
+        "mult": 1.5,
+        "retrace": 0.5,
+        "wait": 60
+      }
+    },
+    {
+      "name": "primary_horizon_15",
+      "pass": true,
+      "detail": 15
+    },
+    {
+      "name": "directions_pm1",
+      "pass": true,
+      "detail": [
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "wait_retrace_le_60",
+      "pass": true,
+      "detail": [
+        1,
+        60
+      ]
+    },
+    {
+      "name": "dest_table_has_splits",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    },
+    {
+      "name": "verdict_terminal",
+      "pass": true,
+      "detail": "KILL_AFTER_TRADE"
+    },
+    {
+      "name": "no_constant_retune",
+      "pass": true,
+      "detail": "constants module matches prereg"
+    }
+  ],
+  "n_events": 80482,
+  "final": "KILL_AFTER_TRADE",
+  "classification": "KILL"
+}

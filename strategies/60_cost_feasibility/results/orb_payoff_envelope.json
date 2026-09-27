@@ -1,0 +1,15 @@
+{
+  "med_R": 46.5,
+  "model_W": 46.5,
+  "model_L": 23.25,
+  "p_star_breakeven": 0.34767025089605735,
+  "p_target_first_obs_IS": 0.1575124829777576,
+  "p_star_minus_obs": 0.19015776791829975,
+  "obs_below_breakeven": true,
+  "p_target_given_resolved": 0.29991356957649096,
+  "E_gross_model_IS_rates": -1.2242396731729448,
+  "E_net_model_IS_rates": -2.224239673172945,
+  "med_mae_on_target_first_IS": 2.75,
+  "n_events_IS": 2203,
+  "note": "W=1R, L=0.5R from OR mid geometry; unresolved treated as ~0 gross"
+}

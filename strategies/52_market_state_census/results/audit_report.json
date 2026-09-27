@@ -1,0 +1,95 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "FUTURE_DATA_USED": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "no_outcome_strategy_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "analysis_window_bounds",
+      "pass": true,
+      "detail": {
+        "min_ny": 570,
+        "max_ny": 959
+      }
+    },
+    {
+      "name": "thresholds_is_only",
+      "pass": true,
+      "detail": {
+        "threshold_years": [
+          2010,
+          2011,
+          2012,
+          2013,
+          2014,
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ]
+      }
+    },
+    {
+      "name": "feature_meta_flags",
+      "pass": true,
+      "detail": {
+        "lookahead": false,
+        "outcomes": false
+      }
+    },
+    {
+      "name": "eligible_finite_primaries",
+      "pass": true,
+      "detail": {
+        "er_60": 0,
+        "rv_60": 0,
+        "rvol": 0,
+        "range_norm_60": 0
+      }
+    },
+    {
+      "name": "er_bounds",
+      "pass": true,
+      "detail": {
+        "min": 0.0,
+        "max": 0.7798165137614679
+      }
+    },
+    {
+      "name": "label_present_directionality_state",
+      "pass": "True",
+      "detail": null
+    },
+    {
+      "name": "label_present_volatility_state",
+      "pass": "True",
+      "detail": null
+    },
+    {
+      "name": "label_present_volume_state",
+      "pass": "True",
+      "detail": null
+    },
+    {
+      "name": "label_present_range_state",
+      "pass": "True",
+      "detail": null
+    },
+    {
+      "name": "label_present_composite_primary",
+      "pass": "True",
+      "detail": null
+    }
+  ],
+  "n_rows": 1382157,
+  "n_eligible": 1377851
+}

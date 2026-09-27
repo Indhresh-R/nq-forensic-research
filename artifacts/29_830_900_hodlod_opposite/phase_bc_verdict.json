@@ -1,0 +1,133 @@
+{
+  "class": "C",
+  "label": "ORACLE_ONLY_NOT_TRADEABLE",
+  "n_survivors_total": 6,
+  "n_survivors_oracle": 6,
+  "n_survivors_causal": 0,
+  "survivors": [
+    {
+      "setup": "oracle",
+      "dip": 5.0,
+      "target_mode": "fixed",
+      "target": 20.0,
+      "E_Discovery": 5.042735042735043,
+      "E_Validation": 6.7895408163265305,
+      "E_OOS": 3.430722891566265,
+      "n_Validation": 196,
+      "n_OOS": 83
+    },
+    {
+      "setup": "oracle",
+      "dip": 5.0,
+      "target_mode": "fixed",
+      "target": 25.0,
+      "E_Discovery": 6.346153846153846,
+      "E_Validation": 8.410714285714286,
+      "E_OOS": 3.3072289156626504,
+      "n_Validation": 196,
+      "n_OOS": 83
+    },
+    {
+      "setup": "oracle",
+      "dip": 5.0,
+      "target_mode": "fixed",
+      "target": 30.0,
+      "E_Discovery": 6.911324786324786,
+      "E_Validation": 10.380102040816327,
+      "E_OOS": 2.536144578313253,
+      "n_Validation": 196,
+      "n_OOS": 83
+    },
+    {
+      "setup": "oracle",
+      "dip": 10.0,
+      "target_mode": "fixed",
+      "target": 20.0,
+      "E_Discovery": 6.201834862385321,
+      "E_Validation": 5.300986842105263,
+      "E_OOS": 4.076388888888889,
+      "n_Validation": 152,
+      "n_OOS": 72
+    },
+    {
+      "setup": "oracle",
+      "dip": 10.0,
+      "target_mode": "fixed",
+      "target": 25.0,
+      "E_Discovery": 7.376146788990826,
+      "E_Validation": 7.3832236842105265,
+      "E_OOS": 2.9409722222222223,
+      "n_Validation": 152,
+      "n_OOS": 72
+    },
+    {
+      "setup": "oracle",
+      "dip": 10.0,
+      "target_mode": "fixed",
+      "target": 30.0,
+      "E_Discovery": 7.935779816513762,
+      "E_Validation": 9.800986842105264,
+      "E_OOS": 1.0,
+      "n_Validation": 152,
+      "n_OOS": 72
+    }
+  ],
+  "headline_oracle_dip10_tgt25": [
+    {
+      "split": "Discovery",
+      "n": 109,
+      "trig_rate": 0.1967509025270758,
+      "win": 0.6972477064220184,
+      "E_net": 7.376146788990826,
+      "target_hit": 0.5504587155963303,
+      "stop_hit": 0.24770642201834864
+    },
+    {
+      "split": "OOS",
+      "n": 72,
+      "trig_rate": 0.6666666666666666,
+      "win": 0.6666666666666666,
+      "E_net": 2.9409722222222223,
+      "target_hit": 0.6666666666666666,
+      "stop_hit": 0.3055555555555556
+    },
+    {
+      "split": "Validation",
+      "n": 152,
+      "trig_rate": 0.6495726495726496,
+      "win": 0.6842105263157895,
+      "E_net": 7.3832236842105265,
+      "target_hit": 0.6776315789473685,
+      "stop_hit": 0.27631578947368424
+    }
+  ],
+  "headline_fade_raid_dip10_tgt25": [
+    {
+      "split": "Discovery",
+      "n": 205,
+      "trig_rate": 0.3120243531202435,
+      "win": 0.5609756097560976,
+      "E_net": 1.7914634146341464,
+      "target_hit": 0.3853658536585366,
+      "stop_hit": 0.3121951219512195
+    },
+    {
+      "split": "OOS",
+      "n": 89,
+      "trig_rate": 0.7355371900826446,
+      "win": 0.651685393258427,
+      "E_net": -4.067415730337078,
+      "target_hit": 0.6404494382022472,
+      "stop_hit": 0.30337078651685395
+    },
+    {
+      "split": "Validation",
+      "n": 242,
+      "trig_rate": 0.7245508982035929,
+      "win": 0.5495867768595041,
+      "E_net": -1.0,
+      "target_hit": 0.5454545454545454,
+      "stop_hit": 0.4090909090909091
+    }
+  ]
+}

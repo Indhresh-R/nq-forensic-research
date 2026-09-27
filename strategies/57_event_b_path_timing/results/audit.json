@@ -1,0 +1,71 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_DEFINITION_FROZEN": true,
+  "NO_PARAMETER_RETUNE": true,
+  "NO_HORIZON_PNL_SHOP": true,
+  "NO_TRADE_IN_THIS_RUN": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "horizons_frozen",
+      "pass": true,
+      "detail": [
+        5,
+        15,
+        30,
+        60
+      ]
+    },
+    {
+      "name": "side_rule_frozen",
+      "pass": true,
+      "detail": {
+        "const": "toward_rebreak",
+        "s56": "toward_rebreak",
+        "verdict": "toward_rebreak"
+      }
+    },
+    {
+      "name": "event_ledger_reuse",
+      "pass": true,
+      "detail": {
+        "n_path_events": 63725,
+        "n_s56_events": 63725
+      }
+    },
+    {
+      "name": "no_pnl_columns",
+      "pass": true,
+      "detail": [
+        "event_id",
+        "horizon",
+        "valid",
+        "split",
+        "break_dir",
+        "session_year",
+        "first_rebreak_bars",
+        "prog_close",
+        "mfe_dir",
+        "mae_dir",
+        "hit_rebreak"
+      ]
+    },
+    {
+      "name": "ladder_splits",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    },
+    {
+      "name": "verdict_ok",
+      "pass": true,
+      "detail": "PATH_KILL"
+    }
+  ],
+  "classification": "PATH_KILL",
+  "reason": "IS_med60_not_pos+IS_not_monotonic+IS_mid_ladder_not_pos"
+}

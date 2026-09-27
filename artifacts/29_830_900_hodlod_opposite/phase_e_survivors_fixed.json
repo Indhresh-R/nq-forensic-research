@@ -1,0 +1,93 @@
+{
+  "n_survivors_val_oos": 3,
+  "n_survivors_all_three": 2,
+  "top": [
+    {
+      "entry": "at_open_wstop",
+      "stop_mode": "structural",
+      "stop_pts": null,
+      "tgt_mode": "rr",
+      "tgt_pts": null,
+      "rr": 2.0,
+      "hold_h": 60,
+      "E_net_disc": -1.1942508710801394,
+      "E_net_val": 3.8469072164948455,
+      "E_net_oos": 0.6598557692307693,
+      "n_val": 485,
+      "n_oos": 208,
+      "win_val": 0.4144329896907217,
+      "win_oos": 0.3173076923076923,
+      "median_stop_val": 29.75
+    },
+    {
+      "entry": "imp20_pb5",
+      "stop_mode": "fixed",
+      "stop_pts": 25.0,
+      "tgt_mode": "fixed",
+      "tgt_pts": 40.0,
+      "rr": null,
+      "hold_h": 60,
+      "E_net_disc": 0.1925981873111782,
+      "E_net_val": 0.1199494949494949,
+      "E_net_oos": 0.5083798882681564,
+      "n_val": 396,
+      "n_oos": 179,
+      "win_val": 0.404040404040404,
+      "win_oos": 0.4078212290502793,
+      "median_stop_val": 25.0
+    },
+    {
+      "entry": "imp20_pb10",
+      "stop_mode": "fixed",
+      "stop_pts": 25.0,
+      "tgt_mode": "fixed",
+      "tgt_pts": 40.0,
+      "rr": null,
+      "hold_h": 60,
+      "E_net_disc": 0.1295731707317073,
+      "E_net_val": 0.1199494949494949,
+      "E_net_oos": 0.5083798882681564,
+      "n_val": 396,
+      "n_oos": 179,
+      "win_val": 0.404040404040404,
+      "win_oos": 0.4078212290502793,
+      "median_stop_val": 25.0
+    }
+  ],
+  "all_three": [
+    {
+      "entry": "imp20_pb5",
+      "stop_mode": "fixed",
+      "stop_pts": 25.0,
+      "tgt_mode": "fixed",
+      "tgt_pts": 40.0,
+      "rr": null,
+      "hold_h": 60,
+      "E_net_disc": 0.1925981873111782,
+      "E_net_val": 0.1199494949494949,
+      "E_net_oos": 0.5083798882681564,
+      "n_val": 396,
+      "n_oos": 179,
+      "win_val": 0.404040404040404,
+      "win_oos": 0.4078212290502793,
+      "median_stop_val": 25.0
+    },
+    {
+      "entry": "imp20_pb10",
+      "stop_mode": "fixed",
+      "stop_pts": 25.0,
+      "tgt_mode": "fixed",
+      "tgt_pts": 40.0,
+      "rr": null,
+      "hold_h": 60,
+      "E_net_disc": 0.1295731707317073,
+      "E_net_val": 0.1199494949494949,
+      "E_net_oos": 0.5083798882681564,
+      "n_val": 396,
+      "n_oos": 179,
+      "win_val": 0.404040404040404,
+      "win_oos": 0.4078212290502793,
+      "median_stop_val": 25.0
+    }
+  ]
+}

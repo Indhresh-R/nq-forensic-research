@@ -1,0 +1,49 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "FUTURE_DATA_USED_IN_STATE_LABEL": false,
+  "OUTCOME_DATA_USED": false,
+  "STRATEGY_DATA_USED": false,
+  "FORWARD_PATH_USED": true,
+  "FORWARD_PATH_NOTE": "Subsequent bars used only for descriptive path geometry after labeled onset; labels themselves are causal.",
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "no_trade_columns",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "cells_only_abcd",
+      "pass": true,
+      "detail": [
+        "A_COMP_LOW_DIR",
+        "B_COMP_MIDHIGH_DIR",
+        "C_EXP_HIGH_DIR",
+        "D_EXP_LOW_DIR"
+      ]
+    },
+    {
+      "name": "horizons_frozen",
+      "pass": true,
+      "detail": [
+        5,
+        15,
+        30,
+        60
+      ]
+    },
+    {
+      "name": "valid_finite_abs_net",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "outcome_data_absent",
+      "pass": true,
+      "detail": null
+    }
+  ],
+  "n_episodes": 140102,
+  "n_metric_rows": 2767264,
+  "n_valid_metric_rows": 2573869
+}

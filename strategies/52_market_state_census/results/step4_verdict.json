@@ -1,0 +1,72 @@
+{
+  "contrasts": {
+    "ExpExit_C_vs_D": {
+      "primary": true,
+      "unmatched": {
+        "return_diff": 0.1485915593210687,
+        "opposite_diff": -0.14806830461067477
+      },
+      "matched": {
+        "return_diff": 0.1263799360245961,
+        "opposite_diff": -0.12768263086895207,
+        "retained_frac": 0.26903655151657024,
+        "n_strata": 234
+      },
+      "classification": {
+        "overall": "A_SURVIVES",
+        "endpoints": {
+          "return": {
+            "class": "A_SURVIVES",
+            "unmatched": 0.1485915593210687,
+            "matched": 0.1263799360245961,
+            "ratio_abs_matched_over_unmatched": 0.8505189433507531,
+            "same_sign": true
+          },
+          "opposite": {
+            "class": "A_SURVIVES",
+            "unmatched": -0.14806830461067477,
+            "matched": -0.12768263086895207,
+            "ratio_abs_matched_over_unmatched": 0.8623225017985853,
+            "same_sign": true
+          }
+        }
+      },
+      "outcome_C_candidate_factors": [],
+      "interpretation_hint": "A_SURVIVES"
+    },
+    "CompExit_A_vs_B": {
+      "primary": false,
+      "unmatched": {
+        "return_diff": -0.06251742910874014,
+        "opposite_diff": 0.042266675547502075
+      },
+      "matched": {
+        "return_diff": -0.030729462865633803,
+        "opposite_diff": 0.019999562772860222,
+        "retained_frac": 0.513679947098694,
+        "n_strata": 404
+      },
+      "classification": {
+        "overall": "B_COMPOSITIONAL",
+        "endpoints": {
+          "return": {
+            "class": "B_COMPOSITIONAL",
+            "unmatched": -0.06251742910874014,
+            "matched": -0.030729462865633803,
+            "ratio_abs_matched_over_unmatched": 0.49153433376449773,
+            "same_sign": true
+          },
+          "opposite": {
+            "class": "B_COMPOSITIONAL",
+            "unmatched": 0.042266675547502075,
+            "matched": 0.019999562772860222,
+            "ratio_abs_matched_over_unmatched": 0.4731756759621039,
+            "same_sign": true
+          }
+        }
+      },
+      "outcome_C_candidate_factors": [],
+      "interpretation_hint": "B_COMPOSITIONAL"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "firmtape_sessions": 33,
+  "first_date": "2024-06-03",
+  "last_date": "2026-09-04",
+  "n_observations": 12859,
+  "minutes_per_session_median": 390.0,
+  "minutes_per_session_min": 379,
+  "minutes_per_session_max": 390,
+  "sessions_not_390": 1,
+  "duplicate_timestamps": 0,
+  "timezone": "America/New_York",
+  "calendar_bdays_in_span": 590,
+  "missing_vs_bdays_count": 557,
+  "missing_vs_bdays_sample": [
+    "2024-06-04",
+    "2024-06-05",
+    "2024-06-06",
+    "2024-06-07",
+    "2024-06-10",
+    "2024-06-11",
+    "2024-06-12",
+    "2024-06-13",
+    "2024-06-14",
+    "2024-06-17",
+    "2024-06-18",
+    "2024-06-19",
+    "2024-06-20",
+    "2024-06-21",
+    "2024-06-24",
+    "2024-06-25",
+    "2024-06-26",
+    "2024-06-27",
+    "2024-06-28",
+    "2024-07-01"
+  ],
+  "es_range": [
+    "2024-05-29 09:00:00-04:00",
+    "2026-08-26 16:04:00-04:00"
+  ],
+  "nq_range": [
+    "2024-05-29 09:00:00-04:00",
+    "2026-08-07 16:04:00-04:00"
+  ],
+  "gamma_timing_interpretation": "Minute label HH:MM treated as end-of-minute snapshot. Signals use gamma lagged by 1 minute (g[t-1] at bar t). Forward returns from close[t] to close[t+h].",
+  "ga_backfill_note": "Archive JSON may include ga_backfill metadata; conventional OI gamma may be reconstructed after the session. Primary tests use ngv_meas (tape-measured).",
+  "underlying": "ES continuous 1m as S&P 500 proxy; NQ for transmission",
+  "timestamp_convention_underlying": "Databento ts_event = bar open; OHLC within minute"
+}

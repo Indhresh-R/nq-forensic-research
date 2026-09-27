@@ -1,0 +1,34 @@
+{
+  "step1": {
+    "classification": "KILL",
+    "stage": "STEP1",
+    "reason": "IS_first_passage",
+    "detail": {
+      "IS": {
+        "n": 2203,
+        "p_target_first": 0.1575124829777576,
+        "p_adverse_first": 0.36768043576940534,
+        "p_unresolved": 0.47480708125283705,
+        "delta_fp": -0.21016795279164774
+      },
+      "Validation": {
+        "n": 727,
+        "p_target_first": 0.17881705639614856,
+        "p_adverse_first": 0.3741403026134801,
+        "p_unresolved": 0.4470426409903714,
+        "delta_fp": -0.19532324621733152
+      },
+      "OOS": {
+        "n": 389,
+        "p_target_first": 0.13110539845758354,
+        "p_adverse_first": 0.38046272493573263,
+        "p_unresolved": 0.4884318766066838,
+        "delta_fp": -0.2493573264781491
+      }
+    },
+    "advance": false
+  },
+  "step2": null,
+  "trade": null,
+  "final": "KILL"
+}

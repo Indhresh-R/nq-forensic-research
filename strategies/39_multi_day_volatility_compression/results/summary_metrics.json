@@ -1,0 +1,75 @@
+{
+  "total_sessions": 3228,
+  "splits": {
+    "IS": {
+      "n_sessions": 2084,
+      "mean_norm_range": 1.037,
+      "mean_efficiency": 0.464,
+      "trend_day_pct": 19.6,
+      "high_trend_pct": 9.4,
+      "exp_125_pct": 25.5,
+      "exp_150_pct": 15.3,
+      "mean_max_exc": 0.823
+    },
+    "Validation": {
+      "n_sessions": 747,
+      "mean_norm_range": 1.017,
+      "mean_efficiency": 0.497,
+      "trend_day_pct": 23.3,
+      "high_trend_pct": 9.5,
+      "exp_125_pct": 21.2,
+      "exp_150_pct": 11.6,
+      "mean_max_exc": 0.807
+    },
+    "OOS": {
+      "n_sessions": 397,
+      "mean_norm_range": 1.038,
+      "mean_efficiency": 0.489,
+      "trend_day_pct": 19.1,
+      "high_trend_pct": 8.6,
+      "exp_125_pct": 24.7,
+      "exp_150_pct": 13.1,
+      "mean_max_exc": 0.833
+    },
+    "OOS_2025": {
+      "n_sessions": 247,
+      "mean_norm_range": 1.021,
+      "mean_efficiency": 0.493,
+      "trend_day_pct": 18.6,
+      "high_trend_pct": 8.5,
+      "exp_125_pct": 24.7,
+      "exp_150_pct": 13.0,
+      "mean_max_exc": 0.827
+    },
+    "OOS_2026": {
+      "n_sessions": 150,
+      "mean_norm_range": 1.065,
+      "mean_efficiency": 0.482,
+      "trend_day_pct": 20.0,
+      "high_trend_pct": 8.7,
+      "exp_125_pct": 24.7,
+      "exp_150_pct": 13.3,
+      "mean_max_exc": 0.844
+    },
+    "ALL": {
+      "n_sessions": 3228,
+      "mean_norm_range": 1.032,
+      "mean_efficiency": 0.475,
+      "trend_day_pct": 20.4,
+      "high_trend_pct": 9.3,
+      "exp_125_pct": 24.4,
+      "exp_150_pct": 14.2,
+      "mean_max_exc": 0.821
+    }
+  },
+  "features_evaluated": [
+    "bin_range3d",
+    "bin_range5d",
+    "bin_range10d",
+    "bin_atr20",
+    "pattern_nr",
+    "bin_contracting",
+    "bin_duration",
+    "bin_range_to_med"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "primary_n_per_horizon": 34,
+  "horizons": [
+    "H30",
+    "H60",
+    "H120",
+    "session_end"
+  ],
+  "note": "Null A is complementary to Step 4 traverse; Null B/C/D are the rejection claims."
+}

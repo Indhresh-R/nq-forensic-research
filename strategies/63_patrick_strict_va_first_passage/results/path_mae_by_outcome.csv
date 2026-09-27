@@ -1,0 +1,3 @@
+outcome,n,med_adverse,med_adverse_frac_own_bound,bound
+into_first,68,14.25,0.3140495867768595,dist_away
+away_first,148,18.0,0.20689655172413793,dist_into

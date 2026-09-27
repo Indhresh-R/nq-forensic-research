@@ -1,0 +1,35 @@
+{
+  "destination": {
+    "classification": "KILL",
+    "stage": "STEP1",
+    "reason": "IS_delta_not_material_or_wrong_sign",
+    "detail": {
+      "IS": {
+        "n_valid": 45869,
+        "p_anchor": 0.591706817240402,
+        "p_extreme": 0.6196123743704899,
+        "p_through": 0.42028385183893263,
+        "delta": -0.02790555713008791
+      },
+      "Validation": {
+        "n_valid": 13756,
+        "p_anchor": 0.5873800523407967,
+        "p_extreme": 0.5923233498109916,
+        "p_through": 0.4153823785984298,
+        "delta": -0.004943297470194841
+      },
+      "OOS": {
+        "n_valid": 7756,
+        "p_anchor": 0.5765858690046416,
+        "p_extreme": 0.6093347086126869,
+        "p_through": 0.40845796802475504,
+        "delta": -0.03274883960804531
+      }
+    },
+    "advance_to_path": false,
+    "delta_is": -0.02790555713008791
+  },
+  "path": null,
+  "trade": null,
+  "final": "KILL"
+}

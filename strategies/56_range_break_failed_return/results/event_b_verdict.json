@@ -1,0 +1,54 @@
+{
+  "classification": "KILL",
+  "stage": "STEP2",
+  "reason": "IS_VAL_OOS_stable",
+  "detail": {
+    "IS": {
+      "n_valid": 38444,
+      "p_opposite": 0.015216938924149413,
+      "p_rebreak": 0.4222505462490896,
+      "p_mid": 0.11785974404328374,
+      "delta": -0.40703360732494015
+    },
+    "Validation": {
+      "n_valid": 14012,
+      "p_opposite": 0.01534399086497288,
+      "p_rebreak": 0.390165572366543,
+      "p_mid": 0.12475021410219811,
+      "delta": -0.3748215815015701
+    },
+    "OOS": {
+      "n_valid": 7230,
+      "p_opposite": 0.01715076071922545,
+      "p_rebreak": 0.3929460580912863,
+      "p_mid": 0.14605809128630706,
+      "delta": -0.37579529737206085
+    }
+  },
+  "advance_to_trade": true,
+  "delta_is": -0.40703360732494015,
+  "sign_is": -1,
+  "trade_side_rule": "toward_rebreak",
+  "trade": {
+    "classification": "KILL",
+    "stage": "TRADE",
+    "detail": {
+      "IS": {
+        "n_trades": 38444,
+        "mean_net": -1.177192799916762,
+        "pass": false
+      },
+      "Validation": {
+        "n_trades": 14012,
+        "mean_net": -0.98920568084499,
+        "pass": false
+      },
+      "OOS": {
+        "n_trades": 7230,
+        "mean_net": -0.9285269709543569,
+        "pass": false
+      }
+    }
+  },
+  "final": "KILL_AFTER_TRADE"
+}

@@ -1,0 +1,75 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "STATE_AT_T_ONLY": true,
+  "SIGNAL_AT_T_ONLY": true,
+  "ENTRY_OPEN_T_PLUS_1": true,
+  "NO_SAME_BAR_EXECUTION": true,
+  "NO_FUTURE_STATE": true,
+  "NO_OUTCOME_FILTERING": true,
+  "NO_PARAMETER_FIT_ON_VAL_OOS": true,
+  "PARAMETER_OPTIMIZATION": false,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "four_cells_only",
+      "pass": true,
+      "detail": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "name": "hold_fixed_15",
+      "pass": true,
+      "detail": 15
+    },
+    {
+      "name": "cost_fixed_1",
+      "pass": true,
+      "detail": 1.0
+    },
+    {
+      "name": "sides_pm1",
+      "pass": true,
+      "detail": [
+        -1,
+        1
+      ]
+    },
+    {
+      "name": "entry_after_signal",
+      "pass": true,
+      "detail": "open[t+1]"
+    },
+    {
+      "name": "exit_at_t_plus_15",
+      "pass": true,
+      "detail": "close[t+15]"
+    },
+    {
+      "name": "verdict_classes_ok",
+      "pass": true,
+      "detail": [
+        "REJECTED"
+      ]
+    },
+    {
+      "name": "shuffle_seed_frozen",
+      "pass": true,
+      "detail": 53
+    },
+    {
+      "name": "summary_has_is_val_oos",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    }
+  ],
+  "n_trades": 958287
+}

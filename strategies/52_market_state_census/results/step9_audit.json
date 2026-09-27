@@ -1,0 +1,64 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_POPULATION_FROZEN": "PASS",
+  "ENTRY_NEXT_OPEN_AFTER_TE": true,
+  "PARAMETER_OPTIMIZATION": false,
+  "EXTRA_FILTERS": false,
+  "COST_RT": 1.0,
+  "HOLD_MINUTES": 15,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "trades_subset_of_step7_pop",
+      "pass": true,
+      "detail": {
+        "n_trades": 9294,
+        "n_pop": 9442
+      }
+    },
+    {
+      "name": "primary_arm_is_d_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "control_arm_is_c_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fixed_cost",
+      "pass": true,
+      "detail": 1.0
+    },
+    {
+      "name": "hold_at_most_15",
+      "pass": true,
+      "detail": 15
+    },
+    {
+      "name": "no_optimization_verdict_binary",
+      "pass": true,
+      "detail": "KILL"
+    },
+    {
+      "name": "gate_uses_primary_only",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "min_trades_constant",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "name": "sides_fade_only",
+      "pass": true,
+      "detail": [
+        -1,
+        1
+      ]
+    }
+  ],
+  "n_summary_rows": 8
+}

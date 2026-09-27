@@ -1,0 +1,23 @@
+{
+  "strategy": "37_overnight_inventory_rth_persistence",
+  "phase": "Information Scan",
+  "verdict": "C",
+  "reason": "Overnight inventory states do not contain stable conditioning information about RTH directional persistence. Gap continuation is a 50.8% coin flip; directional efficiency is invariant across regimes (0.46-0.50); extreme extension regimes exhibit violent sign flips across splits (e.g. True Gap Down -135 pts in Val vs +176 pts in OOS). Information gate failed.",
+  "unconditional_baseline": {
+    "n_sessions": 3470,
+    "gap_continuation_pct": 50.8,
+    "mean_directional_efficiency": 0.474,
+    "trend_day_pct": 20.9,
+    "mean_rth_return_pts": 2.08
+  },
+  "large_gap_up": {
+    "is_mean_return": 5.79,
+    "val_mean_return": -7.97,
+    "oos_mean_return": -23.60
+  },
+  "true_gap_down": {
+    "is_mean_return": 13.47,
+    "val_mean_return": -135.25,
+    "oos_mean_return": 175.92
+  }
+}

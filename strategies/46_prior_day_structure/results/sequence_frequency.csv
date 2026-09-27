@@ -1,0 +1,11 @@
+item,direction,n,share_of_direction
+entered_before_separation,all,2297,0.7486962190352021
+entered_before_separation,bullish,1281,0.7620464009518144
+entered_before_separation,bearish,1016,0.7325162220620043
+separated_no_return,all,75,0.024445893089960886
+separated_no_return,bullish,43,0.02558001189767995
+separated_no_return,bearish,32,0.023071377072819033
+retracement,all,696,0.22685788787483702
+retracement,bullish,357,0.21237358715050564
+retracement,bearish,339,0.24441240086517663
+retracement_with_forward_bar,all,696,0.22685788787483702

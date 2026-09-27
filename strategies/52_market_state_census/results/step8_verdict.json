@@ -1,0 +1,37 @@
+{
+  "classification": "PATH_FEASIBLE",
+  "decision": "GO_TO_STEP9",
+  "research_question_answer": "Yes \u2014 enough stable path geometry to justify constructing one simple executable hypothesis in a separate Step 9.",
+  "detail": {
+    "clause1_15": true,
+    "clause1_30": true,
+    "clause2_hl_range": true,
+    "hl_range_p50_15": 13.0,
+    "hl_range_p50_30": 18.25,
+    "clause3_median_first_dest": true,
+    "median_time_to_first_destination": 6.0,
+    "n_reached_first_dest": 8021,
+    "clause4_split_sign": true,
+    "return_diff_30_IS": 0.19248236331569668,
+    "return_diff_30_Validation": 0.23266416044882926,
+    "return_diff_30_OOS": 0.210800855775381,
+    "reference_30": {
+      "horizon": 30,
+      "split": "ALL",
+      "n_c": 4235,
+      "n_d": 4590,
+      "eligible": true,
+      "return_rate_c": 0.47508854781582055,
+      "return_rate_d": 0.6742919389978214,
+      "return_diff": 0.1992033911820008,
+      "return_diff_ci_lo": 0.1790767409266468,
+      "return_diff_ci_hi": 0.2195587618019667,
+      "opposite_rate_c": 0.7017709563164108,
+      "opposite_rate_d": 0.4993464052287582,
+      "opposite_diff": -0.20242455108765267,
+      "opposite_diff_ci_lo": -0.22252074966087868,
+      "opposite_diff_ci_hi": -0.18258139095063353
+    }
+  },
+  "cost_mid_rt_nq_points": 1.0
+}

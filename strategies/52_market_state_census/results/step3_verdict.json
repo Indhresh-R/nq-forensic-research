@@ -1,0 +1,237 @@
+{
+  "primary_horizon": 30,
+  "contrasts": {
+    "CompExit_A_vs_B": {
+      "return_to_origin": {
+        "pass": true,
+        "present_pooled": true,
+        "pooled_diff": -0.06251742910874014,
+        "same_sign_across_splits": true,
+        "not_wait_confound_only": true,
+        "not_tiny_subgroup_only": true,
+        "split_detail": {
+          "IS": {
+            "diff": -0.059171545333551845,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 6066,
+            "n_b": 8990
+          },
+          "Validation": {
+            "diff": -0.07555918360590275,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 1619,
+            "n_b": 2985
+          },
+          "OOS": {
+            "diff": -0.054944191891192706,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 933,
+            "n_b": 1624
+          }
+        },
+        "wait_detail": {
+          "SHORT": {
+            "diff": -0.05301549348110568,
+            "sign": -1,
+            "eligible": true
+          },
+          "MEDIUM": {
+            "diff": -0.06921747647161813,
+            "sign": -1,
+            "eligible": true
+          },
+          "LONG": {
+            "diff": -0.09667549496210215,
+            "sign": -1,
+            "eligible": true
+          }
+        }
+      },
+      "reach_opposite": {
+        "pass": true,
+        "present_pooled": true,
+        "pooled_diff": 0.042266675547502075,
+        "same_sign_across_splits": true,
+        "not_wait_confound_only": true,
+        "not_tiny_subgroup_only": true,
+        "split_detail": {
+          "IS": {
+            "diff": 0.03804131564287094,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 6066,
+            "n_b": 8990
+          },
+          "Validation": {
+            "diff": 0.06739400109462279,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 1619,
+            "n_b": 2985
+          },
+          "OOS": {
+            "diff": 0.033055876746973356,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 933,
+            "n_b": 1624
+          }
+        },
+        "wait_detail": {
+          "SHORT": {
+            "diff": 0.02709054605896516,
+            "sign": 1,
+            "eligible": true
+          },
+          "MEDIUM": {
+            "diff": 0.06604939208742161,
+            "sign": 1,
+            "eligible": true
+          },
+          "LONG": {
+            "diff": 0.06397452952172022,
+            "sign": 1,
+            "eligible": true
+          }
+        }
+      },
+      "interesting": true,
+      "orthogonal_summary": {
+        "volatility_state": {
+          "n_levels_eligible": 3,
+          "return_same_sign_levels": 3,
+          "opposite_same_sign_levels": 3
+        },
+        "volume_state": {
+          "n_levels_eligible": 3,
+          "return_same_sign_levels": 3,
+          "opposite_same_sign_levels": 3
+        },
+        "tod_block": {
+          "n_levels_eligible": 4,
+          "return_same_sign_levels": 4,
+          "opposite_same_sign_levels": 4
+        }
+      }
+    },
+    "ExpExit_C_vs_D": {
+      "return_to_origin": {
+        "pass": true,
+        "present_pooled": true,
+        "pooled_diff": 0.1485915593210687,
+        "same_sign_across_splits": true,
+        "not_wait_confound_only": true,
+        "not_tiny_subgroup_only": true,
+        "split_detail": {
+          "IS": {
+            "diff": 0.14798490077466564,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 15498,
+            "n_b": 3849
+          },
+          "Validation": {
+            "diff": 0.16978375278492513,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 4620,
+            "n_b": 853
+          },
+          "OOS": {
+            "diff": 0.09700128036611966,
+            "sign": 1,
+            "eligible": true,
+            "n_a": 2442,
+            "n_b": 529
+          }
+        },
+        "wait_detail": {
+          "SHORT": {
+            "diff": 0.13252240119812275,
+            "sign": 1,
+            "eligible": true
+          },
+          "MEDIUM": {
+            "diff": 0.12343737590342307,
+            "sign": 1,
+            "eligible": true
+          },
+          "LONG": {
+            "diff": 0.11463441822145792,
+            "sign": 1,
+            "eligible": true
+          }
+        }
+      },
+      "reach_opposite": {
+        "pass": true,
+        "present_pooled": true,
+        "pooled_diff": -0.14806830461067477,
+        "same_sign_across_splits": true,
+        "not_wait_confound_only": true,
+        "not_tiny_subgroup_only": true,
+        "split_detail": {
+          "IS": {
+            "diff": -0.13942316445025416,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 15498,
+            "n_b": 3849
+          },
+          "Validation": {
+            "diff": -0.19615084017194218,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 4620,
+            "n_b": 853
+          },
+          "OOS": {
+            "diff": -0.11190121209024795,
+            "sign": -1,
+            "eligible": true,
+            "n_a": 2442,
+            "n_b": 529
+          }
+        },
+        "wait_detail": {
+          "SHORT": {
+            "diff": -0.1261170917367861,
+            "sign": -1,
+            "eligible": true
+          },
+          "MEDIUM": {
+            "diff": -0.11549368218417544,
+            "sign": -1,
+            "eligible": true
+          },
+          "LONG": {
+            "diff": -0.1440227226902676,
+            "sign": -1,
+            "eligible": true
+          }
+        }
+      },
+      "interesting": true,
+      "orthogonal_summary": {
+        "volatility_state": {
+          "n_levels_eligible": 3,
+          "return_same_sign_levels": 3,
+          "opposite_same_sign_levels": 3
+        },
+        "volume_state": {
+          "n_levels_eligible": 3,
+          "return_same_sign_levels": 3,
+          "opposite_same_sign_levels": 3
+        },
+        "tod_block": {
+          "n_levels_eligible": 4,
+          "return_same_sign_levels": 4,
+          "opposite_same_sign_levels": 3
+        }
+      }
+    }
+  }
+}

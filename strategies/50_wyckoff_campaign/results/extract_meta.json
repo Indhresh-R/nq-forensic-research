@@ -1,0 +1,31 @@
+{
+  "n_1m": 4788194,
+  "n_15m": 288266,
+  "n_segments": 8069,
+  "n_swing_lows": 33523,
+  "n_swing_highs": 33159,
+  "n_trs": 2402,
+  "n_events": 13510,
+  "n_A": 13072,
+  "n_B": 418,
+  "n_C": 20,
+  "funnel": {
+    "eligible_trs": 2402,
+    "terminal_violations": 4491,
+    "terminal_violations_spring": 2058,
+    "terminal_violations_upthrust": 2433,
+    "recover_abort_timeout": 0,
+    "recover_abort_excursion": 3538,
+    "recover_abort_acceptance": 285,
+    "recover_abort_segment_break": 188,
+    "returns_into_tr": 480,
+    "returns_spring": 270,
+    "returns_upthrust": 210,
+    "candidate_tests": 221,
+    "confirm_success_C": 20,
+    "confirm_fail_test_quality": 201,
+    "confirm_fail_window_expire": 32,
+    "confirm_fail_adverse_close": 185,
+    "confirm_abort_segment_break": 42
+  }
+}

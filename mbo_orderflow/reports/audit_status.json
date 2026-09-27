@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-08",
+  "events": 20503806,
+  "snapshot_checksum_stored": "3d62c55635047c1543a7679a3329c37e8b0ad4368efcee87a306587cfd119eaa",
+  "snapshot_checksum_rebuild": "3d62c55635047c1543a7679a3329c37e8b0ad4368efcee87a306587cfd119eaa",
+  "trade_checksum_stored": "01f78f5b61a0d30b3b864797af46fe66f56a67067c335e340addcd37d8d86e5e",
+  "trade_checksum_rebuild": "01f78f5b61a0d30b3b864797af46fe66f56a67067c335e340addcd37d8d86e5e",
+  "frames_match": true,
+  "max_abs_bid_vs_before": 0.0,
+  "max_abs_ask_vs_before": 0.0,
+  "max_abs_book_change_on_trade": 0.0,
+  "clears_after_open": 0,
+  "status": "PASS",
+  "problems": [],
+  "crossed_book_investigation": "explained_reconstruction_matches_feed",
+  "crossed_rows_dropped": 0,
+  "engine_frozen": "REPLAY_ENGINE_V2_TIMESTAMP_CORRECT"
+}

@@ -1,0 +1,28 @@
+{
+  "boundary_rows": 54,
+  "interaction_sample": 53,
+  "excluded": {
+    "no_next_session": 1,
+    "incomplete_next_trades": 0,
+    "sync_mismatch": 0
+  },
+  "touched": 39,
+  "no_touch": 14,
+  "approach_counts": {
+    "lower_region": 12,
+    "upper_region": 22,
+    "outside_below": 0,
+    "outside_above": 0,
+    "other_inside": 0,
+    "open_in_band": 5
+  },
+  "open_zone_counts": {
+    "upper_region": 24,
+    "lower_region": 10,
+    "outside_above": 6,
+    "lvn_band": 5,
+    "outside_below": 4,
+    "other_inside": 4
+  },
+  "price_source": "trades_24h_1m_ohlc"
+}

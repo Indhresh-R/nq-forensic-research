@@ -1,0 +1,6 @@
+strategy,name,kind,n_is,mean_gross_is,mean_net_is,hit_rate_is,abs_gross_le_0_25,note,med_mfe_15,med_mae_15,mfe_mae_symmetric,med_prog_close_15,delta,p_target_first,p_adverse_first,delta_fp
+55,Event A hold,fixed_hold_trade,51584,-0.035771750930521,-1.035771750930521,0.4032645781637717,True,gross~0 → net~-cost,,,,,,,,
+56,Event B hold,fixed_hold_trade,38444,-0.177192799916762,-1.177192799916762,0.3959525543647903,True,gross~0 → net~-cost,,,,,,,,
+57,Event B path,path_mfe_mae,38444,,,0.4738320674227447,True,med_mfe=0.1980 med_mae=0.1941 symmetric=True,0.1979780601642081,0.1941462021701884,True,-0.0097205489807006,,,,
+58,Event C destination,destination_delta,45869,,,,True,delta=-0.0279 wrong_sign,,,,,-0.02790555713008791,,,
+59,ORB first-passage,first_passage,2203,,,0.1575124829777576,True,p_tgt=0.1575 p_adv=0.3677 dfp=-0.2102,,,,,,0.1575124829777576,0.3676804357694053,-0.2101679527916477

@@ -1,0 +1,14 @@
+{
+  "selected": {
+    "n": 15,
+    "threshold": 2.5
+  },
+  "ranges": 5631,
+  "avg_range_width": 20.220387142603446,
+  "avg_range_width_atr": 2.3242425334032477,
+  "breakouts": 5562,
+  "upside_breakouts": 2868,
+  "downside_breakouts": 2694,
+  "continuation_trades": 3144,
+  "pullback_to_continuation_rate": 0.5652642934196332
+}

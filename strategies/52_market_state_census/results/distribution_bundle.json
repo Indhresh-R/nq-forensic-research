@@ -1,0 +1,162 @@
+{
+  "n_eligible": 1377851,
+  "n_analysis_window": 1382157,
+  "tables": {
+    "table1_composite_primary": [
+      {
+        "state": "TRENDING",
+        "observations": 463512,
+        "pct": 33.64021218549756,
+        "total": 1377851
+      },
+      {
+        "state": "CHOP_RANGE",
+        "observations": 456826,
+        "pct": 33.15496378055392,
+        "total": 1377851
+      },
+      {
+        "state": "COMPRESSION",
+        "observations": 172868,
+        "pct": 12.546204197696268,
+        "total": 1377851
+      },
+      {
+        "state": "EXPANSION",
+        "observations": 97773,
+        "pct": 7.096050298617194,
+        "total": 1377851
+      },
+      {
+        "state": "HIGH_ACTIVITY",
+        "observations": 91279,
+        "pct": 6.624736636980341,
+        "total": 1377851
+      },
+      {
+        "state": "TRANSITION_MIXED",
+        "observations": 62401,
+        "pct": 4.5288641514938845,
+        "total": 1377851
+      },
+      {
+        "state": "LOW_ACTIVITY",
+        "observations": 33192,
+        "pct": 2.408968749160831,
+        "total": 1377851
+      }
+    ],
+    "table1b_composite_flags": [
+      {
+        "state": "TRENDING",
+        "observations": 463512,
+        "pct": 33.64021218549756
+      },
+      {
+        "state": "CHOP_RANGE",
+        "observations": 456826,
+        "pct": 33.15496378055392
+      },
+      {
+        "state": "HIGH_ACTIVITY",
+        "observations": 701588,
+        "pct": 50.919003578761426
+      },
+      {
+        "state": "LOW_ACTIVITY",
+        "observations": 227684,
+        "pct": 16.524573411784
+      },
+      {
+        "state": "COMPRESSION",
+        "observations": 477745,
+        "pct": 34.673197609901216
+      },
+      {
+        "state": "EXPANSION",
+        "observations": 446165,
+        "pct": 32.38122264308696
+      }
+    ],
+    "table2_directionality": [
+      {
+        "state": "HIGH_DIRECTIONALITY",
+        "observations": 463512,
+        "pct": 33.64021218549756,
+        "total": 1377851
+      },
+      {
+        "state": "MID_DIRECTIONALITY",
+        "observations": 457513,
+        "pct": 33.20482403394852,
+        "total": 1377851
+      },
+      {
+        "state": "LOW_DIRECTIONALITY",
+        "observations": 456826,
+        "pct": 33.15496378055392,
+        "total": 1377851
+      }
+    ],
+    "table3_volatility": [
+      {
+        "state": "HIGH_VOLATILITY",
+        "observations": 543425,
+        "pct": 39.44004104943132,
+        "total": 1377851
+      },
+      {
+        "state": "NORMAL_VOLATILITY",
+        "observations": 448313,
+        "pct": 32.53711758383163,
+        "total": 1377851
+      },
+      {
+        "state": "LOW_VOLATILITY",
+        "observations": 386113,
+        "pct": 28.02284136673704,
+        "total": 1377851
+      }
+    ],
+    "table4_volume": [
+      {
+        "state": "NORMAL_VOLUME",
+        "observations": 509670,
+        "pct": 36.990211568594866,
+        "total": 1377851
+      },
+      {
+        "state": "HIGH_VOLUME",
+        "observations": 459594,
+        "pct": 33.355856329893435,
+        "total": 1377851
+      },
+      {
+        "state": "LOW_VOLUME",
+        "observations": 408587,
+        "pct": 29.653932101511703,
+        "total": 1377851
+      }
+    ],
+    "table5_range": [
+      {
+        "state": "COMPRESSION",
+        "observations": 477745,
+        "pct": 34.673197609901216,
+        "total": 1377851
+      },
+      {
+        "state": "NORMAL_RANGE",
+        "observations": 453941,
+        "pct": 32.945579747011834,
+        "total": 1377851
+      },
+      {
+        "state": "EXPANSION",
+        "observations": 446165,
+        "pct": 32.38122264308695,
+        "total": 1377851
+      }
+    ]
+  }
+}

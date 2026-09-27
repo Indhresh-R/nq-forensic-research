@@ -1,0 +1,76 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_POPULATION_FROZEN": "PASS",
+  "FORWARD_PATH_STRICTLY_AFTER_TE": "PASS",
+  "OUTCOME_USED_FOR_SELECTION": false,
+  "STRATEGY_DATA_USED": false,
+  "PARAMETER_OPTIMIZATION": false,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "population_matches_step7_expected",
+      "pass": true,
+      "detail": {
+        "ok": true,
+        "n": 9442,
+        "n_c": 4529,
+        "n_d": 4913,
+        "expected_n": 9442,
+        "expected_c": 4529,
+        "expected_d": 4913
+      }
+    },
+    {
+      "name": "event_ids_identical_to_step7",
+      "pass": true,
+      "detail": {
+        "only_7": 0,
+        "only_8": 0
+      }
+    },
+    {
+      "name": "low_er_cut_respected",
+      "pass": true,
+      "detail": 0.12101910828025478
+    },
+    {
+      "name": "no_compexit",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "horizons_fixed",
+      "pass": true,
+      "detail": [
+        5,
+        15,
+        30,
+        60
+      ]
+    },
+    {
+      "name": "forward_path_strictly_after_te",
+      "pass": true,
+      "detail": "Inherited Step2 compute_event_paths: bars te+1..te+h only"
+    },
+    {
+      "name": "verdict_class_ok",
+      "pass": true,
+      "detail": "PATH_FEASIBLE"
+    },
+    {
+      "name": "no_optimization_flag",
+      "pass": true,
+      "detail": "GO_TO_STEP9"
+    },
+    {
+      "name": "expected_n_tolerance",
+      "pass": true,
+      "detail": 9442
+    }
+  ],
+  "n_population": 9442,
+  "n_c": 4529,
+  "n_d": 4913,
+  "family": "ExpExit"
+}

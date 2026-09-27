@@ -1,0 +1,6 @@
+horizon_s,snapshot_rows,crossed_rows,locked_rows,usable_quote_rows,future_slots,excluded_anchor_crossed,excluded_anchor_not_usable,excluded_endpoint_crossed,excluded_endpoint_not_usable,valid_return_anchors
+1,234000,25,0,233975,233974,25,0,3,0,233946
+5,234000,25,0,233975,233870,25,0,15,0,233830
+15,234000,25,0,233975,233610,25,0,25,0,233560
+30,234000,25,0,233975,233220,25,0,25,0,233170
+60,234000,25,0,233975,232440,25,0,25,0,232390

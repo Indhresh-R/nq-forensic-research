@@ -1,0 +1,8 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "NO_NEW_EVENT": true,
+  "NO_PNL_OPTIMIZATION": true,
+  "READ_ONLY_ARTIFACTS": true,
+  "all_pass": true,
+  "classification": "MAP_LOCKED"
+}

@@ -1,0 +1,25 @@
+{
+  "strategy": "38_opening_auction_information",
+  "phase": "Information Scan",
+  "verdict": "C",
+  "reason": "Early RTH auction behavior (first 5, 10, 15 minutes) fails to condition remaining-session directional persistence or trend-day likelihood. High early path efficiency produces identical remaining-session efficiency to low early efficiency (0.475 vs 0.464, diff +0.011) and only +2.0pp lift in trend-day likelihood (27.2% vs 25.2%). High-efficiency open drive gross remaining return averages only +0.77 pts (-0.23 pts net of 1.0 pt friction). Information gate failed.",
+  "unconditional_15m_baseline": {
+    "n_sessions": 3466,
+    "mean_eff_rem": 0.467,
+    "trend_day_pct": 25.9,
+    "follow_through_pct": 52.3,
+    "mean_rem_return_pts": 2.14
+  },
+  "early_efficiency_15m": {
+    "high_eff_rem_eff": 0.475,
+    "high_eff_trend_day_pct": 27.2,
+    "low_eff_rem_eff": 0.464,
+    "low_eff_trend_day_pct": 25.2
+  },
+  "opening_range_15m": {
+    "expanded_or_rem_eff": 0.474,
+    "expanded_or_trend_day_pct": 27.5,
+    "compressed_or_rem_eff": 0.472,
+    "compressed_or_trend_day_pct": 24.2
+  }
+}

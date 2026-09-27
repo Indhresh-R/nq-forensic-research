@@ -1,0 +1,70 @@
+{
+  "market": "ES",
+  "status": "DESCRIPTIVE_BASELINE_ONLY",
+  "rules": {
+    "ib": "09:30-10:29 ET",
+    "signal": "first 5m close >= IB high + 1 tick or <= IB low - 1 tick",
+    "entry": "next 1m open",
+    "stop": "opposite IB edge",
+    "target": "1R",
+    "flat": "15:55 ET open",
+    "same_bar_rule": "stop first",
+    "max_trades_per_day": 1
+  },
+  "cost_points_round_trip": 0.5,
+  "point_value_1_contract": 50.0,
+  "split_summary": [
+    {
+      "split": "IS",
+      "trades": 2187,
+      "win_rate": 0.47599451303155005,
+      "avg_net_points": -0.422267946959305,
+      "median_net_points": -0.5,
+      "net_points": -923.5,
+      "net_dollars_1_contract": -46175.0,
+      "profit_factor": 0.9077883175237145,
+      "max_drawdown_points": -1288.75,
+      "max_drawdown_dollars_1_contract": -64437.5,
+      "target_rate": 0.2217649748513946,
+      "stop_rate": 0.2167352537722908,
+      "time_rate": 0.5614997713763146,
+      "long_trades": 1204,
+      "short_trades": 983
+    },
+    {
+      "split": "Validation",
+      "trades": 715,
+      "win_rate": 0.5118881118881119,
+      "avg_net_points": 0.15349650349650348,
+      "median_net_points": 0.5,
+      "net_points": 109.75,
+      "net_dollars_1_contract": 5487.5,
+      "profit_factor": 1.016120740305523,
+      "max_drawdown_points": -443.75,
+      "max_drawdown_dollars_1_contract": -22187.5,
+      "target_rate": 0.2727272727272727,
+      "stop_rate": 0.25034965034965034,
+      "time_rate": 0.47692307692307695,
+      "long_trades": 365,
+      "short_trades": 350
+    },
+    {
+      "split": "OOS",
+      "trades": 389,
+      "win_rate": 0.5115681233933161,
+      "avg_net_points": 0.6741645244215938,
+      "median_net_points": 0.75,
+      "net_points": 262.25,
+      "net_dollars_1_contract": 13112.5,
+      "profit_factor": 1.0604750374726162,
+      "max_drawdown_points": -691.25,
+      "max_drawdown_dollars_1_contract": -34562.5,
+      "target_rate": 0.20822622107969152,
+      "stop_rate": 0.20308483290488433,
+      "time_rate": 0.5886889460154242,
+      "long_trades": 214,
+      "short_trades": 175
+    }
+  ],
+  "pass_condition": "Validation and OOS expectancy both positive after costs; then perform robustness tests."
+}

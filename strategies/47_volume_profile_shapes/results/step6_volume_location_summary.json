@@ -1,0 +1,135 @@
+{
+  "date_list_pairs": 95,
+  "location_sample": 95,
+  "excluded": {},
+  "calendar_gap_pairs": 25,
+  "open_to_poc_frac": {
+    "n": 95,
+    "mean": 0.05898459363378383,
+    "min": -1.499689633767846,
+    "p25": -0.10273637558774457,
+    "median": 0.03014416775884666,
+    "p75": 0.17746277057219353,
+    "max": 1.6599056603773585
+  },
+  "open_third_counts": {
+    "prior_upper": 30,
+    "prior_middle": 27,
+    "prior_lower": 20,
+    "outside_above": 13,
+    "outside_below": 5
+  },
+  "dominant_by_open_third": {
+    "lower": {
+      "outside_above": 0,
+      "outside_below": 0,
+      "prior_lower": 10,
+      "prior_middle": 4,
+      "prior_upper": 2
+    },
+    "middle": {
+      "outside_above": 8,
+      "outside_below": 5,
+      "prior_lower": 9,
+      "prior_middle": 18,
+      "prior_upper": 8
+    },
+    "upper": {
+      "outside_above": 5,
+      "outside_below": 0,
+      "prior_lower": 1,
+      "prior_middle": 5,
+      "prior_upper": 20
+    }
+  },
+  "touched_poc_band_n": 70,
+  "touched_poc_band_share": 0.7368421052631579,
+  "minutes_to_poc_band_among_touches": {
+    "n": 70,
+    "mean": 127.07142857142857,
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.0,
+    "p75": 134.5,
+    "max": 1158.0
+  },
+  "near_share": {
+    "n": 95,
+    "mean": 0.2151854805140005,
+    "min": 0.0,
+    "p25": 0.0,
+    "median": 0.1644927536231884,
+    "p75": 0.32065217391304346,
+    "max": 0.8608695652173913
+  },
+  "migration_frac": {
+    "n": 95,
+    "mean": 0.07892030251527521,
+    "min": -1.5904241525350218,
+    "p25": -0.36461202779623725,
+    "median": 0.05359727906402942,
+    "p75": 0.507703015204173,
+    "max": 2.60406770749787
+  },
+  "migration_by_dominant_third": {
+    "lower": {
+      "n": 16,
+      "mean": 0.00044456009678735253,
+      "min": -1.5904241525350218,
+      "p25": -0.13224251924864228,
+      "median": 0.08507019295585075,
+      "p75": 0.1728898928430984,
+      "max": 0.8616698905741801
+    },
+    "middle": {
+      "n": 48,
+      "mean": 0.19167243972589754,
+      "min": -0.8861076655402264,
+      "p25": -0.4348891561591858,
+      "median": 0.09623387962134848,
+      "p75": 0.697009337850429,
+      "max": 2.60406770749787
+    },
+    "upper": {
+      "n": 31,
+      "mean": -0.05516004288517856,
+      "min": -1.5221634624810942,
+      "p25": -0.281071099405957,
+      "median": -0.02752844274381937,
+      "p75": 0.2897959460400127,
+      "max": 1.2442779427155881
+    }
+  },
+  "crossed_poc_n": 67,
+  "band_touch_and_cross_n": 67,
+  "band_touch_without_cross_n": 3,
+  "close_imbalance_among_crosses": {
+    "n": 67,
+    "mean": 29.70149253731343,
+    "min": -1280.0,
+    "p25": -686.5,
+    "median": 89.0,
+    "p75": 639.0,
+    "max": 1379.0
+  },
+  "imbalance_above": 36,
+  "imbalance_below": 31,
+  "imbalance_tie": 0,
+  "cross_with_no_later_close": 0,
+  "next_session_month_counts": {
+    "2026-03": 3,
+    "2026-04": 17,
+    "2026-05": 16,
+    "2026-06": 16,
+    "2026-07": 17,
+    "2026-08": 17,
+    "2026-09": 9
+  },
+  "dominant_third_counts": {
+    "lower": 16,
+    "middle": 48,
+    "upper": 31
+  },
+  "null": null,
+  "note": "STEP6_PREREGISTRATION defers a location null. None is computed."
+}

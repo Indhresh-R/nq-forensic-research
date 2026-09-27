@@ -1,0 +1,14 @@
+{
+  "n_rows": 300,
+  "note": "h=0 is same-bar contamination; trading claims need h>=1",
+  "open15_es_lead_nq_h1": {
+    "Discovery": 0.0005618907089001882,
+    "Validation": 0.00519049896703306,
+    "OOS": -0.002406813720811245
+  },
+  "mid_es_lead_nq_h1": {
+    "Discovery": -0.01385672643031524,
+    "Validation": -0.01308141917500085,
+    "OOS": -0.01572550518970475
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "LOOKAHEAD_CHECK": "PASS",
+  "EVENT_DEFINITION_FROZEN": true,
+  "NO_PARAMETER_RETUNE": true,
+  "NO_EVENT_AB_COMBINE": true,
+  "NO_HORIZON_PNL_SHOP": true,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "frozen_constants",
+      "pass": true,
+      "detail": {
+        "W": 30,
+        "K": 2.0,
+        "retrace": 0.5
+      }
+    },
+    {
+      "name": "side_equals_minus_ext_dir",
+      "pass": true,
+      "detail": "toward_anchor"
+    },
+    {
+      "name": "dest_has_splits",
+      "pass": true,
+      "detail": [
+        "ALL",
+        "IS",
+        "OOS",
+        "Validation"
+      ]
+    },
+    {
+      "name": "no_ab_combine",
+      "pass": true,
+      "detail": "Event C only"
+    },
+    {
+      "name": "final_ok",
+      "pass": true,
+      "detail": "KILL"
+    }
+  ],
+  "final": "KILL",
+  "n_events": 71344
+}
